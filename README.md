@@ -155,10 +155,3 @@ by a generic `score` column.
 The fixed scientific splits are provided without sampling or compression.
 Users are responsible for complying with the terms of the upstream data
 sources and external model assets.
-
-## Reproducibility boundaries
-
-- Large BerMol/ESM-2 weights, the historical feature cache, and a generated
-  human-proteome universe/HDF5 are external assets.
-- CTD/AOP outputs are database concordance and prioritization evidence, not
-  experimental causal proof, adverse-outcome probabilities, or risk estimates.
