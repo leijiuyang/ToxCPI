@@ -182,7 +182,7 @@ def extract_missing_esm2(seq_map, device='cuda:0'):
     if not ESM2_MODEL_PATH.is_file():
         raise FileNotFoundError(
             "ESM-2 weight is missing. Set TOXCPI_ESM2_MODEL to "
-            "esm2_t33_650M_UR50D.pt; see DATA_AND_MODEL_ASSETS.md."
+            "esm2_t33_650M_UR50D.pt."
         )
     from esm.pretrained import load_model_and_alphabet_core
     model_data = torch.load(ESM2_MODEL_PATH, map_location='cpu', weights_only=False)

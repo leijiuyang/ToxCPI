@@ -56,8 +56,7 @@ def build_universe() -> pd.DataFrame:
     ):
         if not source.exists():
             raise FileNotFoundError(
-                f"Required UniProt input is missing: {source}. Set {variable}; "
-                "see DATA_AND_MODEL_ASSETS.md."
+                f"Required UniProt input is missing: {source}. Set {variable}."
             )
     (OUT_DIR / "inputs").mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "logs").mkdir(parents=True, exist_ok=True)
@@ -112,7 +111,7 @@ def load_esm2(device: str):
     if not ESM2_LOCAL.is_file():
         raise FileNotFoundError(
             "ESM-2 weight is missing. Set TOXCPI_ESM2_MODEL to "
-            "esm2_t33_650M_UR50D.pt; see DATA_AND_MODEL_ASSETS.md."
+            "esm2_t33_650M_UR50D.pt."
         )
     model_data = torch.load(ESM2_LOCAL, map_location="cpu", weights_only=False)
     model, alphabet = load_model_and_alphabet_core("esm2_t33_650M_UR50D", model_data, None)

@@ -46,8 +46,8 @@ hardware-specific; adjust only the PyTorch installation when necessary.
 ### 2. External feature/model assets
 
 BerMol and ESM-2 weights and large generated feature caches are not included.
-Obtain them under their upstream terms and configure them as described in
-[`DATA_AND_MODEL_ASSETS.md`](DATA_AND_MODEL_ASSETS.md). Typical variables are:
+Obtain them under their upstream terms and configure them with environment
+variables such as:
 
 ```bash
 export TOXCPI_BERMOL_DIR=/path/to/authorized/BerMol/source
@@ -81,7 +81,7 @@ Warm-starting is optional and always requires an explicit `--init_from
 
 The chemical input CSV must contain `chemical_name`, `casrn`,
 `ctd_chemical_id`, and `smiles`. The proteome universe and ESM-2 HDF5 asset are
-described in `DATA_AND_MODEL_ASSETS.md`.
+provided explicitly through `--universe` and `--esm2-h5`.
 
 ```bash
 python code/inference/predict_human_proteome.py \
@@ -153,8 +153,8 @@ by a generic `score` column.
 | `data/AOP` | 176 KiB | Curated AOP-Wiki multilabel event and protein/family mappings |
 
 The fixed scientific splits are provided without sampling or compression.
-Dataset provenance and third-party attribution are summarized in
-`THIRD_PARTY_NOTICES.md`.
+Users are responsible for complying with the terms of the upstream data
+sources and external model assets.
 
 ## Reproducibility boundaries
 
@@ -162,6 +162,3 @@ Dataset provenance and third-party attribution are summarized in
   human-proteome universe/HDF5 are external assets.
 - CTD/AOP outputs are database concordance and prioritization evidence, not
   experimental causal proof, adverse-outcome probabilities, or risk estimates.
-
-Citation metadata are in `CITATION.cff`; third-party attributions are in
-`THIRD_PARTY_NOTICES.md`.

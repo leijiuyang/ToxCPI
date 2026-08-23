@@ -36,7 +36,7 @@ def main():
     if not BERMOL_MODEL_PATH.is_file():
         raise FileNotFoundError(
             "BerMol weight is missing. Set TOXCPI_BERMOL_MODEL to "
-            "BerMolModel_base.pkl; see DATA_AND_MODEL_ASSETS.md."
+            "BerMolModel_base.pkl."
         )
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 

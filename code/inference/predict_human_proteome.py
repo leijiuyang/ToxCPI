@@ -186,8 +186,7 @@ def load_chemicals_file(path: Path) -> pd.DataFrame:
 def load_universe(limit: int = 0) -> pd.DataFrame:
     if not UNIVERSE.exists():
         raise FileNotFoundError(
-            f"Universe file not found: {UNIVERSE}. Set TOXCPI_PROTEOME_UNIVERSE_CSV; "
-            "see DATA_AND_MODEL_ASSETS.md."
+            f"Universe file not found: {UNIVERSE}. Set TOXCPI_PROTEOME_UNIVERSE_CSV."
         )
     df = pd.read_csv(UNIVERSE)
     gene = df["gene_symbol"].fillna("").astype(str).str.strip()
@@ -205,7 +204,7 @@ def validate_h5_coverage(universe: pd.DataFrame) -> None:
     if not H5.exists():
         raise FileNotFoundError(
             f"HDF5 residue feature cache not found: {H5}. Set "
-            "TOXCPI_PROTEOME_ESM2_H5; see DATA_AND_MODEL_ASSETS.md."
+            "TOXCPI_PROTEOME_ESM2_H5."
         )
     targets = set(universe["uniprot_id"])
     with h5py.File(H5, "r") as h5:
@@ -307,7 +306,7 @@ def load_or_extract_compound_tokens(chemical: pd.Series, device: torch.device) -
         if not BERMOL.is_file():
             raise FileNotFoundError(
                 "BerMol weight is missing. Set TOXCPI_BERMOL_MODEL to "
-                "BerMolModel_base.pkl; see DATA_AND_MODEL_ASSETS.md."
+                "BerMolModel_base.pkl."
             )
         if str(BERMOL_DIR) not in sys.path:
             sys.path.insert(0, str(BERMOL_DIR))
