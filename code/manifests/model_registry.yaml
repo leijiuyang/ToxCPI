@@ -1,0 +1,102 @@
+registry_version: "2026.07.27"
+web_release: "2.0.0"
+model_mode: cold_chemical
+feature_pipeline:
+  cache_schema_version: 2
+  preprocessing_version: bermol-r1_esm2-t33_max768_v1
+  chemical_model_version: BerMolModel_base_r1
+  protein_model_version: esm2_t33_650M_UR50D
+smoke_case: bpa-ar
+examples:
+  bpa-ar:
+    label: BPA × AR
+    chemical_label: Bisphenol A
+    protein_label: P10275
+    chemical_selector: catalog:chemical:a9890075c0af3050928c7cc114364bd483577ab9cd9e240af092af0a4090a429
+    protein_selector: catalog:protein:00f50112d0b9c75a5c602fb93ae8f6545da58272608195f051223f5e442520b6
+    chemical_feature_key: Bisphenol A
+    protein_feature_key: P10275
+  cold-negative:
+    label: Chlorsulfuron × P24666
+    chemical_label: Chlorsulfuron
+    protein_label: P24666
+    chemical_selector: catalog:chemical:7534b379cec5098a80f0cc32e476dd4a1ad9f847012b2f78e51513b5e1d82853
+    protein_selector: catalog:protein:be45c56b8013a63910901092f6632668245c4213cac89407b891c25e7721ba0e
+    chemical_feature_key: Chlorsulfuron
+    protein_feature_key: P24666
+screening:
+  universe_id: human-proteome-uniprot-2026-06-04
+  scoreable_proteins: 20209
+  batch_size: 16
+  route1_union_threshold: 0.5
+  route2_strict_threshold: 0.7
+  state_store: sqlite
+  job_retention_days: 30
+  resources:
+    proteome_universe:
+      version: human-proteome-uniprot-2026-06-04
+      file: human_proteome_universe.csv
+      sha256: d90d65321246892b1d467311dabf1bacc22d8bc72786715848446ad081158ae0
+    protein_features:
+      version: esm2-t33-human-proteome-2026-06-04
+      file: human_proteome_esm2_residues.h5
+      sha256: bb70f7a49ff8fcb7d6b61a2f79d16dec70d1d66618edda62fd8cc64248771d24
+    kegg:
+      version: kegg-human-2026-06-04
+      file: kegg_human.gmt
+      sha256: 787fa39ea4e098d2435bd4ec514e49f458407948787475ce748d3b293f4ff7b4
+    ctd:
+      version: ctd-kegg-pathway-disease-2026-06-02
+      file: ctd_kegg_pathway_disease.parquet
+      sha256: 0ca6376112177692793da871d4887ebd07734d0cd750affecbaa2f1f2fb82337
+    aop_events:
+      version: aop-wiki-multilabel-2026-07-24
+      file: human_aop_proteins_multilabel.csv
+      sha256: eeae1da7d94a01577f0d4d76c2d1b26fd25cbb933cdae92d36af4b57301d2d8b
+    aop_families:
+      version: aop-family-expansion-2026-07-05
+      file: aop_family_expansion_map.csv
+      sha256: 0cde9e2ac8e6bd34c815d1f3602b59f478c01fbfe142f8255548851f6b912595
+models:
+  binding:
+    task: binding
+    architecture: BindingModelFusion
+    checkpoint: null
+    checkpoint_sha256: null
+    decision_threshold: 0.5
+    chemical_feature_dim: 768
+    protein_feature_dim: 1280
+    hidden_dim: 128
+    interaction_dim: 256
+    dropout: 0.3
+    preprocessing_version: bermol-r1_esm2-t33_max768_v1
+    display_version: ToxCPI Binding Cold 2026.05
+    enabled: true
+  activation:
+    task: activation
+    architecture: EffectModelFusionRawGlobal
+    checkpoint: null
+    checkpoint_sha256: null
+    decision_threshold: 0.5
+    chemical_feature_dim: 768
+    protein_feature_dim: 1280
+    hidden_dim: 256
+    interaction_dim: 512
+    dropout: 0.25
+    preprocessing_version: bermol-r1_esm2-t33_max768_v1
+    display_version: ToxCPI Activation Cold 2026.05
+    enabled: true
+  inhibition:
+    task: inhibition
+    architecture: EffectModelFusionRawGlobal
+    checkpoint: null
+    checkpoint_sha256: null
+    decision_threshold: 0.5
+    chemical_feature_dim: 768
+    protein_feature_dim: 1280
+    hidden_dim: 256
+    interaction_dim: 512
+    dropout: 0.3
+    preprocessing_version: bermol-r1_esm2-t33_max768_v1
+    display_version: ToxCPI Inhibition Cold 2026.05
+    enabled: true

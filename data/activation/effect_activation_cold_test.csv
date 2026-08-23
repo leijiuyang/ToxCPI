@@ -1,0 +1,1673 @@
+smiles,uniprot_id,chemical_name,label,data_source
+N.N.Cl[Pt]Cl,P05412,Cisplatin,1,Toxicology
+N.N.Cl[Pt]Cl,P15336,Cisplatin,1,Toxicology
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P05177,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",1,Toxicology
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,P10276,Retinal,1,Toxicology
+CCC1(CC(=O)NC(=O)C1)C,Q16445,Bemegride,0,negative
+N.N.Cl[Pt]Cl,P55211,Cisplatin,1,Toxicology
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P33897,Octafluoroadipamide,0,negative
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,P16473,Retinal,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,P09603,Mestranol,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P07858,3-methyladenine,1,Toxicology
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],O43603,3-nitrofluoranthene,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P04150,Aldosterone,1,Toxicology
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P23443,4-tert-octylphenol,1,Toxicology
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P01375,Pyriproxyfen,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,Q12778,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,Q8TE23,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P29274,Fluthiacet-methyl,0,negative
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,P16104,Tributyltin methacrylate,1,Toxicology
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P10145,2-(Perfluorohexyl)ethyl methacrylate,1,Toxicology
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P0C6P0,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P49748,Bezafibrate,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P33527,C.I. Solvent Red 72,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,Q16665,Busulfan,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,Q9NYW1,Cantharidin,0,negative
+CN1C=NC(=N)C2=C1N=CN2,P42574,3-methyladenine,1,Toxicology
+CN\C(NCC1=CN=C(Cl)S1)=N/[N+]([O-])=O,P32238,Clothianidin,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P01584,Calcitriol,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P04637,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P55210,Leflunomide,0,negative
+C(CN)CP(=O)O,P40145,3-aminopropylphosphinic acid,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q92731,Cyclic AMP,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P20813,Cyclic AMP,0,negative
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,Q12778,Fanetizole,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P01130,Chlorogenic Acid,0,negative
+Cl[Sb](Cl)Cl,P27361,antimony trichloride,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,Q9UL51,ciprofibrate,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P29466,Arsenic Trioxide,1,Toxicology
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,Q16696,benzylparaben,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q02447,coumarin,1,Toxicology
+C1=CC=C2C(=O)C=CC(=O)C2=C1,O14727,"1,4-naphthoquinone",0,negative
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P17787,cytisine,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,O43526,Estradiol enanthate,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q13535,Arsenic Trioxide,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P19793,Clofibrate,1,Toxicology
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,O95069,PharmaGSID_48507,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P55211,Cantharidin,1,Toxicology
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P37288,Astemizole,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P42574,Calcitriol,1,Toxicology
+CNC(=O)N(C)C1=NN=C(S1)C(C)(C)C,O95718,Tebuthiuron,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q13258,cordycepin,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,Q7RTX0,benzylparaben,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,O75469,4-tert-octylphenol,1,Toxicology
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],P56385,FR130739,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P10415,Arsenic Trioxide,1,Toxicology
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,Q03405,Flufenpyr-ethyl,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P32121,Cyclic AMP,1,Toxicology
+N.N.Cl[Pt]Cl,P98170,Cisplatin,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q15596,Calcitriol,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P09874,cordycepin,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q9NZJ5,Buthionine Sulfoximine,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P14867,Chondroitin Sulfates,0,negative
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,P30559,broxaterol,0,negative
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,Q9HC29,Bilirubin,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,Q16515,cyprodinil,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P02647,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+N.N.Cl[Pt]Cl,Q6UXS9,Cisplatin,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P0C6P0,5-alpha-Dihydroprogesterone,0,negative
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P54646,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+[Cr+6],O96017,chromium hexavalent ion,1,Toxicology
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P41595,Melengestrol acetate,0,negative
+O=[Cr](=O)=O,P28482,chromium trioxide,1,Toxicology
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,Q86WV6,4-benzylphenol,0,negative
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,P09603,"1H,1H,5H-Perfluoropentyl methacrylate",1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P01112,"1,25-dihydroxyvitamin D",1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P14780,alpha-naphthoflavone,1,Toxicology
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,P05198,Bilirubin,1,Toxicology
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P50995,N-Methylperfluorooctanesulfonamide,0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P28482,AICA ribonucleotide,1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P00915,Propantheline bromide,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P49146,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P30990,bisindolylmaleimide,1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P10275,cyprodinil,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,Q9HC97,Testosterone,0,negative
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,P25963,albiflorin,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P03372,Testosterone,1,Toxicology
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,Q9UBS5,"3,3',5-triiodothyroacetic acid",0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P27361,Busulfan,1,Toxicology
+Cl[Sb](Cl)Cl,P05362,antimony trichloride,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,P11473,benzylparaben,0,negative
+O=[Cr](=O)=O,P13569,chromium trioxide,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,Q01668,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P35869,5-nitroacenaphthene,1,Toxicology
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,O15399,Chlorogenic Acid,0,negative
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P06401,Hydrocortisone 17-butyrate,1,Toxicology
+C[C@]12CCC(=O)C=C1[C@@H]3C[C@@H]3[C@@H]4[C@@H]2CC[C@]5([C@H]4[C@@H]6C[C@@H]6[C@@]57CCC(=O)O7)C,P42261,Drospirenone,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P27540,alpha-naphthoflavone,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,Q04206,Anethole Trithione,1,Toxicology
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P10826,Propetamphos,0,negative
+CCCCC[C@H]1[C@H](O1)C/C=C\C/C=C\C/C=C\CCCC(=O)O,P13631,"14,15-epoxy-5,8,11-eicosatrienoic acid",0,negative
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,Q9HC29,15-acetyldeoxynivalenol,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,Q8NET8,Hexestrol,0,negative
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P08319,C.I. Solvent Red 72,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P06858,Astemizole,0,negative
+C(C(C(C(C(F)(F)S(=O)(=O)[O-])(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F.[K+],P13500,Potassium perfluorooctanesulfonate,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,Q9UQE7,coumarin,1,Toxicology
+C[C@H](C1=CC=CC=N1)C2=C(CC3=CC=CC=C32)CCN(C)C.C(=C\C(=O)O)\C(=O)O,P01100,(S)-(+)-Dimethindene maleate,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,Q14994,Carbamazepine,1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],O95477,Propantheline bromide,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,Q16236,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+[Cr+6],Q04206,chromium hexavalent ion,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P63261,Triamcinolone,0,negative
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,P32297,PharmaGSID_48507,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P35869,"2,3,3',4,4',5-hexachlorobiphenyl",1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P23560,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,P31644,benzylparaben,0,negative
+O=[Cr](=O)=O,P05412,chromium trioxide,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,Q9NZJ5,17-Methyltestosterone,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q9UGM1,Calcitriol,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P42345,benzo(a)pyrene diolepoxide I,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P78527,coumarin,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P15336,Arsenic Trioxide,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P35348,Estradiol enanthate,0,negative
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P10145,AVE3247,1,Toxicology
+ClCCNP1(=O)OCCCN1CCCl,P19320,Ifosfamide,1,Toxicology
+N.N.Cl[Pt]Cl,Q9Y5N1,Cisplatin,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P30518,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+CCC1(CC(=O)NC(=O)C1)C,P05412,Bemegride,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,P31391,Mestranol,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P02778,Leflunomide,0,negative
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q96EB6,butein,1,Toxicology
+N.N.Cl[Pt]Cl,O14757,Cisplatin,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P09603,C.I. Solvent Red 72,0,negative
+[Cr+6],P01112,chromium hexavalent ion,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P13569,3-methyladenine,0,negative
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P10275,Melengestrol acetate,1,Toxicology
+COP(=S)(OC)OC1=CC=C(C=C1)SC2=CC=C(C=C2)OP(=S)(OC)OC,P05121,Temephos,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],Q13794,Arsenic Trioxide,1,Toxicology
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,O14974,18alpha-glycyrrhetinic acid,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P28482,Calcitriol,1,Toxicology
+N.N.Cl[Pt]Cl,P05198,Cisplatin,1,Toxicology
+[Cr+6],P06239,chromium hexavalent ion,1,Toxicology
+[As],P10145,Arsenic,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,O43525,benzo(a)pyrene diolepoxide I,0,negative
+C(C(Cl)(Cl)Cl)(O)O,Q9UBS5,Chloral Hydrate,1,Toxicology
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,Q8WXA8,camphorquinone,0,negative
+N.N.Cl[Pt]Cl,Q9NZJ5,Cisplatin,1,Toxicology
+CCNC(=O)NC(=O)C(=NOC)C#N,P07550,Cymoxanil,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P05186,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+CCCCCCCCC1=CC=C(C=C1)O,Q03135,4-octylphenol,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P03372,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P48546,Cyclic AMP,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P50591,Arsenic Trioxide,1,Toxicology
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,Q00987,Pyriproxyfen,0,negative
+COC1=CC(OC)=NC(NC(=O)NS(=O)(=O)NC2=C(C=CC=C2)C(=O)N(C)C)=N1,P07203,Orthosulfamuron,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,Q92731,4-tert-octylphenol,1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,Q14994,Leflunomide,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,Q8NE71,Phosalone,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P0DTE8,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,Q16539,aucubin,1,Toxicology
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,Q96RI1,Chlorogenic Acid,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,Q03405,Phosalone,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,O96017,Busulfan,1,Toxicology
+C([C@@H]([C@@H]1C(=C(C(=O)O1)OP(=O)(O)O)O)O)O,Q8N122,ascorbate-2-phosphate,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,Q15910,coumarin,1,Toxicology
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P03372,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,Q6UXS9,"3,3'-Dichlorobenzidine",0,negative
+CN1C=NC(=N)C2=C1N=CN2,P03956,3-methyladenine,0,negative
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,Q9HCF6,Bilirubin,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P47898,benzo(a)pyrene diolepoxide I,0,negative
+[Cr+6],Q16236,chromium hexavalent ion,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P49407,Anethole Trithione,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,Q14790,Cantharidin,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P55211,Busulfan,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P06239,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+N.N.Cl[Pt]Cl,P01579,Cisplatin,1,Toxicology
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,P29353,Beclazone,0,negative
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P04150,Hydrocortisone 17-butyrate,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P27361,alpha-naphthoflavone,1,Toxicology
+[Cr+6],P16104,chromium hexavalent ion,1,Toxicology
+[Cr+6],P06241,chromium hexavalent ion,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,Q92731,17alpha-Estradiol,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,Q9NSD7,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+C1=CC=C2C(=O)C=CC(=O)C2=C1,Q12981,"1,4-naphthoquinone",0,negative
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P45985,Benzo(b)fluoranthene,0,negative
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],Q16236,3-nitrofluoranthene,1,Toxicology
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P28482,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P03372,alpha-naphthoflavone,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P17252,coumarin,1,Toxicology
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,O43707,N-Methylperfluorooctanesulfonamide,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,Q13258,benzylparaben,0,negative
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,Q5NUL3,Ethopropazine hydrochloride,0,negative
+CCC1(CC(=O)NC(=O)C1)C,Q15831,Bemegride,0,negative
+ClCCNP1(=O)OCCCN1CCCl,P13726,Ifosfamide,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,P04798,Buthionine Sulfoximine,1,Toxicology
+C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl,P05121,Chlorambucil,1,Toxicology
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P16473,camphorquinone,0,negative
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P32297,cytisine,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,P03372,Estradiol cypionate,1,Toxicology
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],Q12955,5-nitroacenaphthene,0,negative
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,O15111,Tributyltin methacrylate,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P11473,"1,25-dihydroxyvitamin D",1,Toxicology
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P24941,Melengestrol acetate,0,negative
+[Cr+6],P35222,chromium hexavalent ion,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P08684,Calcitriol,1,Toxicology
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P03956,N-Methylperfluorooctanesulfonamide,1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P16109,AVE3247,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P49137,Arsenic Trioxide,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,Q16665,Chlorpromazine,0,negative
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,P05121,"1H,1H,5H-Perfluoropentyl methacrylate",1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],O43526,AVE3247,0,negative
+CCCO,O95264,1-Propanol,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],Q6UXS9,Arsenic Trioxide,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,O15552,Calcitriol,0,negative
+N.N.Cl[Pt]Cl,P10415,Cisplatin,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P19419,Colistin,0,negative
+CCOC1=C(O)C=C(C=CC)C=C1,P45983,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P19793,Metolachlor,0,negative
+CCC1(CC(=O)NC(=O)C1)C,P62330,Bemegride,0,negative
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P30307,Perfluorobutanesulfonic acid,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P46734,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+CCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P50579,17beta-Estradiol 17-propionate,0,negative
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P19838,Carbamazepine,1,Toxicology
+COC1=CC(OC)=NC(NC(=O)NS(=O)(=O)NC2=C(C=CC=C2)C(=O)N(C)C)=N1,P62330,Orthosulfamuron,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P26358,coumarin,1,Toxicology
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P06748,Pyriproxyfen,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P35869,Berberine,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P31749,Calcitriol,1,Toxicology
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,Q96EB6,albiflorin,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P03372,Cyclic AMP,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,P23415,Phosalone,0,negative
+CNC(=O)N(C)C1=NN=C(S1)C(C)(C)C,P03372,Tebuthiuron,0,negative
+CCCO,O14727,1-Propanol,0,negative
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P10145,Flufenpyr-ethyl,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P14416,Cyclic AMP,1,Toxicology
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,O95467,Hydrocortisone 17-butyrate,0,negative
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P35869,Benzo(b)fluoranthene,1,Toxicology
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P28221,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,Q12791,Testosterone,0,negative
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,Q14994,Febuxostat,1,Toxicology
+[Cr+6],O43683,chromium hexavalent ion,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P43115,5-alpha-Dihydroprogesterone,0,negative
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P13500,D&C Red 27,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P13726,Benzo(b)fluoranthene,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,Q92731,Estradiol cypionate,1,Toxicology
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P08684,Chlorogenic Acid,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q13131,coumarin,1,Toxicology
+Cl[Sb](Cl)Cl,P18146,antimony trichloride,0,negative
+C1=CC=C2C(=O)C=CC(=O)C2=C1,Q8NET8,"1,4-naphthoquinone",1,Toxicology
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P25024,camphorquinone,0,negative
+COC1=CC(OC)=NC(NC(=O)NS(=O)(=O)NC2=C(C=CC=C2)C(=O)N(C)C)=N1,P01137,Orthosulfamuron,1,Toxicology
+C[C@@H]1CC[C@@]2([C@@H](C1(C)CCC3=CC(=O)O[C@H]3O)CCC=C2C)C,P55211,"16-hydroxycleroda-3,13(14)-dien-15,16-olide",1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P01137,Arsenic Trioxide,1,Toxicology
+CC1=CC(=C(C=C1)O)C,O75762,"2,4-dimethylphenol",1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P46734,Amodiaquine,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P08648,Testosterone,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P06239,Equilin,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q16539,Calcitriol,1,Toxicology
+C(CN)CP(=O)O,Q9UBS5,3-aminopropylphosphinic acid,1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P06730,cyprodinil,0,negative
+O=[Cr](=O)=O,Q13685,chromium trioxide,0,negative
+N.N.Cl[Pt]Cl,P00519,Cisplatin,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,P23634,"3,4-dihydroxybenzaldoxime",0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q14790,Arsenic Trioxide,1,Toxicology
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,P06401,Desonide,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P78527,Estradiol enanthate,0,negative
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P10275,Medrysone,1,Toxicology
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,P01137,Gamma-Oryzanol,0,negative
+C(C(Cl)(Cl)Cl)(O)O,O75469,Chloral Hydrate,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P02778,2-(Perfluorohexyl)ethyl methacrylate,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P10145,Perfluorobutanesulfonic acid,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P40145,17-Methyltestosterone,0,negative
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P10275,Estradiol enanthate,1,Toxicology
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P10275,Flumethasone pivalate,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P06400,aucubin,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P49116,coumarin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C(C(=O)CC[C@H]35)O,P10275,Oxabolone cipioncate,1,Toxicology
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P28702,Flumethasone pivalate,0,negative
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],P35869,3-nitrofluoranthene,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P01100,benzo(a)pyrene diolepoxide I,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P28482,Busulfan,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P01127,Chlorpromazine,0,negative
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P35869,ar-turmerone,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P18825,Benzo(b)fluoranthene,0,negative
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P04150,Flumethasone pivalate,1,Toxicology
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P16220,alkannin,0,negative
+CCOC1=C(O)C=C(C=CC)C=C1,P30968,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P37231,alpha-naphthoflavone,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P10275,Testosterone,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P28482,alpha-naphthoflavone,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,O00398,coumarin,1,Toxicology
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,P01100,Trimipramine hydrogen maleate,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,Q00613,Carbamazepine,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P49189,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+CC1=CC(=C(C=C1)O)C,Q8NET8,"2,4-dimethylphenol",1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P09917,Fluthiacet-methyl,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P45983,cordycepin,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,Q9Y5N1,AICA ribonucleotide,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P46734,Arsenic Trioxide,1,Toxicology
+[As],Q8TDS4,Arsenic,0,negative
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P06276,5-alpha-Dihydroprogesterone,0,negative
+C1C[C@H](N(C1)C(=O)[C@@H]2CSSCCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)N,Q9BUB5,Deamino Arginine Vasopressin,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P13500,2-(Perfluorohexyl)ethyl methacrylate,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P09917,Chondroitin Sulfates,0,negative
+COP(=S)(OC)OC1=CC=C(C=C1)SC2=CC=C(C=C2)OP(=S)(OC)OC,P11473,Temephos,0,negative
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P01225,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,Q03405,Fluthiacet-methyl,1,Toxicology
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P13631,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,Q15118,Febuxostat,0,negative
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P41146,Estradiol enanthate,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P45984,4-tert-octylphenol,0,negative
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P05121,Triamcinolone,1,Toxicology
+CC1=C(C=C(C=C1)O)C,O15392,"3,4-dimethylphenol",0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P06276,N-Methylperfluorooctanesulfonamide,0,negative
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P07858,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+COC1=C(C=C2C(=C1O)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)OC2=O)O,P25963,bergenin,1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P01375,Fluthiacet-methyl,1,Toxicology
+COP(=O)(OC)SCN1C2=C(C=C(C=N2)Cl)OC1=O,P43116,Azamethiphos,1,Toxicology
+[As],Q04206,Arsenic,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q93070,coumarin,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,Q01433,aucubin,0,negative
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P24046,5-nitroacenaphthene,0,negative
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P17676,4-benzylphenol,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,Q12983,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P31749,Buthionine Sulfoximine,1,Toxicology
+N.N.Cl[Pt]Cl,P62753,Cisplatin,1,Toxicology
+[Cr+6],P55211,chromium hexavalent ion,1,Toxicology
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P21453,Hydrocortisone 17-butyrate,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q9BUB5,Arsenic Trioxide,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,P03956,Phosalone,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,Q16539,benzo(a)pyrene diolepoxide I,1,Toxicology
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P37231,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P17213,"3,3'-Dichlorobenzidine",0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P35613,coumarin,1,Toxicology
+N.N.Cl[Pt]Cl,P53350,Cisplatin,1,Toxicology
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,P36575,Gamma-Oryzanol,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P10275,alpha-naphthoflavone,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P52564,Arsenic Trioxide,1,Toxicology
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,P05412,Trimipramine hydrogen maleate,1,Toxicology
+CNC(=O)N(C)C1=NN=C(S1)C(C)(C)C,P02778,Tebuthiuron,1,Toxicology
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,O00213,Gamma-Oryzanol,0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q08117,N-Methylperfluorooctanesulfonamide,0,negative
+CCNC(=O)NC(=O)C(=NOC)C#N,P13500,Cymoxanil,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P27361,"2,3,3',4,4',5-hexachlorobiphenyl",1,Toxicology
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,P19320,PharmaGSID_48507,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q14790,cordycepin,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P10145,"N,N'-Di-2-naphthyl-p-phenylenediamine",1,Toxicology
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,P08581,1-chlorosucrose,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,O14842,casuarictin,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P01584,ciprofibrate,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q07812,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P14416,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P14416,Perfluorohexanedioic acid,0,negative
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P55211,Ethopropazine hydrochloride,0,negative
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P25963,astilbin,1,Toxicology
+C[C@@H]1CC[C@@]2([C@@H](C1(C)CCC3=CC(=O)O[C@H]3O)CCC=C2C)C,P01019,"16-hydroxycleroda-3,13(14)-dien-15,16-olide",0,negative
+CCNC(=O)NC(=O)C(=NOC)C#N,P05231,Cymoxanil,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q92793,Cyclic AMP,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P01308,Bezafibrate,1,Toxicology
+CCCO,P01375,1-Propanol,0,negative
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,Q16515,Tributyltin methacrylate,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P37231,Berberine,1,Toxicology
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,P10145,"1H,1H,5H-Perfluoropentyl methacrylate",1,Toxicology
+[Cr+6],P42224,chromium hexavalent ion,1,Toxicology
+C(C(Cl)(Cl)Cl)(O)O,P18505,Chloral Hydrate,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P28039,Chlorpromazine,0,negative
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P36507,5-nitroacenaphthene,0,negative
+CC(=O)C1=CC=CC=C1C(=O)C,P60568,"1,2-diacetylbenzene",0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,Q99720,Octafluoroadipamide,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P13500,Astemizole,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,Q13315,Bezafibrate,0,negative
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P49662,Flumethasone pivalate,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P62753,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],Q8N122,Propantheline bromide,0,negative
+CCCCCCCCC1=CC=C(C=C1)O,P41968,4-octylphenol,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P15692,alkannin,0,negative
+ClCCNP1(=O)OCCCN1CCCl,Q9NSD7,Ifosfamide,0,negative
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P10145,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q99683,Calcitriol,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,Q9HC29,Chondroitin Sulfates,0,negative
+CN1C=NC(=N)C2=C1N=CN2,P18146,3-methyladenine,0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P42226,Clofibrate,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P11712,"2,3,5,6-tetrachlorobiphenyl",0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P14416,4-tert-octylphenol,0,negative
+COC1=CC(OC)=NC(NC(=O)NS(=O)(=O)NC2=C(C=CC=C2)C(=O)N(C)C)=N1,P10145,Orthosulfamuron,1,Toxicology
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,P43681,1-chlorosucrose,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P35869,Leflunomide,1,Toxicology
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,P01106,Isoxaflutole,0,negative
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P30542,Propantheline bromide,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,Q05469,Equilin,0,negative
+O=[Cr](=O)=O,P11511,chromium trioxide,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P08908,Cyclic AMP,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,Q01484,"3,3'-Dichlorobenzidine",0,negative
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P13798,"3,3',5-triiodothyroacetic acid",0,negative
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P01225,5-alpha-Dihydroprogesterone,0,negative
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P09601,ar-turmerone,0,negative
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,O15111,C.I. Solvent Red 72,0,negative
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,Q9BXC0,15-acetyldeoxynivalenol,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,Q14790,Busulfan,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P11474,Clofibrate,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,Q96EB6,Testosterone,0,negative
+[Cr+6],P29466,chromium hexavalent ion,0,negative
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,P03372,Gamma-Oryzanol,1,Toxicology
+[As],P23443,Arsenic,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,Q9UHC3,Mestranol,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P16220,cordycepin,1,Toxicology
+C1=CC=C2C(=O)C=CC(=O)C2=C1,Q14994,"1,4-naphthoquinone",0,negative
+CCC(C)N1C(=O)NC(C)=C(Br)C1=O,O75388,Bromacil,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P42575,coumarin,1,Toxicology
+C(CN)CP(=O)O,O75899,3-aminopropylphosphinic acid,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P24385,Arsenic Trioxide,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P40145,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P55055,casuarictin,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P35368,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P21453,Hexestrol,0,negative
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,Q9H1C0,broxaterol,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P08047,Buthionine Sulfoximine,1,Toxicology
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P13500,Propetamphos,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P78348,Hexestrol,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P08235,Aldosterone,1,Toxicology
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,Q03181,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+CCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P47869,Estradiol valerate,0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,Q05655,22-hydroxycholesterol,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,Q92731,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",1,Toxicology
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,P07550,broxaterol,1,Toxicology
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,Q4VC05,Medrysone,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,O75469,Chlorpromazine,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q13535,cordycepin,1,Toxicology
+[As],Q05397,Arsenic,1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,Q05469,Norethindrone acetate,0,negative
+[Cr+6],P12931,chromium hexavalent ion,1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,Q16236,Amodiaquine,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,Q9Y210,cyprodinil,0,negative
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,P34903,Isoxaflutole,0,negative
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,P06858,Retinal,0,negative
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P01375,Perfluorohexanedioic acid,1,Toxicology
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P13726,5-Nitroacenaphthene,1,Toxicology
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,Q16602,Astemizole,0,negative
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,Q15910,Falnidamol dihydrochloride,0,negative
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,P15144,1-chlorosucrose,0,negative
+CCCCCCCCC1=CC=C(C=C1)O,P28702,4-octylphenol,0,negative
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P47869,4-benzylphenol,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P48023,casuarictin,0,negative
+CCCCC(CC)COCCC#N,P05121,3-((2-Ethylhexyl)oxy)propionitrile,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,Q9UHC3,Triamcinolone,0,negative
+C1=CC=C(C=C1)C2=CC=CC=C2Cl,P10275,2-chlorobiphenyl,1,Toxicology
+CC1=C(C=C(C=C1)O)C,Q9NYW0,"3,4-dimethylphenol",0,negative
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,P29474,albiflorin,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P05177,Arsenic Trioxide,1,Toxicology
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,O14757,benzylparaben,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P05423,"benzo(a)pyrene 7,8-dihydrodiol",0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P10826,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],Q9NYV8,FR130739,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P03372,17-Methyltestosterone,1,Toxicology
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P13726,Hydrocortisone 17-butyrate,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,Q05469,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,P84085,15-acetyldeoxynivalenol,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q99075,Calcitriol,0,negative
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P62753,Flumethasone pivalate,0,negative
+N.N.Cl[Pt]Cl,P45984,Cisplatin,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,P32238,Phosalone,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P02647,Bezafibrate,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,O15303,Carbamazepine,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,O75460,Cantharidin,0,negative
+COP(=O)(OC)SCN1C2=C(C=C(C=N2)Cl)OC1=O,P01375,Azamethiphos,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P03956,Benzo(b)fluoranthene,1,Toxicology
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P13726,Perfluorohexanedioic acid,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P00750,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,O14757,Busulfan,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P53350,coumarin,1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P10275,Norethindrone acetate,1,Toxicology
+[As],P14780,Arsenic,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q13685,Perfluorobutanesulfonic acid,0,negative
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P04637,Amodiaquine,1,Toxicology
+N.N.Cl[Pt]Cl,Q07812,Cisplatin,1,Toxicology
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P04637,Flumethasone pivalate,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P06241,ciprofibrate,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,O75469,Leflunomide,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q13541,Calcitriol,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q07352,butein,0,negative
+C1=CC=C2C(=O)C=CC(=O)C2=C1,P02708,"1,4-naphthoquinone",0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P31749,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P08842,7-hydroxystaurosporine,1,Toxicology
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,O14974,Melengestrol acetate,0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P13945,AICA ribonucleotide,0,negative
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P18507,Chondroitin Sulfates,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P35869,cyprodinil,1,Toxicology
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P30968,Cantharidin,0,negative
+CCCCC(CC)COCCC#N,P50225,3-((2-Ethylhexyl)oxy)propionitrile,0,negative
+N.N.Cl[Pt]Cl,P35228,Cisplatin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,P10275,Estradiol cypionate,1,Toxicology
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P21953,Propetamphos,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P01100,Arsenic Trioxide,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P10275,Leucomycin tartrate,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P40763,"benzo(a)pyrene 7,8-dihydrodiol",0,negative
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,O95264,Norethindrone acetate,0,negative
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,Q00613,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,Q9NYV7,4-((diethylamino)sulfonyl)benzoic acid,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P14416,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P28702,4-tert-octylphenol,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P01133,Colistin,0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P42574,Acitretin,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P49841,cordycepin,1,Toxicology
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,O95665,Equilin,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P16109,"2,3,5,6-tetrachlorobiphenyl",0,negative
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P46098,D&C Red 27,0,negative
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P35414,Perfluorohexanedioic acid,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P28482,cyprodinil,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P06401,Triamcinolone,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P16581,Benzo(b)fluoranthene,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P06858,Bezafibrate,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P06748,Testosterone,0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P35354,camphorquinone,0,negative
+[As],P27361,Arsenic,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P04637,Arsenic Trioxide,1,Toxicology
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P50391,Perfluorohexanedioic acid,0,negative
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P37231,"3,3',5-triiodothyroacetic acid",1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P17252,Leucomycin tartrate,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P42574,cordycepin,1,Toxicology
+C([C@@H]([C@@H]1C(=C(C(=O)O1)OP(=O)(O)O)O)O)O,P19961,ascorbate-2-phosphate,0,negative
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,O43683,Febuxostat,0,negative
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,Q03405,Pyriproxyfen,1,Toxicology
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P08183,astilbin,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P01137,Thifensulfuron methyl,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,Q05397,Anethole Trithione,1,Toxicology
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P02778,Propetamphos,1,Toxicology
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P10275,Hydrocortisone 17-butyrate,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q07973,Perfluorobutanesulfonic acid,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P05019,Astemizole,1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P42575,AVE3247,0,negative
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,O75469,Metolachlor,1,Toxicology
+Cl[Sb](Cl)Cl,P28482,antimony trichloride,1,Toxicology
+[Cr+6],Q05397,chromium hexavalent ion,1,Toxicology
+N.N.Cl[Pt]Cl,P25445,Cisplatin,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P55210,3-methyladenine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P10275,Arsenic oxide (As2O3),1,Toxicology
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P19320,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P22314,Amodiaquine,0,negative
+CCCCC/C=C\C[C@@]\1(C=CC(=O)/C1=C/C=C/[C@@H](CCC(=O)OC)OC(=O)C)OC(=O)C,P52564,clavulone II,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,Q9H1C0,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P78348,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+CCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P10275,17beta-Estradiol 17-propionate,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,Q14683,coumarin,1,Toxicology
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,O60706,cytisine,0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],Q14683,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P10828,Tiratricol,1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P03372,Norethindrone acetate,1,Toxicology
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P42574,7-hydroxystaurosporine,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P24752,Acitretin,0,negative
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,Q12879,Phosalone,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q99707,Buthionine Sulfoximine,1,Toxicology
+[As],O60674,Arsenic,1,Toxicology
+C(C(Cl)(Cl)Cl)(O)O,P23415,Chloral Hydrate,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P22309,Carbamazepine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P18850,Arsenic Trioxide,1,Toxicology
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,P11831,benzylparaben,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P19793,"4-(2-(5,6,7,8-Tetrahydro-5,5,8,8-tetramethyl-2-naphthenyl)-1E-propen-1-yl)benzoic acid",1,Toxicology
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,P05198,15-acetyldeoxynivalenol,1,Toxicology
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,P19320,Bilirubin,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P27361,Aldosterone,1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],Q03405,AVE3247,1,Toxicology
+N.N.Cl[Pt]Cl,P17252,Cisplatin,1,Toxicology
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,Q03405,Propetamphos,1,Toxicology
+C([C@@H]([C@@H]1C(=C(C(=O)O1)OP(=O)(O)O)O)O)O,P05186,ascorbate-2-phosphate,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P10275,Busulfan,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,O75469,butein,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,P52952,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P35613,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,Q15743,18alpha-glycyrrhetinic acid,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,O75469,Bezafibrate,1,Toxicology
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P59535,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,P10275,Flurandrenolide,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P04040,Perfluorobutanesulfonic acid,0,negative
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P42224,Propetamphos,0,negative
+N.N.Cl[Pt]Cl,P49662,Cisplatin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,P18507,Estriol,0,negative
+C1=CC(=C(C=C1/C=N/O)O)O,Q92731,"3,4-dihydroxybenzaldoxime",1,Toxicology
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P13945,Thifensulfuron methyl,0,negative
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P01127,18alpha-glycyrrhetinic acid,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P36507,cordycepin,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P06493,Perfluorobutanesulfonic acid,0,negative
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P10145,C.I. Solvent Red 72,1,Toxicology
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P42574,ar-turmerone,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P03956,Acitretin,0,negative
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P55087,Hexestrol,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,Q92731,benzylparaben,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,O60755,"3,4-dihydroxybenzaldoxime",0,negative
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P30550,4-benzylphenol,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,Q6UXS9,Estradiol cypionate,0,negative
+COP(=S)(OC)OC1=CC=C(C=C1)SC2=CC=C(C=C2)OP(=S)(OC)OC,P15336,Temephos,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P84022,alpha-naphthoflavone,1,Toxicology
+C1C[C@H](N(C1)C(=O)[C@@H]2CSSCCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)N,P13569,Deamino Arginine Vasopressin,1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P45983,Amodiaquine,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P51648,5-alpha-Dihydroprogesterone,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P35568,Arsenic Trioxide,1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,O75469,cyprodinil,1,Toxicology
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P62834,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,Q92934,benzo(a)pyrene diolepoxide I,1,Toxicology
+N.N.Cl[Pt]Cl,P18146,Cisplatin,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P10275,17-Methyltestosterone,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P43405,Hexestrol,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P00390,Buthionine Sulfoximine,1,Toxicology
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P03956,5-Nitroacenaphthene,1,Toxicology
+[Cr+6],Q14683,chromium hexavalent ion,1,Toxicology
+C1=CC=C(C=C1)C2=CC=CC=C2Cl,P21731,2-chlorobiphenyl,0,negative
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,Q14994,4-benzylphenol,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P11511,"3,3'-Dichlorobenzidine",0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,O96017,cordycepin,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P54646,AICA ribonucleotide,1,Toxicology
+C([C@@H]([C@@H]1C(=C(C(=O)O1)OP(=O)(O)O)O)O)O,P31749,ascorbate-2-phosphate,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q7RTX0,Clofibrate,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P10275,"2,3,3',4,4',5-hexachlorobiphenyl",1,Toxicology
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,Q7RTX0,1-chlorosucrose,1,Toxicology
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,Q9H244,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+C(CCl)NC(=O)N(CCCl)N=O,Q13535,Carmustine,1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P03372,AVE3247,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P19793,Arsenic Trioxide,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P02647,Estradiol enanthate,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P55211,"3,3'-Dichlorobenzidine",1,Toxicology
+CN\C(NCC1=CN=C(Cl)S1)=N/[N+]([O-])=O,Q03405,Clothianidin,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P49662,3-methyladenine,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,Q15796,Leucomycin tartrate,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P12694,coumarin,1,Toxicology
+CC1=C(C=C(C=C1)O)C,P18089,"3,4-dimethylphenol",0,negative
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,P28907,Isoxaflutole,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P04798,benzo(b)fluoranthene,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q14790,Calcitriol,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,Q05397,4-tert-octylphenol,1,Toxicology
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P13631,Pyriproxyfen,0,negative
+N.N.Cl[Pt]Cl,Q13535,Cisplatin,1,Toxicology
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P42574,Cantharidin,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,Q12778,AICA ribonucleotide,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P55957,Chlorpromazine,0,negative
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,P00533,"2,2',6,6'-Tetrachlorobisphenol A",1,Toxicology
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,O00429,Beclazone,0,negative
+N.N.Cl[Pt]Cl,P48023,Cisplatin,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P04141,C.I. Solvent Red 72,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,Q14994,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,P53779,"1H,1H,5H-Perfluoropentyl methacrylate",0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],O75460,Arsenic Trioxide,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P47869,Acitretin,0,negative
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P06493,7-hydroxystaurosporine,0,negative
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,Q8N122,"2,2',6,6'-Tetrachlorobisphenol A",0,negative
+C[C@@H]1CC[C@@]2([C@@H](C1(C)CCC3=CC(=O)O[C@H]3O)CCC=C2C)C,P42574,"16-hydroxycleroda-3,13(14)-dien-15,16-olide",1,Toxicology
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,Q96RI1,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+[Cr+6],P42345,chromium hexavalent ion,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P10275,benzo(b)fluoranthene,1,Toxicology
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,P13500,Isofenphos,1,Toxicology
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P01225,Equilin,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,Q14994,benzylparaben,1,Toxicology
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P11245,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,P17213,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P30968,C.I. Solvent Red 72,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,Q04206,Carbamazepine,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,P13500,2-Ethoxy-5-(1-propenyl)phenol,1,Toxicology
+CCC1(CC(=O)NC(=O)C1)C,P18507,Bemegride,1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P32247,D&C Red 27,0,negative
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P13945,5-nitroacenaphthene,0,negative
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P09603,Propantheline bromide,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P27361,Calcitriol,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P16278,Acitretin,0,negative
+[As],P35222,Arsenic,1,Toxicology
+C[C@]12CCC(=O)C=C1[C@@H]3C[C@@H]3[C@@H]4[C@@H]2CC[C@]5([C@H]4[C@@H]6C[C@@H]6[C@@]57CCC(=O)O7)C,P10275,Drospirenone,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P45983,benzo(a)pyrene diolepoxide I,1,Toxicology
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P08253,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P56381,camphorquinone,0,negative
+CCCCC(CC)COCCC#N,Q9NYW7,3-((2-Ethylhexyl)oxy)propionitrile,0,negative
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,Q8TDU9,broxaterol,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P02654,casuarictin,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P25021,Thifensulfuron methyl,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P35869,Cantharidin,1,Toxicology
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P01375,casuarictin,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P49662,Arsenic Trioxide,1,Toxicology
+C(C(Cl)(Cl)Cl)(O)O,P06748,Chloral Hydrate,0,negative
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P51587,ar-turmerone,0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,Q12879,Acitretin,0,negative
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,Q8TE23,Phosalone,0,negative
+[Cr+6],Q13501,chromium hexavalent ion,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P16581,Falnidamol dihydrochloride,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,Q9GZQ4,benzo(a)pyrene diolepoxide I,0,negative
+CCCCC/C=C\C[C@@]\1(C=CC(=O)/C1=C/C=C/[C@@H](CCC(=O)OC)OC(=O)C)OC(=O)C,P42574,clavulone II,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P43220,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,P13945,broxaterol,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P27540,Berberine,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P17213,alkannin,0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P25025,AICA ribonucleotide,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q00613,Arsenic Trioxide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P01106,Arsenic Trioxide,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P31749,cordycepin,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,O75469,Berberine,1,Toxicology
+CCCCCCCCC1=CC=C(C=C1)O,P10275,4-octylphenol,1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P56385,Leflunomide,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,O60755,Aldosterone,0,negative
+[As],P23458,Arsenic,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,Q03181,Bezafibrate,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P60484,Berberine,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],O96017,Arsenic Trioxide,1,Toxicology
+[As],P45984,Arsenic,1,Toxicology
+C(C(C(C(C(F)(F)S(=O)(=O)[O-])(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F.[K+],P03956,Potassium perfluorooctanesulfonate,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P32745,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q05397,Clofibrate,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,O15392,cyprodinil,0,negative
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,Q16236,Benzo(b)fluoranthene,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P04150,Leucomycin tartrate,1,Toxicology
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,P24530,1-chlorosucrose,0,negative
+N.N.Cl[Pt]Cl,Q13794,Cisplatin,1,Toxicology
+N.N.Cl[Pt]Cl,O96017,Cisplatin,1,Toxicology
+CCCCC(CC)COCCC#N,P02778,3-((2-Ethylhexyl)oxy)propionitrile,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,P16581,Estriol,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P51648,Bezafibrate,1,Toxicology
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P27361,alkannin,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P84022,Cantharidin,1,Toxicology
+CCC(C)N1C(=O)NC(C)=C(Br)C1=O,Q6DWJ6,Bromacil,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,Q99683,alkannin,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,O14842,Equilin,0,negative
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],P21554,FR130739,0,negative
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,Q03405,Isofenphos,1,Toxicology
+N.N.Cl[Pt]Cl,P14780,Cisplatin,1,Toxicology
+[Cr+6],P14598,chromium hexavalent ion,1,Toxicology
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P43681,cytisine,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P01375,Anethole Trithione,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,Q07869,ciprofibrate,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P50591,Carbamazepine,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,Q96RI1,17-Methyltestosterone,0,negative
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P00750,Fluthiacet-methyl,1,Toxicology
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P35613,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P16220,4-tert-octylphenol,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q07869,Clofibrate,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q07973,Calcitriol,1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P04798,Amodiaquine,1,Toxicology
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P04637,4-tert-octylphenol,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P08758,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P03372,Berberine,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P03372,Hexestrol,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q05469,Cyclic AMP,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P10275,Triamcinolone,1,Toxicology
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P25089,"3,3',5-triiodothyroacetic acid",0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P02751,Chlorogenic Acid,0,negative
+C(C(C(C(C(F)(F)S(=O)(=O)[O-])(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F.[K+],P60568,Potassium perfluorooctanesulfonate,0,negative
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P27540,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P28566,Estradiol enanthate,0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],Q13489,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P13945,Arsenic oxide (As2O3),0,negative
+C(CN)CP(=O)O,Q9NYW7,3-aminopropylphosphinic acid,0,negative
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P27361,bisindolylmaleimide,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],A5X5Y0,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+CCCCCCCCC1=CC=C(C=C1)O,Q8WXA8,4-octylphenol,0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,Q13085,AICA ribonucleotide,1,Toxicology
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],P17676,3-nitrofluoranthene,0,negative
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P07202,Flufenpyr-ethyl,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q15796,Arsenic Trioxide,1,Toxicology
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P78348,7-hydroxystaurosporine,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P45983,Buthionine Sulfoximine,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,Q92934,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P17676,Norethindrone acetate,0,negative
+[Cr+6],P23443,chromium hexavalent ion,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P14598,"3,3'-Dichlorobenzidine",0,negative
+[Cr+6],O15111,chromium hexavalent ion,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P24385,C.I. Solvent Red 72,0,negative
+N.N.Cl[Pt]Cl,P16615,Cisplatin,0,negative
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,P04150,Desonide,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P17676,Berberine,1,Toxicology
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P47870,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+C1C[C@H](N(C1)C(=O)[C@@H]2CSSCCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)N,O95069,Deamino Arginine Vasopressin,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,P10275,17alpha-Estradiol,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P55212,Falnidamol dihydrochloride,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q13501,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,O15552,Phosalone,0,negative
+O=[Cr](=O)=O,P05231,chromium trioxide,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,O95467,Cyclic AMP,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q9NYW1,butein,0,negative
+COC1=C(C=C2C(=C1O)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)OC2=O)O,P50226,bergenin,0,negative
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,Q14683,Isoxaflutole,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P05186,Equilin,0,negative
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P05412,Ethopropazine hydrochloride,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P06493,alpha-naphthoflavone,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P55211,3-methyladenine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P29474,Arsenic Trioxide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P05198,Arsenic Trioxide,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P32249,Bezafibrate,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,O00398,Bezafibrate,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P10145,"2,2-Dimethoxy-1,2-diphenylethanone",1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,Q16539,D&C Red 27,0,negative
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P08908,Medrysone,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P30307,alpha-naphthoflavone,1,Toxicology
+[As],O14764,Arsenic,0,negative
+CCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P03372,Estradiol valerate,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P49137,ciprofibrate,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,Q13003,cyprodinil,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P43119,Cyclic AMP,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,O75762,Hexestrol,0,negative
+[As],P00533,Arsenic,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P50225,Falnidamol dihydrochloride,0,negative
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,Q13796,Trimipramine hydrogen maleate,0,negative
+C([C@@H]([C@@H]1C(=C(C(=O)O1)OP(=O)(O)O)O)O)O,O95255,ascorbate-2-phosphate,0,negative
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P01130,Triamcinolone,1,Toxicology
+[Cr+6],P42575,chromium hexavalent ion,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P15056,Falnidamol dihydrochloride,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,Q9UQE7,Thifensulfuron methyl,0,negative
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P03956,Propetamphos,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P16109,Estradiol enanthate,0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,Q13315,camphorquinone,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P01375,cordycepin,1,Toxicology
+[As],P40763,Arsenic,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P05121,Bezafibrate,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q13316,butein,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,P42574,Carmustine,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,Q969F8,C.I. Solvent Red 72,1,Toxicology
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P31749,Cantharidin,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P45984,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,P34981,C.I. Solvent Red 72,1,Toxicology
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,Q9NYV7,Gamma-Oryzanol,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P01579,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,O75388,"3,4-dihydroxybenzaldoxime",0,negative
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,P02778,PharmaGSID_48507,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P35609,"3,3'-Dichlorobenzidine",0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P41587,AICA ribonucleotide,0,negative
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P00533,bisindolylmaleimide,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P16581,Chlorpromazine,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,Q13133,Bezafibrate,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P21554,Cyclic AMP,1,Toxicology
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P21399,astilbin,0,negative
+[As],Q15910,Arsenic,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P27361,AICA ribonucleotide,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P27361,Chlorpromazine,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,Q12772,Chlorpromazine,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P45983,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P19838,Anethole Trithione,1,Toxicology
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P28482,Cantharidin,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P01375,Arsenic Trioxide,1,Toxicology
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P04150,Melengestrol acetate,1,Toxicology
+COC1=C(C=C2C(=C1O)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)OC2=O)O,Q04206,bergenin,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,Q13315,Busulfan,1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,Q12981,C.I. Solvent Red 72,0,negative
+CN\C(NCC1=CN=C(Cl)S1)=N/[N+]([O-])=O,P16581,Clothianidin,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P09874,3-methyladenine,1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P01130,Propantheline bromide,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P31749,cyprodinil,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q96RJ0,Cyclic AMP,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P19838,Chondroitin Sulfates,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P19320,"N,N'-Di-2-naphthyl-p-phenylenediamine",1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P04040,Propantheline bromide,0,negative
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,P19419,PharmaGSID_48507,0,negative
+C[C@]12CCC(=O)C=C1[C@@H]3C[C@@H]3[C@@H]4[C@@H]2CC[C@]5([C@H]4[C@@H]6C[C@@H]6[C@@]57CCC(=O)O7)C,P10276,Drospirenone,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,Q14994,Chlorpromazine,1,Toxicology
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,P17676,Tributyltin methacrylate,0,negative
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,O75469,Carbamazepine,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P04637,benzo(a)pyrene diolepoxide I,1,Toxicology
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,O43683,"2,2',6,6'-Tetrachlorobisphenol A",0,negative
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,P13631,Febuxostat,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P05423,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],Q969F8,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+N.N.Cl[Pt]Cl,Q03135,Cisplatin,1,Toxicology
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q9UBK2,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,P07203,Carmustine,0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P27361,aucubin,1,Toxicology
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P04150,Medrysone,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,P47870,17alpha-Estradiol,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,P03372,benzylparaben,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P32245,"3,3'-Dichlorobenzidine",0,negative
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P48546,Hexestrol,0,negative
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P04798,Norethindrone acetate,0,negative
+[Cr+6],P42574,chromium hexavalent ion,1,Toxicology
+C(C(Cl)(Cl)Cl)(O)O,P27216,Chloral Hydrate,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P10828,Equilin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,P03372,Estriol,1,Toxicology
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P36956,Flufenpyr-ethyl,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,O95838,Chlorogenic Acid,0,negative
+[Cr+6],Q13535,chromium hexavalent ion,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,P05231,2-Ethoxy-5-(1-propenyl)phenol,1,Toxicology
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,P59533,4-((diethylamino)sulfonyl)benzoic acid,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q05655,Buthionine Sulfoximine,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P45983,Berberine,1,Toxicology
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,Q02750,Cantharidin,0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q9GZN0,Clofibrate,0,negative
+ClCCNP1(=O)OCCCN1CCCl,Q15822,Ifosfamide,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P19793,Bezafibrate,1,Toxicology
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P13726,7-hydroxystaurosporine,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P31644,Thifensulfuron methyl,0,negative
+CCCCC/C=C\C[C@@]\1(C=CC(=O)/C1=C/C=C/[C@@H](CCC(=O)OC)OC(=O)C)OC(=O)C,P55211,clavulone II,1,Toxicology
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,O75762,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P11511,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P27361,3-methyladenine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P09874,Arsenic Trioxide,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q16881,Buthionine Sulfoximine,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,Q01668,AICA ribonucleotide,0,negative
+[Cr+6],P55210,chromium hexavalent ion,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,P41597,17alpha-Estradiol,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,Q04206,alkannin,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P28482,3-methyladenine,1,Toxicology
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P28907,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+N.N.Cl[Pt]Cl,P08183,Cisplatin,1,Toxicology
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,P23560,Isoxaflutole,0,negative
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P10827,Tiratricol,1,Toxicology
+CCCCC[C@H]1[C@H](O1)C/C=C\C/C=C\C/C=C\CCCC(=O)O,Q15413,"14,15-epoxy-5,8,11-eicosatrienoic acid",0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,P36956,Bezafibrate,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q8TDS4,Cyclic AMP,1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P16581,Propantheline bromide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P05019,Arsenic Trioxide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P84022,Arsenic Trioxide,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,Q92731,Acitretin,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,P03372,Mestranol,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P42224,Colistin,0,negative
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,Q03405,D&C Red 27,1,Toxicology
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],O95069,FR130739,0,negative
+C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,P06401,Flurandrenolide,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P49841,coumarin,1,Toxicology
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P19320,AVE3247,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P17676,AICA ribonucleotide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P45985,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P14780,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P17252,alkannin,0,negative
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,P09603,PharmaGSID_48507,1,Toxicology
+O=[Cr](=O)=O,P13725,chromium trioxide,0,negative
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P24298,Hydrocortisone 17-butyrate,0,negative
+C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl,P42574,Chlorambucil,1,Toxicology
+COP(=O)(OC)SCN1C2=C(C=C(C=N2)Cl)OC1=O,Q13133,Azamethiphos,0,negative
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P22303,Falnidamol dihydrochloride,0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,P42224,22-hydroxycholesterol,1,Toxicology
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P46098,Ethopropazine hydrochloride,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P04746,Astemizole,0,negative
+[As],P28482,Arsenic,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],Q05655,Arsenic Trioxide,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P04150,Hydrocortisone 21-hemisuccinate sodium salt,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P41235,Calcitriol,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P30988,3-methyladenine,0,negative
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],P05177,AVE3247,0,negative
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,Q07973,Pyriproxyfen,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q00613,coumarin,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P07327,AICA ribonucleotide,0,negative
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,Q13794,arctiin,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,P03372,17alpha-Estradiol,1,Toxicology
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P43251,Ethopropazine hydrochloride,0,negative
+CCCCC(CC)COCCC#N,P50579,3-((2-Ethylhexyl)oxy)propionitrile,0,negative
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P50995,Triamcinolone,0,negative
+N.N.Cl[Pt]Cl,P37231,Cisplatin,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P05121,"N,N'-Di-2-naphthyl-p-phenylenediamine",1,Toxicology
+C1=CC=C2C(=O)C=CC(=O)C2=C1,Q14790,"1,4-naphthoquinone",1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q16236,Buthionine Sulfoximine,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P09917,Calcitriol,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,O95977,"3,4-dihydroxybenzaldoxime",0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q02750,cordycepin,1,Toxicology
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P10275,"2,3,5,6-tetrachlorobiphenyl",1,Toxicology
+Cl[Sb](Cl)Cl,Q92731,antimony trichloride,0,negative
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,Q99250,15-acetyldeoxynivalenol,0,negative
+[Cr+6],P40763,chromium hexavalent ion,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P50995,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,Q13131,AICA ribonucleotide,1,Toxicology
+C(CCl)NC(=O)N(CCCl)N=O,P16104,Carmustine,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P32239,Colistin,0,negative
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P10275,Perfluorohexanedioic acid,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P62834,Cyclic AMP,1,Toxicology
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,P02778,Isoxaflutole,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P07384,butein,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P22314,coumarin,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P01137,aucubin,1,Toxicology
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P02708,Thifensulfuron methyl,0,negative
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P14618,bisindolylmaleimide,0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q03181,Clofibrate,1,Toxicology
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P10276,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+C1=CC=C(C=C1)C2=CC=CC=C2Cl,Q14994,2-chlorobiphenyl,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q04206,Buthionine Sulfoximine,1,Toxicology
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P37231,5-nitroacenaphthene,0,negative
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P43405,ar-turmerone,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P04637,cordycepin,1,Toxicology
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P50052,Metolachlor,0,negative
+CNC(=O)N(C)C1=NN=C(S1)C(C)(C)C,P42684,Tebuthiuron,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P27361,cyprodinil,1,Toxicology
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P01375,Octafluoroadipamide,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,O14757,3-methyladenine,1,Toxicology
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P01375,18alpha-glycyrrhetinic acid,1,Toxicology
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P03372,Acitretin,1,Toxicology
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,P34972,4-((diethylamino)sulfonyl)benzoic acid,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P45984,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P61587,"3,3'-Dichlorobenzidine",0,negative
+C(C(C(C(C(F)(F)S(=O)(=O)[O-])(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F.[K+],P42262,Potassium perfluorooctanesulfonate,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,Q8TDU6,Cyclic AMP,1,Toxicology
+[Cr+6],P45983,chromium hexavalent ion,1,Toxicology
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,P34981,Fanetizole,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P00533,4-tert-octylphenol,1,Toxicology
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P36507,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,Q92934,Isofenphos,0,negative
+CN1C=NC(=N)C2=C1N=CN2,P62508,3-methyladenine,0,negative
+C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,P19838,Flurandrenolide,0,negative
+CCCCCCCCC1=CC=C(C=C1)O,O14764,4-octylphenol,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],O60894,Arsenic oxide (As2O3),0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P28482,"2,3,3',4,4',5-hexachlorobiphenyl",1,Toxicology
+C1=CC=C2C(=C1)C(=O)OC23C4=C(C(=C(C=C4)O)Br)OC5=C3C=CC(=C5Br)O,Q92952,C.I. Solvent Red 72,0,negative
+C(CN)CP(=O)O,P05129,3-aminopropylphosphinic acid,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P06493,Aldosterone,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P16473,Cyclic AMP,1,Toxicology
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P05362,Octafluoroadipamide,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,Q13131,"3,4-dihydroxybenzaldoxime",0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P28907,Buthionine Sulfoximine,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P23945,Cyclic AMP,1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P38405,Norethindrone acetate,0,negative
+CCCCC/C=C\C[C@@]\1(C=CC(=O)/C1=C/C=C/[C@@H](CCC(=O)OC)OC(=O)C)OC(=O)C,Q14790,clavulone II,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P20073,Clofibrate,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,Q92793,"3,3'-Dichlorobenzidine",0,negative
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P04040,Anethole Trithione,1,Toxicology
+[As],P21399,Arsenic,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P02751,Testosterone,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q07817,Arsenic Trioxide,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,Q9NS75,Hexestrol,0,negative
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,P10275,Beclazone,1,Toxicology
+[As],Q99707,Arsenic,1,Toxicology
+N.N.Cl[Pt]Cl,P04798,Cisplatin,1,Toxicology
+O=[Cr](=O)=O,P62745,chromium trioxide,0,negative
+CN1C=NC(=N)C2=C1N=CN2,P35568,3-methyladenine,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P59535,Leucomycin tartrate,0,negative
+N.N.Cl[Pt]Cl,O75469,Cisplatin,1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P01130,D&C Red 27,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P51681,"2,3,5,6-tetrachlorobiphenyl",0,negative
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P13500,Perfluorobutanesulfonic acid,1,Toxicology
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,Q15831,Phosalone,0,negative
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P01584,Fluthiacet-methyl,0,negative
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P49190,Propetamphos,0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P37231,Clofibrate,1,Toxicology
+N.N.Cl[Pt]Cl,Q00987,Cisplatin,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P49019,AICA ribonucleotide,0,negative
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,Q05469,Colistin,0,negative
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,Q03181,Falnidamol dihydrochloride,1,Toxicology
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,Q9NZJ5,Bilirubin,1,Toxicology
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,Q02447,4-((diethylamino)sulfonyl)benzoic acid,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,Q07869,Bezafibrate,1,Toxicology
+CC(=O)C1=CC=CC=C1C(=O)C,P10636,"1,2-diacetylbenzene",1,Toxicology
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,Q99572,4-benzylphenol,0,negative
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P35869,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,O96017,Phosalone,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P12694,alpha-naphthoflavone,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,Q92731,Mestranol,1,Toxicology
+CC1=C(C=C(C=C1)O)C,P33527,"3,4-dimethylphenol",0,negative
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P05198,Melengestrol acetate,0,negative
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,Q15822,cytisine,1,Toxicology
+N.N.Cl[Pt]Cl,P55210,Cisplatin,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,O60266,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P09874,Equilin,0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P28482,aucubin,1,Toxicology
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,P05121,Isofenphos,1,Toxicology
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P06401,Medrysone,1,Toxicology
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,Q12809,albiflorin,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P21917,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",0,negative
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,Q15596,Melengestrol acetate,0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P28482,camphorquinone,1,Toxicology
+N.N.Cl[Pt]Cl,Q15831,Cisplatin,1,Toxicology
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P02743,Octafluoroadipamide,0,negative
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,P54646,arctiin,1,Toxicology
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,O96017,Metolachlor,0,negative
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P28482,Amodiaquine,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P42224,coumarin,1,Toxicology
+C(CN)CP(=O)O,P21399,3-aminopropylphosphinic acid,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q08050,Arsenic oxide (As2O3),0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,P25054,22-hydroxycholesterol,0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P30990,aucubin,0,negative
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P36575,Estradiol enanthate,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q13002,2-(Perfluorohexyl)ethyl methacrylate,0,negative
+CCOC1=C(O)C=C(C=CC)C=C1,P0C864,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,Q13541,"2,2',6,6'-Tetrachlorobisphenol A",0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P27361,Cantharidin,1,Toxicology
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,P10275,Desonide,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,Q16678,Colistin,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P00533,alpha-naphthoflavone,1,Toxicology
+CCCO,Q9NR82,1-Propanol,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P05121,Thifensulfuron methyl,1,Toxicology
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P05231,2-(Perfluorohexyl)ethyl methacrylate,1,Toxicology
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,P14867,15-acetyldeoxynivalenol,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,Q14833,Carmustine,0,negative
+N.N.Cl[Pt]Cl,P25963,Cisplatin,1,Toxicology
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P01375,Metolachlor,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P02656,3-methyladenine,0,negative
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,P11474,Febuxostat,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P25963,Berberine,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P21554,Falnidamol dihydrochloride,0,negative
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P11245,Colistin,0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P01137,Cantharidin,1,Toxicology
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,O43306,Retinal,0,negative
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,P31749,albiflorin,1,Toxicology
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,P22303,Isofenphos,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P03372,"4-(1,1,3,3-Tetramethylbutyl)phenol",1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P42345,aucubin,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,Q92731,17-Methyltestosterone,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P55211,Colistin,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,Q07352,coumarin,1,Toxicology
+C(CCl)NC(=O)N(CCCl)N=O,Q9UL62,Carmustine,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P10828,alkannin,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,Q8NEC5,Chlorpromazine,0,negative
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],O14727,AVE3247,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q96G91,Berberine,0,negative
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P42574,Chondroitin Sulfates,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,P42574,Buthionine Sulfoximine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],Q16539,Arsenic Trioxide,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P05198,Cyclic AMP,0,negative
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,Q02156,Medrysone,0,negative
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,Q16881,Desonide,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P01133,Arsenic Trioxide,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P30990,Anethole Trithione,0,negative
+CCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P03372,17beta-Estradiol 17-propionate,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P08235,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,P07858,Hexestrol,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,Q07812,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P55210,coumarin,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P04150,Triamcinolone,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P55211,butein,1,Toxicology
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,O75469,"3,3',5-triiodothyroacetic acid",1,Toxicology
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P30926,cytisine,1,Toxicology
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,P0DPQ6,Thifensulfuron methyl,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P00533,Arsenic oxide (As2O3),0,negative
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,Q9UBS5,Triamcinolone,0,negative
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P09211,Metolachlor,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,Q96RI1,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,Q99572,cyprodinil,0,negative
+N.N.Cl[Pt]Cl,P60484,Cisplatin,1,Toxicology
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,Q07869,PharmaGSID_48507,0,negative
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,P00519,arctiin,0,negative
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,O75899,Trimipramine hydrogen maleate,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,Q99758,Carmustine,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,Q99250,Leflunomide,0,negative
+CC(=O)C1=CC=CC=C1C(=O)C,P49748,"1,2-diacetylbenzene",0,negative
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P14416,Pyriproxyfen,0,negative
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,P26358,Retinal,0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P55211,Acitretin,1,Toxicology
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P14780,18alpha-glycyrrhetinic acid,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P55211,Arsenic Trioxide,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P13726,"N,N'-Di-2-naphthyl-p-phenylenediamine",1,Toxicology
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P14780,bisindolylmaleimide,1,Toxicology
+CC1=C(C=C(C=C1)O)C,Q8NET8,"3,4-dimethylphenol",1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q13315,cordycepin,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q14790,butein,1,Toxicology
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,P01375,4-((diethylamino)sulfonyl)benzoic acid,0,negative
+C[C@@H]1CC[C@@]2([C@@H](C1(C)CCC3=CC(=O)O[C@H]3O)CCC=C2C)C,P05187,"16-hydroxycleroda-3,13(14)-dien-15,16-olide",0,negative
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,Q08117,5-alpha-Dihydroprogesterone,0,negative
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,Q9NYW7,Bilirubin,0,negative
+CNC(=O)N(C)C1=NN=C(S1)C(C)(C)C,P28907,Tebuthiuron,1,Toxicology
+CCC(C)N1C(=O)NC(C)=C(Br)C1=O,P28907,Bromacil,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P42226,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+O=[Cr](=O)=O,Q14957,chromium trioxide,0,negative
+CC(=O)C1=CC=CC=C1C(=O)C,P50391,"1,2-diacetylbenzene",0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P15056,coumarin,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P13726,Triamcinolone,1,Toxicology
+CC[C@H](C1=CC=C(C=C1)O)[C@@H](CC)C2=CC=C(C=C2)O,Q92731,Hexestrol,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,P36956,5-alpha-Dihydroprogesterone,0,negative
+[Cr+6],P84085,chromium hexavalent ion,0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P17787,aucubin,0,negative
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P42262,Medrysone,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P04798,Calcitriol,1,Toxicology
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P10145,Perfluorohexanedioic acid,1,Toxicology
+CCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P30518,17beta-Estradiol 17-propionate,0,negative
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,P04637,Tributyltin methacrylate,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P43405,Arsenic Trioxide,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P43116,Cyclic AMP,1,Toxicology
+COC1=C(C=C2C(=C1O)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)OC2=O)O,Q9UBJ2,bergenin,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P01584,cordycepin,1,Toxicology
+CCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P10275,Estradiol valerate,1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,P18850,Norethindrone acetate,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P06748,coumarin,1,Toxicology
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P01308,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P05186,cordycepin,1,Toxicology
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,Q14994,"2,3,5,6-tetrachlorobiphenyl",1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P13726,aucubin,0,negative
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P09038,Amodiaquine,0,negative
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P45983,7-hydroxystaurosporine,1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P08319,cyprodinil,0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,Q14790,Acitretin,1,Toxicology
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,O15111,Astemizole,0,negative
+[Cr+6],P14618,chromium hexavalent ion,0,negative
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P02649,D&C Red 27,0,negative
+[Cr+6],P45984,chromium hexavalent ion,1,Toxicology
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],P14780,FR130739,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P16278,Arsenic Trioxide,1,Toxicology
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P50226,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P10275,Carbamazepine,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,Q92731,aucubin,0,negative
+CCCO,P46098,1-Propanol,1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P15056,Fluthiacet-methyl,0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P30874,N-Methylperfluorooctanesulfonamide,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q08050,coumarin,1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,P35568,Fluthiacet-methyl,0,negative
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,Q16665,benzo(b)fluoranthene,1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P00390,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+C1C[C@H](N(C1)C(=O)[C@@H]2CSSCCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)N,P16278,Deamino Arginine Vasopressin,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P06858,ciprofibrate,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P60568,Calcitriol,1,Toxicology
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,P37288,15-acetyldeoxynivalenol,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)CCNC(=O)C2=CC=C(C=C2)Cl,Q13535,Bezafibrate,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P08581,coumarin,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P08842,coumarin,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P08842,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P49588,butein,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,O96017,4-tert-octylphenol,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P59540,Triamcinolone,0,negative
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P08172,astilbin,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P14867,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P06858,Clofibrate,1,Toxicology
+[Cr+6],Q9NZJ5,chromium hexavalent ion,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P47871,coumarin,0,negative
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,Q16236,Carbamazepine,1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P05412,cordycepin,1,Toxicology
+CCCCC[C@H]1[C@H](O1)C/C=C\C/C=C\C/C=C\CCCC(=O)O,P31749,"14,15-epoxy-5,8,11-eicosatrienoic acid",1,Toxicology
+[As],P49841,Arsenic,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,Q05397,Benzo(b)fluoranthene,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C,P18440,Testosterone,0,negative
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,Q07817,"1H,1H,5H-Perfluoropentyl methacrylate",0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P04217,Acitretin,0,negative
+[Cr+6],Q16539,chromium hexavalent ion,1,Toxicology
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P25445,bisindolylmaleimide,0,negative
+CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C,P53350,15-acetyldeoxynivalenol,0,negative
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P59533,Perfluorobutanesulfonic acid,0,negative
+C(C(C(C(C(F)(F)S(=O)(=O)[O-])(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F.[K+],P01375,Potassium perfluorooctanesulfonate,1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,Q14995,Fluthiacet-methyl,0,negative
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,P43119,Gamma-Oryzanol,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P06401,17-Methyltestosterone,1,Toxicology
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P49662,4-benzylphenol,0,negative
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,O75027,benzylparaben,0,negative
+Cl.CN1C(=O)C=C(OC2=C(F)C=C(F)C=C2)C2=C1N=C(NCC(C)(C)O)N=C2,O43524,PharmaGSID_48507,0,negative
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P45983,butein,1,Toxicology
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,Q00987,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+CC(=O)C1=CC=CC=C1C(=O)C,P49841,"1,2-diacetylbenzene",1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P23560,Anethole Trithione,0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],Q05513,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P04637,camphorquinone,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,Q14683,Busulfan,1,Toxicology
+C[C@H]1C[C@H]2[C@@H]3CC[C@@H]([C@]3(C[C@@H]([C@@H]2[C@@]4(C1=CC(=O)CC4)C)O)C)C(=O)C,P30838,Medrysone,0,negative
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],Q99928,AVE3247,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P60568,Chlorpromazine,1,Toxicology
+C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1,P03372,benzo(b)fluoranthene,1,Toxicology
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,Q14994,Metolachlor,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C(C(=O)CC[C@H]35)O,O00429,Oxabolone cipioncate,0,negative
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,P19961,Tributyltin methacrylate,0,negative
+CC1=C(C=C(C=C1)O)C,P41595,"3,4-dimethylphenol",0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P10827,Equilin,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q14790,Berberine,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P55210,Arsenic Trioxide,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P16220,aucubin,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],O14757,Arsenic Trioxide,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P25098,Cyclic AMP,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P38405,Cyclic AMP,1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,Q15389,D&C Red 27,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P42226,4-tert-octylphenol,1,Toxicology
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],P00533,"N,N,N-Trimethyloctadecan-1-aminium chloride",1,Toxicology
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q02447,cordycepin,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P01225,Cyclic AMP,1,Toxicology
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P49116,cyprodinil,0,negative
+CCCCC[C@H]1[C@H](O1)C/C=C\C/C=C\C/C=C\CCCC(=O)O,P23443,"14,15-epoxy-5,8,11-eicosatrienoic acid",1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P01579,ciprofibrate,0,negative
+C1C[C@H](N(C1)C(=O)[C@@H]2CSSCCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)N,P30518,Deamino Arginine Vasopressin,1,Toxicology
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,P04217,Trimipramine hydrogen maleate,0,negative
+O=[Cr](=O)=O,P12931,chromium trioxide,0,negative
+CCOP(=S)(OCC)SCN1C2=C(C=C(C=C2)Cl)OC1=O,P42574,Phosalone,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P08684,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,Q9HBW0,Norethindrone acetate,0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P15692,Octafluoroadipamide,0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P10145,Octafluoroadipamide,1,Toxicology
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,Q15796,butein,0,negative
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,P0DTE7,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],P03956,"N,N,N-Trimethyloctadecan-1-aminium chloride",1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,P08069,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P11229,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+C[C@@]12[C@H]3CC[C@@H]([C@@]1(C(=O)OC2=O)C)O3,P05412,Cantharidin,1,Toxicology
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P05231,N-Methylperfluorooctanesulfonamide,0,negative
+CCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P05412,Estradiol valerate,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,P30305,Mestranol,0,negative
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P78348,4-benzylphenol,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P08047,cordycepin,1,Toxicology
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],P10827,Propantheline bromide,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C(C(=O)CC[C@H]35)O,P03372,Oxabolone cipioncate,1,Toxicology
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P03372,Estradiol enanthate,1,Toxicology
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,O75460,Equilin,0,negative
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,P25089,Beclazone,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P42574,Busulfan,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P13569,Cyclic AMP,1,Toxicology
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],Q14832,3-nitrofluoranthene,0,negative
+C[C@H](C1=CC=CC=N1)C2=C(CC3=CC=CC=C32)CCN(C)C.C(=C\C(=O)O)\C(=O)O,P05412,(S)-(+)-Dimethindene maleate,1,Toxicology
+N.N.Cl[Pt]Cl,P16104,Cisplatin,1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P10826,D&C Red 27,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P50583,casuarictin,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P40763,4-tert-octylphenol,1,Toxicology
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,P35228,ciprofibrate,0,negative
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,P10275,Gamma-Oryzanol,1,Toxicology
+[As],P31749,Arsenic,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P28482,Chlorpromazine,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,Q8N122,coumarin,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P28482,Aldosterone,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P23443,aucubin,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],Q8NB16,Arsenic Trioxide,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P23458,3-methyladenine,0,negative
+N.N.Cl[Pt]Cl,P42224,Cisplatin,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P05091,Leucomycin tartrate,0,negative
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P06401,Melengestrol acetate,1,Toxicology
+Cl[Sb](Cl)Cl,P10827,antimony trichloride,0,negative
+N.N.Cl[Pt]Cl,Q16539,Cisplatin,1,Toxicology
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P05121,N-Methylperfluorooctanesulfonamide,1,Toxicology
+ClCCNP1(=O)OCCCN1CCCl,P00533,Ifosfamide,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P36575,Astemizole,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q16539,Buthionine Sulfoximine,1,Toxicology
+C1=CC=C2C(=C1)C3=C4C2=CC=CC4=C(C=C3)[N+](=O)[O-],P04040,3-nitrofluoranthene,0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P00750,N-Methylperfluorooctanesulfonamide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P01308,Arsenic Trioxide,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,Q04206,Chondroitin Sulfates,1,Toxicology
+CC(CN1C2=CC=CC=C2CCC3=CC=CC=C31)CN(C)C.C(=C\C(=O)O)\C(=O)O,P43116,Trimipramine hydrogen maleate,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P84022,benzo(a)pyrene diolepoxide I,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],O15111,Arsenic Trioxide,1,Toxicology
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P50225,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",1,Toxicology
+[As],Q13541,Arsenic,1,Toxicology
+COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,Q15761,Fluthiacet-methyl,0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,Q9Y258,Octafluoroadipamide,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,Q14994,Clofibrate,1,Toxicology
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,Q92847,casuarictin,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P43119,"benzo(a)pyrene 7,8-dihydrodiol",0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,P32121,22-hydroxycholesterol,0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,Q03405,Octafluoroadipamide,0,negative
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P35346,Carbamazepine,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C6C(O6)[C@@H]([C@H]5O)O)C=C2,P05412,benzo(a)pyrene diolepoxide I,1,Toxicology
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,Q13258,camphorquinone,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P08047,Astemizole,0,negative
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,O75343,cytisine,0,negative
+[Cr+6],Q9HBW0,chromium hexavalent ion,0,negative
+N.N.Cl[Pt]Cl,Q13315,Cisplatin,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P50579,coumarin,1,Toxicology
+CCCCS(=N)(=O)CCC(C(=O)O)N,P49662,Buthionine Sulfoximine,1,Toxicology
+CC1=C(C=C(C=C1)O)C,O75762,"3,4-dimethylphenol",1,Toxicology
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,Q13003,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,P30968,arctiin,0,negative
+CCOC1=C(O)C=C(C=CC)C=C1,P25089,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P04798,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,Q12772,"3,3',5-triiodothyroacetic acid",0,negative
+N.N.Cl[Pt]Cl,P30307,Cisplatin,1,Toxicology
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,Q13131,arctiin,1,Toxicology
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,P61587,7-hydroxystaurosporine,0,negative
+CCOC1=C(O)C=C(C=CC)C=C1,P22309,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+C1=CC=C2C(=O)C=CC(=O)C2=C1,P00533,"1,4-naphthoquinone",1,Toxicology
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,Q09472,Norethindrone acetate,0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,Q9Y5X5,Thifensulfuron methyl,0,negative
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P01127,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",1,Toxicology
+C(CCl)NC(=O)N(CCCl)N=O,Q04206,Carmustine,1,Toxicology
+C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl,Q9NS75,Chlorambucil,0,negative
+CC1=CC2=C(NC3=CC=CC=C32)N=C1N,P13569,"2-amino-3-methyl-9H-pyrido(2,3-b)indole",0,negative
+CCNP(=S)(OC)O/C(=C/C(=O)OC(C)C)/C,P04114,Propetamphos,0,negative
+CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)O)C)C(=O)CO,P41235,Hydrocortisone 17-butyrate,0,negative
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,P48167,Falnidamol dihydrochloride,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P08842,Chlorpromazine,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,Q14994,5-alpha-Dihydroprogesterone,1,Toxicology
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P46531,alkannin,0,negative
+COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,P09603,Astemizole,1,Toxicology
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,P03372,Fanetizole,1,Toxicology
+C1=CC=C(C=C1)C2=CC=CC=C2Cl,P41595,2-chlorobiphenyl,0,negative
+CC(C)[N+](C)(CCOC(=O)C1C2=CC=CC=C2OC3=CC=CC=C13)C(C)C.[Br-],Q03405,Propantheline bromide,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,Q08050,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+N.N.Cl[Pt]Cl,P55957,Cisplatin,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q16236,Berberine,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,Q9UBK2,Calcitriol,1,Toxicology
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P98170,Flufenpyr-ethyl,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P30518,Cyclic AMP,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P30518,17-Methyltestosterone,0,negative
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P01011,Flufenpyr-ethyl,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P34972,Cyclic AMP,1,Toxicology
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,Q9BWD1,Beclazone,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],P10275,Hydrocortisone 21-hemisuccinate sodium salt,1,Toxicology
+CCC(C)N1C(=O)NC(C)=C(Br)C1=O,P17707,Bromacil,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P20020,"2,3,5,6-tetrachlorobiphenyl",0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,Q92793,Octafluoroadipamide,0,negative
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,Q92847,ar-turmerone,0,negative
+CCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P59533,Estradiol valerate,0,negative
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P41968,Flumethasone pivalate,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=C3C=CC(=C4)OC,Q03405,Mestranol,1,Toxicology
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,O75469,5-alpha-Dihydroprogesterone,1,Toxicology
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P22309,Clofibrate,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,P0DPQ6,17alpha-Estradiol,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P42574,Berberine,1,Toxicology
+C1=CC=C(C=C1)COC(=O)C2=CC=C(C=C2)O,P10275,benzylparaben,0,negative
+CCNC(=O)NC(=O)C(=NOC)C#N,P09917,Cymoxanil,0,negative
+CC(C)(C(=O)O)OC1=CC=C(C=C1)C2CC2(Cl)Cl,Q04206,ciprofibrate,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C=C2)N)Cl)Cl)N,P42574,"3,3'-Dichlorobenzidine",1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P51575,coumarin,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P10275,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,Q15761,ar-turmerone,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P24046,"2,3,5,6-tetrachlorobiphenyl",0,negative
+CCC1(CC(=O)NC(=O)C1)C,Q92731,Bemegride,0,negative
+CC1=CC(=NC(=N1)NC2=CC=CC=C2)C3CC3,P16104,cyprodinil,1,Toxicology
+[As],P12931,Arsenic,1,Toxicology
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,Q9UNQ0,astilbin,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,P42261,Carmustine,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P62508,4-tert-octylphenol,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P31749,aucubin,1,Toxicology
+N.N.Cl[Pt]Cl,P06730,Cisplatin,1,Toxicology
+C[C@H](C1=CC=CC=N1)C2=C(CC3=CC=CC=C32)CCN(C)C.C(=C\C(=O)O)\C(=O)O,P13726,(S)-(+)-Dimethindene maleate,0,negative
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,P27361,camphorquinone,1,Toxicology
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,P14618,Octafluoroadipamide,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P06493,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P29274,alpha-naphthoflavone,0,negative
+C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl,P16104,Chlorambucil,1,Toxicology
+C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,Q13085,Flurandrenolide,0,negative
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,O14764,Bilirubin,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P52564,coumarin,0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,O75469,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P42574,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,1,Toxicology
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,O00591,Retinal,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P01308,casuarictin,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,Q13976,alpha-naphthoflavone,0,negative
+CC(C)(C)NCC(C1=CC(=NO1)Br)O,P55957,broxaterol,0,negative
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P55212,D&C Red 27,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P04150,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+C1=CC(=CC=C1CCCC(=O)O)N(CCCl)CCCl,Q14790,Chlorambucil,1,Toxicology
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,Q9NYW1,Fanetizole,0,negative
+N.N.Cl[Pt]Cl,P01375,Cisplatin,1,Toxicology
+CCNC(=O)NC(=O)C(=NOC)C#N,P41181,Cymoxanil,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,P19838,Carmustine,1,Toxicology
+CN1C=NC(=N)C2=C1N=CN2,P49841,3-methyladenine,1,Toxicology
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P01100,Ethopropazine hydrochloride,1,Toxicology
+OC1=C(Br)C2=C(C=C1Br)C1(OC(=O)C3=C1C(Cl)=C(Cl)C(Cl)=C3Cl)C1=C(O2)C(Br)=C(O)C(Br)=C1,P43405,D&C Red 27,0,negative
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P56381,Anethole Trithione,0,negative
+C(CCl)NC(=O)N(CCCl)N=O,O14757,Carmustine,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,P49841,Estradiol cypionate,0,negative
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q14994,Berberine,1,Toxicology
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,Q99928,Beclazone,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P55957,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P16104,4-tert-octylphenol,1,Toxicology
+CCCCCCCCC1=CC=C(C=C1)O,Q9NYW1,4-octylphenol,0,negative
+C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,P04150,Flurandrenolide,1,Toxicology
+OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P43405,Perfluorobutanesulfonic acid,0,negative
+CCCCC[C@H]1[C@H](O1)C/C=C\C/C=C\C/C=C\CCCC(=O)O,P05186,"14,15-epoxy-5,8,11-eicosatrienoic acid",0,negative
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P09874,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,1,Toxicology
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P55212,4-benzylphenol,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P05231,Arsenic Trioxide,1,Toxicology
+C[C@@H]1CC[C@@]2([C@@H](C1(C)CCC3=CC(=O)O[C@H]3O)CCC=C2C)C,P01100,"16-hydroxycleroda-3,13(14)-dien-15,16-olide",0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,Q13133,22-hydroxycholesterol,1,Toxicology
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P41597,cytisine,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P50579,Chlorogenic Acid,0,negative
+CC(=C)C(=O)OCCC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P00533,2-(Perfluorohexyl)ethyl methacrylate,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,Q16539,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P09038,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,Q96RJ0,"3,4-dihydroxybenzaldoxime",0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Q03405,N-Methylperfluorooctanesulfonamide,1,Toxicology
+CC1=C(NC(=C1CCC(=O)O)CC2=C(C(=C(N2)/C=C\3/C(=C(C(=O)N3)C)C=C)C)CCC(=O)O)/C=C\4/C(=C(C(=O)N4)C=C)C,P30926,Bilirubin,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,P04637,Buthionine Sulfoximine,1,Toxicology
+N.N.Cl[Pt]Cl,P05177,Cisplatin,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P43220,Berberine,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q02447,Buthionine Sulfoximine,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P55210,Chondroitin Sulfates,1,Toxicology
+C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)[C@H](NC6=O)O)NC)OC,Q8N1C3,7-hydroxystaurosporine,0,negative
+CCCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C5=NN=N[N-]5)N=CC=C2.[Na+],P00533,FR130739,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P00390,Anethole Trithione,1,Toxicology
+N.N.Cl[Pt]Cl,P09211,Cisplatin,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P02656,alpha-naphthoflavone,0,negative
+CCOP(=S)(NC(C)C)OC1=CC=CC=C1C(=O)OC(C)C,Q14571,Isofenphos,0,negative
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P27540,Colistin,0,negative
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,P84022,22-hydroxycholesterol,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P51449,Equilin,0,negative
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P05412,alpha-naphthoflavone,1,Toxicology
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,P25098,ar-turmerone,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P05019,Leflunomide,0,negative
+N.N.Cl[Pt]Cl,P00533,Cisplatin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,P05121,Estriol,1,Toxicology
+C1=NC(=C(N1[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O)N)C(=O)N,P04637,AICA ribonucleotide,1,Toxicology
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,P05177,Chlorpromazine,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P30305,coumarin,1,Toxicology
+COC1=CC=C(C=C1)C2=CC(=S)SS2,P28482,Anethole Trithione,0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,Q8NB16,Acitretin,0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],P48546,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P49189,Colistin,0,negative
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,Q04656,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P21728,Ethopropazine hydrochloride,0,negative
+CNS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,P52952,N-Methylperfluorooctanesulfonamide,0,negative
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P25963,18alpha-glycyrrhetinic acid,1,Toxicology
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,Q9GZU1,arctiin,0,negative
+CCOC(=O)C(C)(C)OC1=CC=C(C=C1)Cl,P32239,Clofibrate,0,negative
+CCCCCCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=C3C=CC(=C4)O)C,P51575,Estradiol enanthate,0,negative
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,Q04206,astilbin,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@H]2O)CCC4=C3C=CC(=C4)O,Q9NZJ5,17alpha-Estradiol,0,negative
+CC(=O)C1=CC=CC=C1C(=O)C,P35367,"1,2-diacetylbenzene",0,negative
+CCCCC(CC)COCCC#N,P08047,3-((2-Ethylhexyl)oxy)propionitrile,0,negative
+N.N.Cl[Pt]Cl,O94759,Cisplatin,1,Toxicology
+C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CCl)O)O)O)O,Q8TE23,1-chlorosucrose,1,Toxicology
+CCC1(CC(=O)NC(=O)C1)C,P06858,Bemegride,0,negative
+Cl[Sb](Cl)Cl,Q16236,Antimony trichloride,1,Toxicology
+CCOC1=C(O)C=C(C=CC)C=C1,P25054,2-Ethoxy-5-(1-propenyl)phenol,0,negative
+OC(=O)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(OC(F)(F)C(F)(F)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,Q13315,"Perfluoro-(2,5,8-trimethyl-3,6,9-trioxadodecanoic) acid",0,negative
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,P01100,Desonide,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],Q09472,Arsenic Trioxide,1,Toxicology
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,Q96RI1,Falnidamol dihydrochloride,1,Toxicology
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@H]4C(=O)CO)C=O)O,P59540,Aldosterone,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,P05412,"2,3,5,6-tetrachlorobiphenyl",0,negative
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P10275,butein,0,negative
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P47900,Leflunomide,0,negative
+CC1=C[C@@H]2[C@H](CC[C@]3([C@H]2CC(=C)[C@@]3(C(=O)C)OC(=O)C)C)[C@@]4(C1=CC(=O)CC4)C,P30872,Melengestrol acetate,0,negative
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P07203,18alpha-glycyrrhetinic acid,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,O95467,Busulfan,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C,P12694,17-Methyltestosterone,0,negative
+C1=CC=C(C=C1)C2=CC=CC=C2Cl,Q01432,2-chlorobiphenyl,0,negative
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,P22301,Febuxostat,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,P05412,4-tert-octylphenol,1,Toxicology
+CCCC[Sn](CCCC)(CCCC)OC(=O)C(=C)C,P19793,Tributyltin methacrylate,1,Toxicology
+N(C1=CC=C(NC2=CC=C3C=CC=CC3=C2)C=C1)C1=CC=C2C=CC=CC2=C1,Q93070,"N,N'-Di-2-naphthyl-p-phenylenediamine",0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P24941,coumarin,1,Toxicology
+C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,P09603,Triamcinolone,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P01106,coumarin,1,Toxicology
+Cl[Sb](Cl)Cl,O60674,antimony trichloride,0,negative
+CN1CCC(CC1)NC2=NC=C3C(=N2)C(=NC=N3)NC4=CC(=C(C=C4)F)Cl.Cl.Cl,O00591,Falnidamol dihydrochloride,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P34913,Chlorogenic Acid,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,P03372,Equilin,1,Toxicology
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,P16473,22-hydroxycholesterol,0,negative
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P19793,Calcitriol,1,Toxicology
+COC1=C(C=C(C=C1)C[C@H]2COC(=O)[C@@H]2CC3=CC(=C(C=C3)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)OC)OC,P22309,arctiin,0,negative
+[As],Q13501,Arsenic,1,Toxicology
+C[C@]12CC[C@](C[C@@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O)C)(C)C(=O)O,P34903,18alpha-glycyrrhetinic acid,0,negative
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P31749,Amodiaquine,0,negative
+C[C@]12CC[C@H]3C(=CCC4=C3C=CC(=C4)O)[C@@H]1CCC2=O,Q92731,Equilin,1,Toxicology
+O=[Cr](=O)=O,P15336,chromium trioxide,1,Toxicology
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P63000,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P28482,Chlorogenic Acid,1,Toxicology
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,Q13790,Pyriproxyfen,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P16104,Busulfan,1,Toxicology
+CCNC(=O)NC(=O)C(=NOC)C#N,P10275,Cymoxanil,0,negative
+CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C,P06239,Retinal,0,negative
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P16278,Pyriproxyfen,0,negative
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P10145,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+C1=CC(=C(C=C1/C=C/C(=O)C2=C(C=C(C=C2)O)O)O)O,P42574,butein,1,Toxicology
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P01127,Chondroitin Sulfates,1,Toxicology
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,P27361,Amodiaquine,1,Toxicology
+CCCCC(CC)COCCC#N,P32297,3-((2-Ethylhexyl)oxy)propionitrile,0,negative
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,P27361,Chlorogenic Acid,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P14598,Arsenic Trioxide,1,Toxicology
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,P05129,aucubin,0,negative
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P01308,"2,2-Dimethoxy-1,2-diphenylethanone",0,negative
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P23945,Flufenpyr-ethyl,0,negative
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P03956,Metolachlor,1,Toxicology
+C(CCl)NC(=O)N(CCCl)N=O,P27216,Carmustine,0,negative
+CN1C=NC(=N)C2=C1N=CN2,P04637,3-methyladenine,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P23443,Busulfan,0,negative
+CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)Cl)O)C)C)OC(=O)CC,P04150,Beclazone,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q04206,Berberine,1,Toxicology
+[As],P33527,Arsenic,1,Toxicology
+C[C@]12CCC(=O)C=C1[C@@H]3C[C@@H]3[C@@H]4[C@@H]2CC[C@]5([C@H]4[C@@H]6C[C@@H]6[C@@]57CCC(=O)O7)C,P06401,Drospirenone,1,Toxicology
+N.N.Cl[Pt]Cl,P50591,Cisplatin,1,Toxicology
+[Cr+6],P27361,chromium hexavalent ion,1,Toxicology
+ClCCNP1(=O)OCCCN1CCCl,O95264,Ifosfamide,0,negative
+CC(C)OC1=CC2=C(C=C1)C(=O)C3=C(O2)C=CC(=C3)C(=O)O,P06401,6-isopropoxy-9-oxoxanthene-2-carboxylic acid,0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P45985,"2,2',3,5',6-pentachlorobiphenyl",0,negative
+[As],P45983,Arsenic,1,Toxicology
+C[C@H](CCCC(C)(C)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,P11511,Calcitriol,1,Toxicology
+C1=CC=C2C(=C1)C=CC(=O)O2,P40763,coumarin,1,Toxicology
+ClCCNP1(=O)OCCCN1CCCl,P16104,Ifosfamide,0,negative
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,P05231,"2,2',6,6'-Tetrachlorobisphenol A",1,Toxicology
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,P18505,Fanetizole,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P63000,Arsenic Trioxide,1,Toxicology
+CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,Q9UEY8,ar-turmerone,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,Q14994,4-tert-octylphenol,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P15692,Arsenic Trioxide,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P19419,Arsenic Trioxide,1,Toxicology
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P43220,Cyclic AMP,1,Toxicology
+C[C@]12C[C@H]([C@@H]3C[C@]1([C@@]3(C(=O)O2)COC(=O)C4=CC=CC=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O,P00533,albiflorin,1,Toxicology
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,Q14833,Leucomycin tartrate,0,negative
+CC(C)(C1=CC(=C(C(=C1)Cl)O)Cl)C2=CC(=C(C(=C2)Cl)O)Cl,Q9H3N8,"2,2',6,6'-Tetrachlorobisphenol A",0,negative
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CCl)C,P10636,Metolachlor,0,negative
+CCCCCCCCCCCCCCCCCC[N+](C)(C)C.[Cl-],P43166,"N,N,N-Trimethyloctadecan-1-aminium chloride",0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P10636,cordycepin,1,Toxicology
+Cl[Sb](Cl)Cl,Q4VC05,antimony trichloride,0,negative
+C1=CC=C(C=C1)C2=C(C(=CC(=C2Cl)Cl)Cl)Cl,O60894,"2,3,5,6-tetrachlorobiphenyl",0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,Q04206,casuarictin,1,Toxicology
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P27361,astilbin,1,Toxicology
+[Cr+6],P04637,chromium hexavalent ion,1,Toxicology
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,Q8IY17,Febuxostat,0,negative
+CC(=C)C(=O)OCC(F)(F)C(F)(F)C(F)(F)C(F)F,P11712,"1H,1H,5H-Perfluoropentyl methacrylate",0,negative
+CC1=CC(=C(C(=C1/C=C/C(=C/C=C/C(=C/C(=O)O)/C)/C)C)C)OC,P09874,Acitretin,1,Toxicology
+COP(=S)(OC)OC1=CC=C(C=C1)SC2=CC=C(C=C2)OP(=S)(OC)OC,P19320,Temephos,1,Toxicology
+C1=CC=C(C=C1)CC2=CC=C(C=C2)O,P10275,4-benzylphenol,1,Toxicology
+C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,Q16236,Chlorogenic Acid,1,Toxicology
+[As],P42345,Arsenic,1,Toxicology
+CCC(C)CCCC(=O)N[C@@H](CCN)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](CCN)C(=O)N[C@H]1CCNC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)CCN)CC(C)C)CC(C)C)CCN)CCN)[C@@H](C)O,P42574,Colistin,1,Toxicology
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,P50579,"benzo(a)pyrene 7,8-dihydrodiol",0,negative
+COC(=O)C1=C(C=CS1)S(=O)(=O)NC(=O)NC1=NC(C)=NC(OC)=N1,Q07352,Thifensulfuron methyl,0,negative
+N.N.Cl[Pt]Cl,Q92731,Cisplatin,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q99572,Berberine,1,Toxicology
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,P28482,astilbin,1,Toxicology
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(O)=O,P05121,Perfluorohexanedioic acid,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,P20309,coumarin,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,Q13685,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q01433,coumarin,1,Toxicology
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,O15111,bisindolylmaleimide,0,negative
+N.N.Cl[Pt]Cl,Q00613,Cisplatin,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P30305,Busulfan,1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P01106,Leflunomide,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P55957,Arsenic Trioxide,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,P04637,Berberine,1,Toxicology
+CCC1(CC(=O)NC(=O)C1)C,P07510,Bemegride,0,negative
+CCC(C)N1C(=O)NC(C)=C(Br)C1=O,P00533,Bromacil,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P12931,Arsenic Trioxide,1,Toxicology
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,P11712,Carbamazepine,1,Toxicology
+CCN(CC)C(C)CN1C2=CC=CC=C2SC3=CC=CC=C31.Cl,P01011,Ethopropazine hydrochloride,0,negative
+O=[Cr](=O)=O,Q9UBK2,chromium trioxide,0,negative
+CCC1(CC(=O)NC(=O)C1)C,P14867,Bemegride,1,Toxicology
+C(CN)CP(=O)O,P45954,3-aminopropylphosphinic acid,0,negative
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,O94759,Fanetizole,0,negative
+C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,P25098,Flumethasone pivalate,0,negative
+C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O.[Na+],Q9NSD7,Hydrocortisone 21-hemisuccinate sodium salt,0,negative
+CC(=O)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(CCC(=O)C4)C)C,Q9NYW2,5-alpha-Dihydroprogesterone,0,negative
+CC(=O)O[C@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CC(=O)CC[C@H]34)C)C#C,O14727,Norethindrone acetate,0,negative
+C(C(Cl)(Cl)Cl)(O)O,P47869,Chloral Hydrate,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,P09038,alpha-naphthoflavone,1,Toxicology
+[Cr+6],P28482,chromium hexavalent ion,1,Toxicology
+C1=CC(=C(C=C1OC2=C(C=C(C=C2I)CC(=O)O)I)I)O,P03372,"3,3',5-triiodothyroacetic acid",1,Toxicology
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P13945,Flufenpyr-ethyl,0,negative
+CC(=O)N[C@@H]1[C@H]([C@H]([C@H](O[C@H]1O)OS(=O)(=O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O,P09603,Chondroitin Sulfates,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,Q00613,Estriol,0,negative
+C[C@]12CCC(=O)C=C1[C@@H]3C[C@@H]3[C@@H]4[C@@H]2CC[C@]5([C@H]4[C@@H]6C[C@@H]6[C@@]57CCC(=O)O7)C,P13725,Drospirenone,0,negative
+CCCCS(=N)(=O)CCC(C(=O)O)N,Q15118,Buthionine Sulfoximine,1,Toxicology
+C[C@@H]([C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C)C(CCC(C)C)O,Q8TDS5,22-hydroxycholesterol,0,negative
+COP(=O)(OC)SCN1C2=C(C=C(C=N2)Cl)OC1=O,P19320,Azamethiphos,0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P53350,Arsenic Trioxide,1,Toxicology
+CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,O00206,Isoxaflutole,0,negative
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,O14757,4-tert-octylphenol,1,Toxicology
+CCC1(CC(=O)NC(=O)C1)C,P47870,Bemegride,1,Toxicology
+C[C@]12CC[C@H](C1(C)C)C(=O)C2=O,O96017,camphorquinone,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,Q92731,Estriol,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P16104,Arsenic Trioxide,1,Toxicology
+C1=CC=C(C=C1)CCNC2=NC(=CS2)C3=CC=CC=C3,O75469,Fanetizole,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1C[C@H]([C@@H]2O)O)CCC4=C3C=CC(=C4)O,P02649,Estriol,0,negative
+CS(=O)(=O)OCCCCOS(=O)(=O)C,Q9UQE7,Busulfan,1,Toxicology
+CC1=CC(=C(C=C1)O)C,P35222,"2,4-dimethylphenol",0,negative
+C1=CC(=C(C=C1Cl)C2=C(C=CC(=C2Cl)Cl)Cl)Cl,P18507,"2,2',3,5',6-pentachlorobiphenyl",1,Toxicology
+COC(C1=CC=CC=C1)(C(=O)C2=CC=CC=C2)OC,P03372,"2,2-Dimethoxy-1,2-diphenylethanone",1,Toxicology
+C1[C@H]2CNC[C@@H]1C3=CC=CC(=O)N3C2,P16442,cytisine,0,negative
+CCN(CC)S(=O)(=O)C1=CC=C(C=C1)C(=O)O,P55212,4-((diethylamino)sulfonyl)benzoic acid,0,negative
+C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O[C@@H]3CC([C@@H]([C@H](O3)C)O)(C)C)N(C)C)O)CC=O)C)O.C(C(C(=O)O)O)(C(=O)O)O,P47974,Leucomycin tartrate,0,negative
+N.N.Cl[Pt]Cl,O14727,Cisplatin,1,Toxicology
+[As],Q7RTX7,Arsenic,0,negative
+CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,Q9UMX3,Chlorpromazine,0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,Q03135,cordycepin,1,Toxicology
+CC1=C(C=C(C=C1)O)C,Q9NR97,"3,4-dimethylphenol",0,negative
+C1=CC2=C3C(=C1)C=CC4=C3C(=CC5=C4C=CC(C5O)O)C=C2,Q16678,"benzo(a)pyrene 7,8-dihydrodiol",1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,P40763,"3,4-dihydroxybenzaldoxime",0,negative
+[O-2].[O-2].[O-2].[As+3].[As+3],P06730,Arsenic Trioxide,1,Toxicology
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C(C(=O)CC[C@H]35)O,Q92934,Oxabolone cipioncate,0,negative
+C1=CC=C2C(=C1)C(=CN2)C3=C(C(=O)NC3=O)C4=CNC5=CC=CC=C54,P30550,bisindolylmaleimide,1,Toxicology
+CS(=O)(=O)OCCCCOS(=O)(=O)C,P30872,Busulfan,0,negative
+N.N.Cl[Pt]Cl,P02751,Cisplatin,1,Toxicology
+CC1=C(SC(=N1)C2=CC(=C(C=C2)OCC(C)C)C#N)C(=O)O,Q9Y258,Febuxostat,0,negative
+C1=CO[C@H]([C@H]2[C@@H]1[C@@H](C=C2CO)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O,O75460,aucubin,1,Toxicology
+C/C(=C\C1=CC=C(C=C1)C(=O)O)/C2=CC3=C(C=C2)C(CCC3(C)C)(C)C,P49840,"4-(2-(5,6,7,8-tetrahydro-5,5,8,8-tetramethyl-2-naphthalenyl)-1-propenyl)benzoic acid",0,negative
+CC1=CC(=C(C=C1)O)C,P13500,"2,4-dimethylphenol",0,negative
+C1[C@H](O[C@H]([C@@H]1O)N2C=NC3=C(N=CN=C32)N)CO,P55211,cordycepin,1,Toxicology
+CCOC(=O)COC1=CC(N2N=CC(=C(C)C2=O)C(F)(F)F)=C(F)C=C1Cl,P13500,Flufenpyr-ethyl,1,Toxicology
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,Q92731,"2,2,4-trimethyl-1,3-pentanediol diisobutyrate",1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P11473,Leflunomide,0,negative
+C1=CC=C2C(=C1)C=CC(=O)O2,Q9NZJ5,coumarin,1,Toxicology
+C[C@H](CCC=C(C)C)[C@H]1CC[C@@]2([C@@]1(CC[C@]34[C@H]2CC[C@@H]5[C@]3(C4)CC[C@@H](C5(C)C)OC(=O)/C=C/C6=CC(=C(C=C6)O)OC)C)C,Q09472,Gamma-Oryzanol,0,negative
+C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N,Q9NZJ5,Carbamazepine,1,Toxicology
+CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O,Q99707,4-tert-octylphenol,0,negative
+CCN(CC)CC1=C(C=CC(=C1)NC2=C3C=CC(=CC3=NC=C2)Cl)O,Q16445,Amodiaquine,0,negative
+COP(=O)(OC)SCN1C2=C(C=C(C=N2)Cl)OC1=O,P00533,Azamethiphos,1,Toxicology
+C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C4=CC=CC=C4C=C3,Q04206,alpha-naphthoflavone,1,Toxicology
+CC(=O)C1=CC=CC=C1C(=O)C,P07858,"1,2-diacetylbenzene",0,negative
+NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(N)=O,Q99758,Octafluoroadipamide,0,negative
+C1[C@@H]2[C@H]([C@H]3[C@H]([C@@H](O2)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5C6=C(C(=C(C=C6C(=O)O3)O)O)O)O)O)O)OC(=O)C7=CC(=C(C(=C7C8=C(C(=C(C=C8C(=O)O1)O)O)O)O)O)O,P10145,casuarictin,1,Toxicology
+[O-2].[O-2].[O-2].[As+3].[As+3],P24298,Arsenic Trioxide,1,Toxicology
+C1=CC(=C(C=C1/C=N/O)O)O,Q99571,"3,4-dihydroxybenzaldoxime",0,negative
+C1=CC(=C(C=C1/C=N/O)O)O,P03372,"3,4-dihydroxybenzaldoxime",1,Toxicology
+C1=CC(=C(C=C1C2=CC(=C(C(=C2Cl)Cl)Cl)Cl)Cl)Cl,P04150,"2,3,3',4,4',5-hexachlorobiphenyl",0,negative
+CCCO,P45954,1-Propanol,0,negative
+C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O,P47898,Desonide,0,negative
+N.N.Cl[Pt]Cl,O15392,Cisplatin,1,Toxicology
+C1CC2=CC=C(C3=CC=CC1=C23)[N+](=O)[O-],P55212,5-nitroacenaphthene,0,negative
+CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C,P25963,alkannin,1,Toxicology
+CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,P02751,Leflunomide,0,negative
+C1[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)(O1)O,P15056,Cyclic AMP,1,Toxicology
+CCCCCCCCC1=CC=C(C=C1)O,P03372,4-octylphenol,1,Toxicology
+COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,Q14457,Berberine,0,negative
+C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2OC(=O)CCC4CCCC4)CCC5=C3C=CC(=C5)O,P01112,Estradiol cypionate,0,negative
+CC(COC1=CC=C(OC2=CC=CC=C2)C=C1)OC1=NC=CC=C1,P10415,Pyriproxyfen,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P41145,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative
+CC(C)C(C(C)(C)COC(=O)C(C)C)OC(=O)C(C)C,P08069,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",0,negative
+C1CC1N2CCC(CC2)NC(=O)C3=NC4=C(N3CC5=NOC(=C5)C6=CC=C(S6)Cl)C=CC(=C4)C(=O)[O-].[Na+],Q8TDU6,AVE3247,0,negative
+C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,Q92952,astilbin,0,negative
+CC(C=C)(C(=O)O)OC(=O)NC1=CC(=CC(=C1)Cl)Cl,P02743,"2-(((3,5-dichlorophenyl)carbamoyl)oxy)-2-methyl-3-butenoic acid",0,negative

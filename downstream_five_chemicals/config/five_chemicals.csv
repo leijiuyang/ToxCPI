@@ -1,0 +1,6 @@
+short_name,chemical_name,casrn,ctd_chemical_id,slug
+BPA,Bisphenol A,80-05-7,C006780,bisphenol_a
+TCDD,"2,3,7,8-Tetrachlorodibenzo-p-dioxin",1746-01-6,D013749,2378-tetrachlorodibenzo-p-dioxin
+BaP,Benzo(a)pyrene,50-32-8,D001564,benzo(a)pyrene
+Chlorpyrifos,Chlorpyrifos,2921-88-2,D004390,chlorpyrifos
+DDT,DDT,50-29-3,D003634,ddt

@@ -1,0 +1,38 @@
+gene_symbol,uniprot_id,protein_name,mapping_source,notes
+AHR,P35869,aryl hydrocarbon receptor,manual_direct_uniprot_mapping_20260705,Existing manual mapping; direct protein member only.
+ARNT,P27540,aryl hydrocarbon receptor nuclear translocator,manual_direct_uniprot_mapping_20260705,Existing manual mapping; dimer context is not scored as a complex.
+AR,P10275,androgen receptor,manual_direct_uniprot_mapping_20260705,Existing manual mapping.
+HIF1A,Q16665,hypoxia-inducible factor 1-alpha,manual_direct_uniprot_mapping_20260705,Existing manual mapping; dimer context is not scored as a complex.
+TPO,P07202,thyroid peroxidase,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+ACE2,Q9BYF1,angiotensin-converting enzyme 2,manual_direct_uniprot_mapping_20260705,Single human protein; viral receptor binding remains controlled by Binding_Context.
+CTSL,P07711,cathepsin L1 (human),manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+TMPRSS2,O15393,transmembrane protease serine 2,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+DBN1,Q16643,drebrin,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+NOS3,P29474,"nitric oxide synthase, endothelial",manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+VEGFA,P15692,vascular endothelial growth factor A,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+SIX1,Q15475,homeobox protein SIX1,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+IFNB1,P01574,interferon beta,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+SLC5A5,Q92911,sodium/iodide cotransporter,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+ACHE,P22303,acetylcholinesterase,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+EGFR,P00533,epidermal growth factor receptor,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+IL4,P05112,interleukin-4,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+MUC5AC,P98088,mucin-5AC,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+PNPLA6,Q8IY17,neuropathy target esterase,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+FKBP15,Q5T1M5,FK506-binding protein 15,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+GCH1,P30793,GTP cyclohydrolase 1,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+BAX,Q07812,apoptosis regulator BAX,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+ADRB2,P07550,beta-2 adrenergic receptor,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+NR1H4,Q96RI1,bile acid receptor,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+TP53,P04637,cellular tumor antigen p53,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+CYP1A2,P05177,cytochrome P450 1A2,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+HDAC1,Q13547,histone deacetylase 1,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+IL2,P60568,interleukin-2,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+PLA1A,Q53H76,phospholipase A1 member A (human),manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+PORCN,Q9H237,protein-serine O-palmitoleoyltransferase porcupine,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+ALDH1A1,P00352,retinal dehydrogenase 1,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+JAK3,P52333,tyrosine-protein kinase JAK3,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+UROD,P06132,uroporphyrinogen decarboxylase,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+FLT1,P17948,vascular endothelial growth factor receptor 1,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+KDR,P35968,vascular endothelial growth factor receptor 2,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+VHL,P40337,von Hippel-Lindau disease tumor suppressor,manual_direct_uniprot_mapping_20260705,Single human protein; route2 direct mapping.
+TLR4,O00206,Toll-like receptor 4,manual_direct_uniprot_mapping_20260705,Single TLR4 concept; direct mapping preferred over single-member family expansion.
