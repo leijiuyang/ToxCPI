@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import glob
 import os, sys
 for i, arg in enumerate(sys.argv):
@@ -60,7 +49,6 @@ FEATURE_DIR = Path(os.environ.get(
 
 
 def load_partial_checkpoint(model, ckpt_path, device):
-
     if not os.path.exists(ckpt_path):
         raise FileNotFoundError(f"Init checkpoint not found: {ckpt_path}")
     try:
@@ -95,7 +83,6 @@ def load_partial_checkpoint(model, ckpt_path, device):
 
 
 def set_params_trainable(model, param_names, trainable):
-
     affected = 0
     for name, param in model.named_parameters():
         if name in param_names:
@@ -106,7 +93,6 @@ def set_params_trainable(model, param_names, trainable):
 
 
 def load_prebuilt_splits(split_dir, split, logger):
-
     paths = {
         'train': os.path.join(split_dir, f'train_{split}.csv'),
         'val': os.path.join(split_dir, f'val_{split}.csv'),
@@ -136,11 +122,7 @@ def load_prebuilt_splits(split_dir, split, logger):
     return train_df, val_df, test_df
 
 
-
-
 class EMAModel:
-
-
     def __init__(self, model, decay=0.999):
         self.decay = decay
         self.shadow = {}
@@ -149,13 +131,11 @@ class EMAModel:
                 self.shadow[name] = param.data.clone()
 
     def update(self, model):
-
         for name, param in model.named_parameters():
             if param.requires_grad:
                 self.shadow[name].mul_(self.decay).add_(param.data, alpha=1 - self.decay)
 
     def apply_shadow(self, model):
-
         self.backup = {}
         for name, param in model.named_parameters():
             if param.requires_grad:
@@ -163,35 +143,20 @@ class EMAModel:
                 param.data.copy_(self.shadow[name])
 
     def restore(self, model):
-
         for name, param in model.named_parameters():
             if param.requires_grad:
                 param.data.copy_(self.backup[name])
         self.backup = {}
 
 
-
-
 class ContrastiveLoss(nn.Module):
-
-
-
-
-
     def __init__(self, temperature=0.07):
         super().__init__()
         self.temperature = temperature
 
     def forward(self, chem_emb, prot_emb, labels):
-
-
-
-
-
-
         chem_emb = F.normalize(chem_emb, dim=-1)
         prot_emb = F.normalize(prot_emb, dim=-1)
-
 
         sim = chem_emb @ prot_emb.T / self.temperature
 
@@ -199,10 +164,8 @@ class ContrastiveLoss(nn.Module):
         if pos_mask.sum() == 0:
             return torch.tensor(0.0, device=chem_emb.device)
 
-
         log_prob_c2p = F.log_softmax(sim, dim=1)
         loss_c2p = -torch.diag(log_prob_c2p)[pos_mask].mean()
-
 
         log_prob_p2c = F.log_softmax(sim, dim=0)
         loss_p2c = -torch.diag(log_prob_p2c)[pos_mask].mean()
@@ -210,15 +173,7 @@ class ContrastiveLoss(nn.Module):
         return (loss_c2p + loss_p2c) / 2
 
 
-
-
 class FusionDataset(Dataset):
-
-
-
-
-
-
     def __init__(self, df, comp_feats, prot_feats, chem_col, prot_col, label_col,
                  tox_cache_path=None, use_residue_attention=False, max_protein_length=768,
                  max_chem_tokens=64, shared_tensors=None, use_molecular_gcn=False,
@@ -227,7 +182,6 @@ class FusionDataset(Dataset):
         self.use_residue_attention = use_residue_attention
         self.use_molecular_gcn = use_molecular_gcn
         self.return_indices = return_indices
-
 
         valid_mask = df.apply(
             lambda row: str(row[chem_col]) in comp_feats and str(row[prot_col]) in prot_feats,
@@ -243,7 +197,6 @@ class FusionDataset(Dataset):
 
         if use_residue_attention:
             if shared_tensors is not None:
-
                 self.chem_tensor = shared_tensors['chem_tensor']
                 self.chem_lengths = shared_tensors['chem_lengths']
                 self.prot_tensor = shared_tensors['prot_tensor']
@@ -253,7 +206,6 @@ class FusionDataset(Dataset):
                 chem_id2idx = shared_tensors['chem_id2idx']
                 prot_id2idx = shared_tensors['prot_id2idx']
             else:
-
                 tensors = FusionDataset.build_entity_tensors(
                     comp_feats, prot_feats, max_chem_tokens, max_protein_length,
                     build_chem_adj=use_molecular_gcn,
@@ -267,7 +219,6 @@ class FusionDataset(Dataset):
                 chem_id2idx = tensors['chem_id2idx']
                 prot_id2idx = tensors['prot_id2idx']
 
-
             self.chem_indices = torch.zeros(n, dtype=torch.long)
             self.prot_indices = torch.zeros(n, dtype=torch.long)
             for i in range(n):
@@ -279,7 +230,6 @@ class FusionDataset(Dataset):
             logger.info(f"Preloaded Step 2: {n} samples, "
                         f"{len(chem_id2idx)} unique chems, {len(prot_id2idx)} unique prots")
         else:
-
             tox_dict = self._build_tox_dict(df_valid['smiles'].unique(), tox_cache_path)
             tox_dim = 812
             comp_dim = next(iter(comp_feats.values())).shape[0]
@@ -304,7 +254,6 @@ class FusionDataset(Dataset):
 
     @staticmethod
     def _build_tox_dict(unique_smiles, cache_path=None):
-
         if cache_path and os.path.exists(cache_path):
             logger.info(f"Loading cached ToxPrint from {cache_path}")
             cached = np.load(cache_path, allow_pickle=True)
@@ -339,11 +288,9 @@ class FusionDataset(Dataset):
     @staticmethod
     def build_entity_tensors(comp_feats, prot_feats, max_chem_tokens=64, max_protein_length=768,
                              build_chem_adj=False, chem_smiles_map=None):
-
         chem_dim = next(iter(comp_feats.values())).shape[1]
         prot_dim = next(iter(prot_feats.values())).shape[1]
         chem_smiles_map = chem_smiles_map or {}
-
 
         unique_chems = list(comp_feats.keys())
         chem_id2idx = {k: i for i, k in enumerate(unique_chems)}
@@ -370,7 +317,6 @@ class FusionDataset(Dataset):
                     n_adj_from_rdkit += 1
                 else:
                     n_adj_fallback += 1
-
 
         unique_prots = list(prot_feats.keys())
         prot_id2idx = {k: i for i, k in enumerate(unique_prots)}
@@ -418,7 +364,6 @@ class FusionDataset(Dataset):
 
     @staticmethod
     def _build_chem_adjacency(smiles, length, max_chem_tokens):
-
         adj = torch.zeros(max_chem_tokens, max_chem_tokens)
         valid_len = min(int(length), max_chem_tokens)
         if not smiles:
@@ -471,7 +416,6 @@ class FusionDataset(Dataset):
                 item['prot_site_label'] = self.prot_site_tensor[pi, :pl]
             return item
         else:
-
             return {
                 'tox_feat': self.tox_data[idx],
                 'chemberta_feat': self.comp_data[idx],
@@ -481,9 +425,7 @@ class FusionDataset(Dataset):
 
 
 def seq_collate_fn(batch):
-
     labels = torch.stack([b['label'] for b in batch])
-
 
     chem_feats = [b['chem_tokens_feat'] for b in batch]
     max_chem = max(f.size(0) for f in chem_feats)
@@ -500,7 +442,6 @@ def seq_collate_fn(batch):
         for i, b in enumerate(batch):
             adj = b['chem_adj']
             chem_adj[i, :adj.size(0), :adj.size(1)] = adj
-
 
     prot_feats = [b['prot_residue_feat'] for b in batch]
     max_prot = max(f.size(0) for f in prot_feats)
@@ -530,7 +471,6 @@ def seq_collate_fn(batch):
 
 
 def _parse_position_list(value):
-
     if isinstance(value, list):
         return [int(x) for x in value]
     if not isinstance(value, str) or not value.strip():
@@ -546,12 +486,6 @@ def _parse_position_list(value):
 
 def attach_site_label_tensors(shared_tensors, site_annotation_path, max_protein_length,
                               position_columns=None):
-
-
-
-
-
-
     if not site_annotation_path:
         return shared_tensors
     if not os.path.exists(site_annotation_path):
@@ -602,7 +536,6 @@ def attach_site_label_tensors(shared_tensors, site_annotation_path, max_protein_
 def build_or_load_entity_tensors(cache_path, comp_feats, prot_feats, max_chem_tokens,
                                  max_protein_length, build_chem_adj=False,
                                  chem_smiles_map=None, rebuild=False):
-
     if cache_path and os.path.exists(cache_path) and not rebuild:
         logger.info(f"Loading entity tensor cache from {cache_path}")
         try:
@@ -626,7 +559,6 @@ def build_or_load_entity_tensors(cache_path, comp_feats, prot_feats, max_chem_to
 
 def default_entity_cache_path(base_dir, prefix, split, max_chem_tokens, max_protein_length,
                               use_molecular_gcn=False, extra_tag=''):
-
     tag = f"{prefix}_{split}_chem{max_chem_tokens}_prot{max_protein_length}"
     tag += "_gcn" if use_molecular_gcn else "_nogcn"
     if extra_tag:
@@ -636,11 +568,6 @@ def default_entity_cache_path(base_dir, prefix, split, max_chem_tokens, max_prot
 
 
 def make_index_collate_fn(shared_tensors):
-
-
-
-
-
     chem_tensor = shared_tensors['chem_tensor']
     chem_lengths = shared_tensors['chem_lengths']
     prot_tensor = shared_tensors['prot_tensor']
@@ -675,12 +602,8 @@ def make_index_collate_fn(shared_tensors):
     return _collate
 
 
-
-
 def _forward_batch(model, batch, device):
-
     if 'chem_tokens_feat' in batch:
-
         logits, attn, chem_emb, prot_emb = model(
             chem_tokens_feat=batch['chem_tokens_feat'].to(device),
             chem_mask=batch['chem_mask'].to(device),
@@ -689,7 +612,6 @@ def _forward_batch(model, batch, device):
             prot_mask=batch['prot_mask'].to(device)
         )
     else:
-
         logits, attn, chem_emb, prot_emb = model(
             tox_feat=batch['tox_feat'].to(device),
             chemberta_feat=batch['chemberta_feat'].to(device),
@@ -700,12 +622,6 @@ def _forward_batch(model, batch, device):
 
 def site_attention_loss(attention, chem_mask, prot_mask, site_labels, labels=None,
                         positive_only=True, eps=1e-8):
-
-
-
-
-
-
     if attention is None or site_labels is None:
         return torch.tensor(0.0, device=site_labels.device if site_labels is not None else 'cpu')
     if attention.dim() == 4:
@@ -741,9 +657,7 @@ def site_attention_loss(attention, chem_mask, prot_mask, site_labels, labels=Non
 
 
 def _add_feature_noise(batch, comp_noise, prot_noise):
-
     if 'chem_tokens_feat' in batch:
-
         if comp_noise > 0:
             mask = ~batch['chem_mask']
             noise = torch.randn_like(batch['chem_tokens_feat']) * comp_noise
@@ -753,7 +667,6 @@ def _add_feature_noise(batch, comp_noise, prot_noise):
             noise = torch.randn_like(batch['prot_residue_feat']) * prot_noise
             batch['prot_residue_feat'] = batch['prot_residue_feat'] + noise * mask.unsqueeze(-1)
     else:
-
         if comp_noise > 0:
             batch['chemberta_feat'] = batch['chemberta_feat'] + torch.randn_like(batch['chemberta_feat']) * comp_noise
         if prot_noise > 0:
@@ -776,12 +689,10 @@ def train_epoch(model, loader, optimizer, criterion, device, scaler, log_interva
         labels = batch['label'].to(device)
         hard_labels = labels.clone()
 
-
         if label_smoothing > 0:
             labels = labels * (1 - label_smoothing) + 0.5 * label_smoothing
 
         optimizer.zero_grad()
-
 
         if comp_noise > 0 or prot_noise > 0:
             batch = _add_feature_noise(batch, comp_noise, prot_noise)
@@ -824,7 +735,6 @@ def train_epoch(model, loader, optimizer, criterion, device, scaler, log_interva
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
-
 
         if ema is not None:
             ema.update(model)
@@ -885,7 +795,6 @@ def evaluate(model, loader, criterion, device):
 
 
 def analyze_gate_weights(model, loader, device, n_samples=1000):
-
     model.eval()
     all_gates = []
 
@@ -906,8 +815,6 @@ def analyze_gate_weights(model, loader, device, n_samples=1000):
                 f"min={gates.min():.4f}, max={gates.max():.4f}")
     logger.info(f"  >0.5 (prefer domain): {(gates > 0.5).mean()*100:.1f}%")
     logger.info(f"  <0.5 (prefer semantic): {(gates < 0.5).mean()*100:.1f}%")
-
-
 
 
 def main():
@@ -992,9 +899,7 @@ def main():
     if args.site_loss_weight > 0 and not args.use_residue_attention:
         raise ValueError("--site_loss_weight requires --use_residue_attention")
 
-
     device = torch.device('cuda:0')
-
 
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
@@ -1045,13 +950,11 @@ def main():
     logger.info(f"DataLoader Workers: {args.num_workers}")
     logger.info("=" * 60)
 
-
     base_dir = str(RUNTIME_ROOT)
     feat_dir = str(FEATURE_DIR)
 
     logger.info("Loading pretrained features...")
     if args.use_residue_attention:
-
         with open(os.path.join(feat_dir, 'compound_features_bermol_tokens.pkl'), 'rb') as f:
             comp_feats = pickle.load(f)
         with open(os.path.join(feat_dir, 'protein_features_esm2_residues.pkl'), 'rb') as f:
@@ -1063,7 +966,6 @@ def main():
         logger.info(f"ESM2 residue features: {len(prot_feats)} proteins, "
                     f"sample shape {sample_prot.shape}")
     else:
-
         if args.chem_feat == 'bermol':
             comp_feat_file = 'compound_features_bermol.pkl'
         else:
@@ -1076,7 +978,6 @@ def main():
                     f"{next(iter(comp_feats.values())).shape[0]}")
         logger.info(f"ESM2 features: {len(prot_feats)} x "
                     f"{next(iter(prot_feats.values())).shape[0]}")
-
 
     data_path = str(REPOSITORY_ROOT / 'data' / 'binding' /
                     'combined_balanced_n72045_with_seq.csv')
@@ -1116,10 +1017,8 @@ def main():
 
     logger.info(f"Train: {len(train_df)}, Val: {len(val_df)}, Test: {len(test_df)}")
 
-
     logger.info("Creating datasets...")
     if args.use_residue_attention:
-
         cache_path = args.entity_cache or default_entity_cache_path(
             base_dir, 'fusion', args.split, args.max_chem_tokens,
             args.max_protein_length, args.molecular_gcn,
@@ -1160,7 +1059,6 @@ def main():
                                   chem_col, prot_col, label_col,
                                   tox_cache_path=None, **ds_kwargs)
 
-
     if args.use_residue_attention and args.fast_index_collate:
         collate = make_index_collate_fn(shared)
     else:
@@ -1175,9 +1073,7 @@ def main():
                               shuffle=False, num_workers=args.num_workers, pin_memory=True,
                               collate_fn=collate)
 
-
     if args.use_residue_attention:
-
         model = BindingModelFusion(
             chemberta_dim=768,
             esm2_dim=1280,
@@ -1208,7 +1104,6 @@ def main():
     total_params = sum(p.numel() for p in model.parameters())
     logger.info(f"Model parameters: {total_params:,}")
 
-
     loaded_param_names = set()
     if args.init_from:
         loaded_param_names = load_partial_checkpoint(model, args.init_from, device)
@@ -1217,7 +1112,6 @@ def main():
         if args.freeze_backbone_epochs > 0:
             set_params_trainable(model, loaded_param_names, trainable=False)
             logger.info(f"Trainable params after freeze: {sum(p.numel() for p in model.parameters() if p.requires_grad):,}")
-
 
     optimizer = torch.optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay
@@ -1239,7 +1133,6 @@ def main():
     criterion = nn.BCEWithLogitsLoss()
     scaler = GradScaler('cuda')
 
-
     best_val_auroc = 0
     no_improve = 0
     ckpt_suffix = ''
@@ -1258,11 +1151,9 @@ def main():
     if not use_amp:
         logger.info("AMP disabled for BilinearAttention (numerical stability)")
 
-
     ema = EMAModel(model, decay=args.ema_decay) if args.ema_decay > 0 else None
     if ema:
         logger.info(f"EMA enabled: decay={args.ema_decay}")
-
 
     contrastive_loss_fn = ContrastiveLoss(temperature=0.07) if args.contrastive_weight > 0 else None
     if contrastive_loss_fn:
@@ -1281,7 +1172,6 @@ def main():
                                   contrastive_weight=args.contrastive_weight,
                                   site_loss_weight=args.site_loss_weight,
                                   site_positive_only=not args.site_supervise_all)
-
 
         if ema:
             ema.apply_shadow(model)
@@ -1316,7 +1206,6 @@ def main():
                 logger.info(f"Early stopping at epoch {epoch+1}")
                 break
 
-
     logger.info("=" * 60)
     logger.info("Loading best model for testing...")
     model.load_state_dict(torch.load(ckpt_path, weights_only=True))
@@ -1331,7 +1220,6 @@ def main():
     logger.info(f"Accuracy: {test_metrics['acc']:.4f}")
     logger.info(f"MCC:      {test_metrics['mcc']:.4f}")
     logger.info("=" * 60)
-
 
     if not args.no_toxprint and not args.use_residue_attention:
         logger.info("Analyzing gate weights...")

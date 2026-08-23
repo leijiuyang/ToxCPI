@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import os, sys
 for i, arg in enumerate(sys.argv):
     if arg == '--gpu' and i + 1 < len(sys.argv):
@@ -31,7 +23,6 @@ import torch
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-
 BERMOL_MODEL_PATH = Path(os.environ.get(
     "TOXCPI_BERMOL_MODEL", BERMOL_DIR / "BerMolModel_base.pkl"
 )).expanduser().resolve()
@@ -54,7 +45,6 @@ def main():
     logger.info(f"Device: {device}")
     logger.info("=" * 60)
 
-
     logger.info(f"Loading BerMol model from {BERMOL_MODEL_PATH}...")
     try:
         import dill as pkl
@@ -67,14 +57,12 @@ def main():
         comp_model.model.eval()
     logger.info("BerMol model loaded.")
 
-
     logger.info(f"Loading data from {DATA_PATH}...")
     df = pd.read_csv(DATA_PATH)
 
     chem_data = df[["chemical_name", "smiles"]].drop_duplicates(subset=["chemical_name"])
     chem_data = chem_data.dropna(subset=["smiles"])
     logger.info(f"Unique chemicals: {len(chem_data)}")
-
 
     comp_feat = {}
     failed = 0
@@ -96,13 +84,11 @@ def main():
         dim = next(iter(comp_feat.values())).shape[0]
         logger.info(f"Feature dimension: {dim}")
 
-
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     output_path = OUTPUT_DIR / 'compound_features_bermol.pkl'
     with open(output_path, 'wb') as f:
         pickle.dump(comp_feat, f)
     logger.info(f"Saved to {output_path}")
-
 
     chemberta_path = OUTPUT_DIR / 'compound_features.pkl'
     if chemberta_path.exists():

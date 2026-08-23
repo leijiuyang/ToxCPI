@@ -1,4 +1,3 @@
-
 import argparse
 import os
 import pickle
@@ -39,7 +38,6 @@ COMPOUND_CACHE = WORK / "features" / "compound_bermol_tokens_4chem.pkl"
 
 MAX_CHEM_TOKENS = 64
 MAX_PROTEIN_LENGTH = 768
-
 
 CHEMICAL_ROWS = [
     {

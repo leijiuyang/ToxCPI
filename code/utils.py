@@ -1,8 +1,3 @@
-
-
-
-
-
 import numpy as np
 import torch
 from rdkit import Chem
@@ -13,8 +8,6 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-
 
 BENIGNI_BOSSA_SMARTS = [
     "[N+](=O)[O-]",
@@ -52,7 +45,6 @@ BENIGNI_BOSSA_SMARTS = [
     "[N+]#[C-]",
 ]
 
-
 EDC_SMARTS = [
 
     "c1ccc(O)cc1",
@@ -66,20 +58,17 @@ EDC_SMARTS = [
     "Clc1ccc(O)cc1",
     "Clc1cc(Cl)c(O)cc1",
 
-
     "c1ccc2c(c1)C(=O)OC2=O",
     "O=C(O)c1ccccc1C(=O)O",
     "CCCCOC(=O)c1ccccc1C(=O)OCCCC",
     "CCCCCCCCOC(=O)c1ccccc1",
     "c1ccc(C(=O)O)c(C(=O)O)c1",
 
-
     "c1ccc(-c2ccccc2)cc1",
     "Clc1ccccc1-c1ccccc1",
     "Clc1ccc(-c2ccc(Cl)cc2)cc1",
     "Clc1cc(Cl)c(-c2ccccc2)cc1",
     "Clc1ccc(-c2ccc(Cl)cc2Cl)cc1",
-
 
     "ClC(Cl)=C(c1ccc(Cl)cc1)c1ccc(Cl)cc1",
     "ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl",
@@ -92,20 +81,17 @@ EDC_SMARTS = [
     "c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl",
     "Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl",
 
-
     "Brc1ccc(Oc2ccccc2)cc1",
     "Brc1ccc(Oc2ccc(Br)cc2)cc1",
     "c1ccc(Oc2ccccc2)cc1",
     "Brc1cc(Br)c(Oc2ccccc2)cc1",
     "Brc1ccc(Oc2cc(Br)ccc2Br)cc1Br",
 
-
     "CCCCCCCCC(C)c1ccc(O)cc1",
     "CCCCCCCCc1ccc(O)cc1",
     "CCCCCCCCCC(C)c1ccc(O)cc1",
     "CC(C)(C)c1ccc(O)cc1",
     "CC(C)(C)c1ccc(O)c(C(C)(C)C)c1",
-
 
     "O=C1c2ccccc2C(=O)c2ccccc12",
     "c1ccc2[nH]c3ccccc3c2c1",
@@ -121,15 +107,6 @@ EDC_SMARTS = [
 
 
 def get_benigni_bossa_features(mol: Chem.Mol) -> np.ndarray:
-
-
-
-
-
-
-
-
-
     if mol is None:
         return np.zeros(len(BENIGNI_BOSSA_SMARTS), dtype=np.float32)
 
@@ -149,15 +126,6 @@ def get_benigni_bossa_features(mol: Chem.Mol) -> np.ndarray:
 
 
 def get_edc_features(mol: Chem.Mol) -> np.ndarray:
-
-
-
-
-
-
-
-
-
     if mol is None:
         return np.zeros(len(EDC_SMARTS), dtype=np.float32)
 
@@ -177,31 +145,17 @@ def get_edc_features(mol: Chem.Mol) -> np.ndarray:
 
 
 def get_toxprint_features(mol: Chem.Mol) -> np.ndarray:
-
-
-
-
-
-
-
-
-
-
     if mol is None:
         return np.zeros(729, dtype=np.float32)
 
     try:
-
         morgan_fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=512)
         morgan_arr = np.array(morgan_fp, dtype=np.float32)
-
 
         maccs_fp = rdMolDescriptors.GetMACCSKeysFingerprint(mol)
         maccs_arr = np.array(maccs_fp, dtype=np.float32)
 
-
         tox_descriptors = []
-
 
         tox_descriptors.append(Descriptors.MolWt(mol) / 500.0)
 
@@ -223,7 +177,6 @@ def get_toxprint_features(mol: Chem.Mol) -> np.ndarray:
 
         tox_descriptors.append(Descriptors.RingCount(mol) / 5.0)
 
-
         atom_counts = []
         atom_types = ['C', 'N', 'O', 'S', 'P', 'F', 'Cl', 'Br', 'I', 'B',
                       'Si', 'Se', 'As', 'Hg', 'Pb', 'Cd', 'Cr', 'Ni', 'Co', 'Cu',
@@ -237,7 +190,6 @@ def get_toxprint_features(mol: Chem.Mol) -> np.ndarray:
         tox_descriptors.extend(atom_counts)
         tox_arr = np.array(tox_descriptors, dtype=np.float32)
 
-
         features = np.concatenate([morgan_arr, maccs_arr, tox_arr])
 
         return features
@@ -248,19 +200,9 @@ def get_toxprint_features(mol: Chem.Mol) -> np.ndarray:
 
 
 def smiles_to_mol(smiles: str) -> Optional[Chem.Mol]:
-
-
-
-
-
-
-
-
-
     try:
         mol = Chem.MolFromSmiles(smiles)
         if mol is not None:
-
             Chem.SanitizeMol(mol)
         return mol
     except Exception:
@@ -268,15 +210,6 @@ def smiles_to_mol(smiles: str) -> Optional[Chem.Mol]:
 
 
 def canonicalize_smiles(smiles: str) -> Optional[str]:
-
-
-
-
-
-
-
-
-
     mol = smiles_to_mol(smiles)
     if mol is not None:
         return Chem.MolToSmiles(mol, canonical=True)
@@ -284,17 +217,7 @@ def canonicalize_smiles(smiles: str) -> Optional[str]:
 
 
 def get_atom_features(atom: Chem.Atom) -> np.ndarray:
-
-
-
-
-
-
-
-
-
     features = []
-
 
     atom_types = ['C', 'N', 'O', 'S', 'F', 'Cl', 'Br', 'I', 'P', 'other']
     symbol = atom.GetSymbol()
@@ -303,16 +226,13 @@ def get_atom_features(atom: Chem.Atom) -> np.ndarray:
     if symbol not in atom_types[:-1]:
         features[-1] = 1.0
 
-
     degree = atom.GetDegree()
     for i in range(6):
         features.append(1.0 if degree == i else 0.0)
 
-
     charge = atom.GetFormalCharge()
     for c in [-2, -1, 0, 1, 2]:
         features.append(1.0 if charge == c else 0.0)
-
 
     hybridization = atom.GetHybridization()
     hyb_types = [Chem.rdchem.HybridizationType.SP,
@@ -323,28 +243,21 @@ def get_atom_features(atom: Chem.Atom) -> np.ndarray:
     for hyb in hyb_types:
         features.append(1.0 if hybridization == hyb else 0.0)
 
-
     features.append(1.0 if atom.IsInRing() else 0.0)
 
-
     features.append(1.0 if atom.GetIsAromatic() else 0.0)
-
 
     num_h = atom.GetTotalNumHs()
     for i in range(5):
         features.append(1.0 if num_h == i else 0.0)
 
-
     chiral = atom.GetChiralTag()
     features.append(1.0 if chiral == Chem.rdchem.ChiralType.CHI_TETRAHEDRAL_CW else 0.0)
     features.append(1.0 if chiral == Chem.rdchem.ChiralType.CHI_TETRAHEDRAL_CCW else 0.0)
 
-
     features.append(atom.GetMass() / 100.0)
 
-
     features.append(Chem.GetPeriodicTable().GetRvdw(atom.GetAtomicNum()) / 3.0)
-
 
     features.append(Chem.GetPeriodicTable().GetNOuterElecs(atom.GetAtomicNum()) / 8.0)
 
@@ -352,17 +265,7 @@ def get_atom_features(atom: Chem.Atom) -> np.ndarray:
 
 
 def get_bond_features(bond: Chem.Bond) -> np.ndarray:
-
-
-
-
-
-
-
-
-
     features = []
-
 
     bond_types = [Chem.rdchem.BondType.SINGLE,
                   Chem.rdchem.BondType.DOUBLE,
@@ -372,12 +275,9 @@ def get_bond_features(bond: Chem.Bond) -> np.ndarray:
     for bond_type in bond_types:
         features.append(1.0 if bt == bond_type else 0.0)
 
-
     features.append(1.0 if bond.GetIsConjugated() else 0.0)
 
-
     features.append(1.0 if bond.IsInRing() else 0.0)
-
 
     stereo = bond.GetStereo()
     stereo_types = [Chem.rdchem.BondStereo.STEREONONE,
@@ -391,12 +291,6 @@ def get_bond_features(bond: Chem.Bond) -> np.ndarray:
 
 
 def set_seed(seed: int):
-
-
-
-
-
-
     import random
     random.seed(seed)
     np.random.seed(seed)
@@ -409,28 +303,12 @@ def set_seed(seed: int):
 
 
 def count_parameters(model: torch.nn.Module) -> int:
-
-
-
-
-
-
-
-
-
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 
 def save_checkpoint(model, optimizer, epoch, loss, path):
-
-
-
-
-
-
     import os
     import tempfile
-
 
     checkpoint = {
         'epoch': epoch,
@@ -439,11 +317,9 @@ def save_checkpoint(model, optimizer, epoch, loss, path):
         'loss': loss,
     }
 
-
     save_dir = os.path.dirname(path)
     if save_dir:
         os.makedirs(save_dir, exist_ok=True)
-
 
     temp_path = path + '.tmp'
     try:
@@ -451,16 +327,12 @@ def save_checkpoint(model, optimizer, epoch, loss, path):
 
         os.replace(temp_path, path)
     except Exception as e:
-
         if os.path.exists(temp_path):
             os.remove(temp_path)
         raise e
 
 
 def load_checkpoint(model, optimizer, path):
-
-
-
     checkpoint = torch.load(path)
     model.load_state_dict(checkpoint['model_state_dict'])
     if optimizer is not None:
@@ -469,15 +341,7 @@ def load_checkpoint(model, optimizer, path):
 
 
 class EarlyStopping:
-
-
     def __init__(self, patience: int = 10, min_delta: float = 0.0, mode: str = 'min'):
-
-
-
-
-
-
         self.patience = patience
         self.min_delta = min_delta
         self.mode = mode

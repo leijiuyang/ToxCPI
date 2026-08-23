@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import torch
 import torch.nn as nn
 from typing import Dict, Optional, List, Tuple
@@ -19,17 +7,6 @@ logger = logging.getLogger(__name__)
 
 
 class GatedFusion(nn.Module):
-
-
-
-
-
-
-
-
-
-
-
     def __init__(self, hidden_dim: int, dropout: float = 0.3,
                  gate_min: float = 0.0, gate_max: float = 1.0):
         super().__init__()
@@ -53,13 +30,6 @@ class GatedFusion(nn.Module):
 
 
 class InteractionMatrixCNN(nn.Module):
-
-
-
-
-
-
-
     def __init__(
         self,
         num_heads: int,
@@ -125,13 +95,6 @@ class InteractionMatrixCNN(nn.Module):
 
 
 class MolecularGraphEncoder(nn.Module):
-
-
-
-
-
-
-
     def __init__(
         self,
         hidden_dim: int,
@@ -182,7 +145,6 @@ class MolecularGraphEncoder(nn.Module):
 
 
 def masked_mean_pool(x: torch.Tensor, mask: Optional[torch.Tensor] = None) -> torch.Tensor:
-
     if mask is None:
         return x.mean(dim=1)
     valid = (~mask).unsqueeze(-1).float()
@@ -190,28 +152,6 @@ def masked_mean_pool(x: torch.Tensor, mask: Optional[torch.Tensor] = None) -> to
 
 
 class BindingModelFusion(nn.Module):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def __init__(
         self,
         tox_dim: int = 812,
@@ -240,7 +180,6 @@ class BindingModelFusion(nn.Module):
         self.dropout_rate = dropout
 
         if use_toxprint:
-
             self.tox_encoder = nn.Sequential(
                 nn.Linear(tox_dim, hidden_dim),
                 nn.LayerNorm(hidden_dim),
@@ -248,7 +187,6 @@ class BindingModelFusion(nn.Module):
                 nn.Dropout(dropout),
                 nn.Linear(hidden_dim, hidden_dim)
             )
-
 
         self.sem_encoder = nn.Sequential(
             nn.Linear(chemberta_dim, hidden_dim),
@@ -258,13 +196,9 @@ class BindingModelFusion(nn.Module):
         )
 
         if use_toxprint:
-
             self.chem_fusion = GatedFusion(hidden_dim, dropout, gate_min, gate_max)
 
-
         if use_residue_attention:
-
-
             self.chem_token_proj = nn.Sequential(
                 nn.Linear(chemberta_dim, hidden_dim),
                 nn.LayerNorm(hidden_dim),
@@ -309,7 +243,6 @@ class BindingModelFusion(nn.Module):
                     nn.Dropout(dropout)
                 )
 
-
             if use_multi_granularity:
                 coarse_dim = hidden_dim
 
@@ -344,7 +277,6 @@ class BindingModelFusion(nn.Module):
                 nn.Dropout(dropout)
             )
 
-
         self.classifier = nn.Sequential(
             nn.Linear(interaction_dim, hidden_dim),
             nn.ReLU(),
@@ -366,24 +298,6 @@ class BindingModelFusion(nn.Module):
         prot_residue_feat: torch.Tensor = None,
         prot_mask: torch.Tensor = None
     ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         if self.use_residue_attention and chem_tokens_feat is not None:
             H_chem, H_prot = self.encode_sequence_inputs(
                 chem_tokens_feat=chem_tokens_feat,
@@ -398,7 +312,6 @@ class BindingModelFusion(nn.Module):
                 prot_mask=prot_mask
             )
         else:
-
             h_sem = self.sem_encoder(chemberta_feat)
             if self.use_toxprint and tox_feat is not None:
                 h_tox = self.tox_encoder(tox_feat)
@@ -475,7 +388,6 @@ class BindingModelFusion(nn.Module):
         tox_feat: torch.Tensor,
         chemberta_feat: torch.Tensor
     ) -> torch.Tensor:
-
         with torch.no_grad():
             h_tox = self.tox_encoder(tox_feat)
             h_sem = self.sem_encoder(chemberta_feat)
@@ -484,13 +396,6 @@ class BindingModelFusion(nn.Module):
 
 
 class EffectModelFusion(BindingModelFusion):
-
-
-
-
-
-
-
     def __init__(
         self,
         *args,
@@ -611,7 +516,6 @@ if __name__ == "__main__":
     chemberta_feat = torch.randn(batch_size, 768)
     esm2_feat = torch.randn(batch_size, 1280)
 
-
     model = BindingModelFusion(use_residue_attention=False)
     total_params = sum(p.numel() for p in model.parameters())
     print(f"Step 1 parameters: {total_params:,}")
@@ -620,7 +524,6 @@ if __name__ == "__main__":
     print(f"Logits shape: {logits.shape}")
     print(f"Attention: {attn}")
     print(f"Chem emb: {c_emb}, Prot emb: {p_emb}")
-
 
     g = model.get_gate_weights(tox_feat, chemberta_feat)
     print(f"Gate weights: {g.squeeze()}")

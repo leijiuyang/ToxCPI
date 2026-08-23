@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import glob
 import os, sys
 for i, arg in enumerate(sys.argv):
@@ -67,12 +47,6 @@ FEATURE_DIR = Path(os.environ.get(
 
 
 def load_partial_checkpoint(model, ckpt_path, device):
-
-
-
-
-
-
     if not os.path.exists(ckpt_path):
         raise FileNotFoundError(f"Init checkpoint not found: {ckpt_path}")
 
@@ -117,7 +91,6 @@ def load_partial_checkpoint(model, ckpt_path, device):
 
 
 def set_params_trainable(model, param_names, trainable):
-
     affected = 0
     for name, param in model.named_parameters():
         if name in param_names:
@@ -213,9 +186,6 @@ def main():
         logger.info(f"PyTorch CPU threads: intra={torch.get_num_threads()}, "
                     f"interop={torch.get_num_interop_threads()}")
 
-
-
-
     exp_name = f"effect_{args.task}_{args.split}"
     if args.interaction_cnn:
         exp_name = f"{exp_name}_icnn"
@@ -255,9 +225,6 @@ def main():
     logger.info(f"DataLoader Workers: {args.num_workers}")
     logger.info("=" * 60)
 
-
-
-
     base_dir = str(RUNTIME_ROOT)
     feat_dir = str(FEATURE_DIR)
     data_dir = args.data_dir or str(REPOSITORY_ROOT / 'data' / args.task)
@@ -270,9 +237,6 @@ def main():
     logger.info(f"BerMol tokens: {len(comp_feats)} chemicals")
     logger.info(f"ESM2 residues: {len(prot_feats)} proteins")
 
-
-
-
     train_file = os.path.join(data_dir, f"effect_{args.task}_{args.split}_train.csv")
     val_file = os.path.join(data_dir, f"effect_{args.task}_{args.split}_val.csv")
     test_file = os.path.join(data_dir, f"effect_{args.task}_{args.split}_test.csv")
@@ -283,7 +247,6 @@ def main():
     test_df = pd.read_csv(test_file, low_memory=False)
 
     logger.info(f"Original Train: {len(train_df)} ({(train_df['label']==1).sum()} pos + {(train_df['label']==0).sum()} neg)")
-
 
     if args.downsample:
         ratio = int(args.downsample.split(':')[1])
@@ -321,9 +284,6 @@ def main():
             except Exception:
                 pass
         logger.info(f"SMILES map: {len(chem_smiles_map)} chemicals (effect + binding)")
-
-
-
 
     logger.info("Building shared entity tensors...")
     cache_path = args.entity_cache or default_entity_cache_path(
@@ -380,9 +340,6 @@ def main():
                              shuffle=False, num_workers=n_workers, pin_memory=True,
                              persistent_workers=n_workers > 0, collate_fn=collate)
 
-
-
-
     model_cls = EffectModelFusion if (args.effect_dual_branch or args.effect_raw_global_branch) else BindingModelFusion
     model_kwargs = dict(
         chemberta_dim=768,
@@ -406,9 +363,6 @@ def main():
     total_params = sum(p.numel() for p in model.parameters())
     logger.info(f"Model parameters: {total_params:,}")
 
-
-
-
     init_path = args.init_from
     if args.init_from_v3:
         if not args.init_from:
@@ -421,9 +375,6 @@ def main():
                 "Warm-start loaded zero trainable parameters. "
                 "Check hidden_dim/model flags against the v3 checkpoint."
             )
-
-
-
 
     optimizer = torch.optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay
@@ -444,7 +395,6 @@ def main():
             optimizer, T_max=args.num_epochs, eta_min=args.lr / 10
         )
 
-
     if args.pos_weight == -1:
         criterion = nn.BCEWithLogitsLoss()
         logger.info("pos_weight: disabled")
@@ -459,7 +409,6 @@ def main():
         logger.info(f"pos_weight: {pw:.2f}")
     scaler = GradScaler('cuda')
 
-
     ema = EMAModel(model, decay=args.ema_decay) if args.ema_decay > 0 else None
     if ema:
         logger.info(f"EMA enabled: decay={args.ema_decay}")
@@ -468,15 +417,11 @@ def main():
         set_params_trainable(model, loaded_param_names, trainable=False)
         logger.info(f"Trainable parameters after freeze: {count_trainable_params(model):,}")
 
-
-
-
     best_score = float('-inf')
     no_improve = 0
     ckpt_dir = os.path.join(base_dir, 'checkpoints')
     os.makedirs(ckpt_dir, exist_ok=True)
     ckpt_path = os.path.join(ckpt_dir, f'{exp_name}_seed{args.seed}_best.pth')
-
 
     use_amp = False
     logger.info("AMP disabled for BilinearAttention (numerical stability)")
@@ -494,7 +439,6 @@ def main():
             label_smoothing=args.label_smoothing,
             ema=ema
         )
-
 
         if ema:
             ema.apply_shadow(model)
@@ -532,9 +476,6 @@ def main():
             if no_improve >= args.patience:
                 logger.info(f"Early stopping at epoch {epoch+1}")
                 break
-
-
-
 
     logger.info("=" * 60)
     logger.info("Loading best model for testing...")

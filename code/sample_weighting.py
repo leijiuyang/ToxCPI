@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import numpy as np
 import pandas as pd
 from collections import Counter, defaultdict
@@ -19,12 +8,6 @@ logger = logging.getLogger(__name__)
 
 
 class SampleWeightCalculator:
-
-
-
-
-
-
     def __init__(
         self,
         use_protein_freq_weight: bool = True,
@@ -35,16 +18,6 @@ class SampleWeightCalculator:
         difficulty_alpha: float = 0.5,
         normalize: bool = True
     ):
-
-
-
-
-
-
-
-
-
-
         self.use_protein_freq_weight = use_protein_freq_weight
         self.use_chemical_freq_weight = use_chemical_freq_weight
         self.use_difficulty_weight = use_difficulty_weight
@@ -53,48 +26,29 @@ class SampleWeightCalculator:
         self.difficulty_alpha = difficulty_alpha
         self.normalize = normalize
 
-
         self.protein_weights: Dict[str, float] = {}
         self.chemical_weights: Dict[str, float] = {}
         self.sample_difficulty_weights: Dict[Tuple[str, str], float] = {}
 
-
         self.stats = {}
 
     def _compute_protein_freq_weights(self, df: pd.DataFrame) -> Dict[str, float]:
-
-
-
-
-
-
-
-
-
-
-
-
         protein_counts = df['uniprot_id'].value_counts()
         n_samples = len(df)
         n_proteins = len(protein_counts)
 
-
-
         weights = {}
         for protein, count in protein_counts.items():
-
             smooth_count = np.sqrt(count) * self.protein_freq_smooth
 
             weight = 1.0 / (smooth_count + 1)
             weights[protein] = weight
-
 
         min_w = min(weights.values())
         max_w = max(weights.values())
         if max_w > min_w:
             for protein in weights:
                 weights[protein] = 0.5 + 1.5 * (weights[protein] - min_w) / (max_w - min_w)
-
 
         self.stats['protein_count_min'] = int(protein_counts.min())
         self.stats['protein_count_max'] = int(protein_counts.max())
@@ -108,27 +62,19 @@ class SampleWeightCalculator:
         return weights
 
     def _compute_chemical_freq_weights(self, df: pd.DataFrame) -> Dict[str, float]:
-
-
-
-
-
         chemical_counts = df['smiles_clean'].value_counts()
 
         weights = {}
         for chemical, count in chemical_counts.items():
-
             smooth_count = np.sqrt(count) * self.chemical_freq_smooth
             weight = 1.0 / (smooth_count + 1)
             weights[chemical] = weight
-
 
         min_w = min(weights.values())
         max_w = max(weights.values())
         if max_w > min_w:
             for chemical in weights:
                 weights[chemical] = 0.5 + 1.5 * (weights[chemical] - min_w) / (max_w - min_w)
-
 
         self.stats['chemical_count_min'] = int(chemical_counts.min())
         self.stats['chemical_count_max'] = int(chemical_counts.max())
@@ -142,17 +88,7 @@ class SampleWeightCalculator:
         return weights
 
     def _compute_difficulty_weights(self, df: pd.DataFrame) -> Dict[Tuple[str, str], float]:
-
-
-
-
-
-
-
-
-
         weights = {}
-
 
         protein_pos_ratio = {}
         for protein in df['uniprot_id'].unique():
@@ -161,7 +97,6 @@ class SampleWeightCalculator:
             pos = (prot_df['label'] == 1).sum()
             protein_pos_ratio[protein] = pos / total if total > 0 else 0.5
 
-
         chemical_pos_ratio = {}
         for chemical in df['smiles_clean'].unique():
             chem_df = df[df['smiles_clean'] == chemical]
@@ -169,12 +104,10 @@ class SampleWeightCalculator:
             pos = (chem_df['label'] == 1).sum()
             chemical_pos_ratio[chemical] = pos / total if total > 0 else 0.5
 
-
         for _, row in df.iterrows():
             protein = row['uniprot_id']
             chemical = row['smiles_clean']
             label = row['label']
-
 
             if label == 1:
                 protein_rarity = 1 - protein_pos_ratio[protein]
@@ -183,23 +116,16 @@ class SampleWeightCalculator:
                 protein_rarity = protein_pos_ratio[protein]
                 chemical_rarity = chemical_pos_ratio[chemical]
 
-
-
             difficulty = (protein_rarity + chemical_rarity) / 2
-
-
-
 
             if difficulty < 0.5:
                 weight = 1 + self.difficulty_alpha * difficulty
             else:
                 weight = 1 + self.difficulty_alpha * (difficulty / (1 - difficulty + 0.1))
 
-
             weight = np.clip(weight, 0.5, 3.0)
 
             weights[(protein, chemical, label)] = weight
-
 
         weight_values = list(weights.values())
         self.stats['difficulty_weight_min'] = float(min(weight_values))
@@ -213,15 +139,6 @@ class SampleWeightCalculator:
         return weights
 
     def fit(self, df: pd.DataFrame) -> 'SampleWeightCalculator':
-
-
-
-
-
-
-
-
-
         logger.info("Computing sample weights...")
 
         if self.use_protein_freq_weight:
@@ -237,15 +154,6 @@ class SampleWeightCalculator:
         return self
 
     def get_sample_weights(self, df: pd.DataFrame) -> np.ndarray:
-
-
-
-
-
-
-
-
-
         n_samples = len(df)
         weights = np.ones(n_samples)
 
@@ -256,14 +164,11 @@ class SampleWeightCalculator:
 
             w = 1.0
 
-
             if self.use_protein_freq_weight and protein in self.protein_weights:
                 w *= self.protein_weights[protein]
 
-
             if self.use_chemical_freq_weight and chemical in self.chemical_weights:
                 w *= self.chemical_weights[chemical]
-
 
             if self.use_difficulty_weight:
                 key = (protein, chemical, label)
@@ -272,14 +177,12 @@ class SampleWeightCalculator:
 
             weights[i] = w
 
-
         if self.normalize:
             weights = weights / weights.mean()
 
         return weights
 
     def get_weight_dict(self) -> Dict:
-
         return {
             'protein_weights': {
                 'enabled': self.use_protein_freq_weight,
@@ -303,7 +206,6 @@ class SampleWeightCalculator:
         }
 
     def save_weights(self, filepath: str):
-
         import json
         data = {
             'config': {
@@ -324,7 +226,6 @@ class SampleWeightCalculator:
 
     @classmethod
     def load_weights(cls, filepath: str) -> 'SampleWeightCalculator':
-
         import json
         with open(filepath, 'r') as f:
             data = json.load(f)
@@ -346,24 +247,12 @@ class SampleWeightCalculator:
 
 
 class WeightedSampler:
-
-
-
-
-
-
     def __init__(self, weights: np.ndarray, replacement: bool = True):
-
-
-
-
-
         self.weights = weights
         self.replacement = replacement
         self.num_samples = len(weights)
 
     def get_sampler(self):
-
         import torch
         from torch.utils.data.sampler import WeightedRandomSampler
 
@@ -379,16 +268,6 @@ def compute_and_apply_weights(
     df: pd.DataFrame,
     sampler_config: Optional[Dict] = None
 ) -> Tuple[np.ndarray, SampleWeightCalculator]:
-
-
-
-
-
-
-
-
-
-
     if sampler_config is None:
         sampler_config = {
             'use_protein_freq_weight': True,
@@ -403,14 +282,11 @@ def compute_and_apply_weights(
     return weights, calculator
 
 
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
-
     np.random.seed(42)
     n_samples = 1000
-
 
     data = {
         'uniprot_id': ['P1'] * 400 + ['P2'] * 200 + ['P3'] * 100 + ['P4'] * 50 + ['P5'] * 50 +
@@ -418,7 +294,6 @@ if __name__ == "__main__":
         'smiles_clean': [f'C{i%50}' for i in range(n_samples)],
         'label': [0] * 550 + [1] * 450
     }
-
 
     df = pd.DataFrame(data)
     for i in range(len(df)):
@@ -449,7 +324,6 @@ if __name__ == "__main__":
     print(f"  Max: {weights.max():.3f}")
     print(f"  Mean: {weights.mean():.3f}")
     print(f"  Std: {weights.std():.3f}")
-
 
     print(f"\nSample weights by protein:")
     for protein in ['P1', 'P2', 'P3', 'P9']:

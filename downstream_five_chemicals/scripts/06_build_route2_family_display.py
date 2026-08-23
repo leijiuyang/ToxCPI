@@ -1,6 +1,3 @@
-
-
-
 from __future__ import annotations
 
 import argparse
@@ -88,7 +85,6 @@ def score_family_members(
     event_labels: object,
     threshold: float = THRESHOLD,
 ) -> pd.DataFrame:
-
     scored = member_scores.copy()
     labels = required_event_labels(event_labels)
     required_cols = [TASK_PROBABILITY[label] for label in labels]

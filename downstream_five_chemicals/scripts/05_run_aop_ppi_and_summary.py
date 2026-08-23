@@ -1,6 +1,3 @@
-
-
-
 from __future__ import annotations
 
 import argparse
@@ -199,7 +196,6 @@ def labels_to_string(labels: list[str]) -> str:
 
 
 def required_event_labels(event_labels: object) -> list[str]:
-
     labels = str(event_labels or "").split(";")
     return [label for label in LABEL_ORDER if label in labels and label in TASK_PROBABILITY]
 
@@ -209,7 +205,6 @@ def event_joint_hit(
     event_labels: object,
     threshold: float = ROUTE2_HIT_THRESHOLD,
 ) -> bool:
-
     labels = required_event_labels(event_labels)
     if not labels:
         return False
@@ -225,7 +220,6 @@ def score_family_members(
     event_labels: object,
     threshold: float = ROUTE2_HIT_THRESHOLD,
 ) -> pd.DataFrame:
-
     scored = member_scores.copy()
     labels = required_event_labels(event_labels)
     required_cols = [TASK_PROBABILITY[label] for label in labels]
@@ -241,7 +235,6 @@ def score_family_members(
 
 
 def apply_event_joint_hits(detail: pd.DataFrame) -> pd.DataFrame:
-
     out = detail.copy()
     out["_event_joint_hit"] = out.apply(
         lambda row: event_joint_hit(row, row["event_labels"]), axis=1
@@ -291,7 +284,6 @@ def infer_event_direction(row: pd.Series) -> str:
         str(row.get(col, ""))
         for col in ["Event_Title", "Action", "Expected_Effect", "AOP_Title", "AO_Title"]
     ).lower()
-
 
     inhibition_patterns = [
         r"\bantagonist\b",
@@ -475,8 +467,6 @@ def build_directional_detail(aop: pd.DataFrame) -> pd.DataFrame:
             default=np.nan,
         )
         merged["is_label_hit"] = merged["matched_probability"].gt(ROUTE2_HIT_THRESHOLD)
-
-
 
         merged = apply_event_joint_hits(merged)
         merged["P_dir"] = merged["matched_probability"]

@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 from run_ctd_mapping import main
 
 

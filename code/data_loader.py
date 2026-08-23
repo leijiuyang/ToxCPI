@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 import pandas as pd
 import numpy as np
@@ -39,12 +26,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.WARNING)
 
 
-
-
 class BaseCPIDataset(Dataset):
-
-
-
     AA_VOCAB = "ACDEFGHIKLMNPQRSTVWYX"
     AA_TO_IDX = {aa: i for i, aa in enumerate(AA_VOCAB)}
 
@@ -66,7 +48,6 @@ class BaseCPIDataset(Dataset):
         self.benigni_features = None
         self.edc_features = None
 
-
         self.protein_tokens = None
         self.protein_masks = None
 
@@ -75,7 +56,6 @@ class BaseCPIDataset(Dataset):
             self._precompute_protein_tokens(cache_path)
 
     def _precompute_tox_features(self, cache_path: str = None):
-
         if cache_path and os.path.exists(cache_path):
             logger.info(f"Loading cached toxicity features from {cache_path}")
             try:
@@ -121,8 +101,6 @@ class BaseCPIDataset(Dataset):
                 logger.warning(f"Failed to save cache: {e}")
 
     def _precompute_protein_tokens(self, cache_path: str = None):
-
-
         token_cache_path = cache_path.replace('.npz', '_tokens.npz') if cache_path else None
         if token_cache_path and os.path.exists(token_cache_path):
             logger.info(f"Loading cached protein tokens from {token_cache_path}")
@@ -145,10 +123,8 @@ class BaseCPIDataset(Dataset):
         masks_list = []
 
         for seq in self.sequences_list:
-
             if len(seq) > self.max_protein_length:
                 seq = seq[:self.max_protein_length]
-
 
             tokens = np.zeros(self.max_protein_length, dtype=np.int64)
             mask = np.ones(self.max_protein_length, dtype=np.bool_)
@@ -163,7 +139,6 @@ class BaseCPIDataset(Dataset):
         self.protein_tokens = np.array(tokens_list, dtype=np.int64)
         self.protein_masks = np.array(masks_list, dtype=np.bool_)
 
-
         if token_cache_path:
             try:
                 np.savez(token_cache_path,
@@ -177,7 +152,6 @@ class BaseCPIDataset(Dataset):
         return len(self.smiles_list)
 
     def _get_base_item(self, idx: int) -> Dict:
-
         smiles = self.smiles_list[idx]
         sequence = self.sequences_list[idx]
 
@@ -202,7 +176,6 @@ class BaseCPIDataset(Dataset):
             'edc': torch.tensor(edc, dtype=torch.float32),
         }
 
-
         if self.protein_tokens is not None:
             result['protein_tokens'] = torch.tensor(self.protein_tokens[idx], dtype=torch.long)
             result['protein_mask'] = torch.tensor(self.protein_masks[idx], dtype=torch.bool)
@@ -210,14 +183,7 @@ class BaseCPIDataset(Dataset):
         return result
 
 
-
-
 class BindingDataset(BaseCPIDataset):
-
-
-
-
-
     def __init__(
         self,
         smiles_list: List[str],
@@ -234,22 +200,7 @@ class BindingDataset(BaseCPIDataset):
         return sample
 
 
-
-
 class EffectDataset(BaseCPIDataset):
-
-
-
-
-
-
-
-
-
-
-
-
-
     def __init__(
         self,
         smiles_list: List[str],
@@ -269,24 +220,17 @@ class EffectDataset(BaseCPIDataset):
         return sample
 
 
-
-
 def load_binding_data(filepath: str = BINDING_DATA_PATH) -> pd.DataFrame:
-
     logger.info(f"Loading binding data from {filepath}")
     df = pd.read_csv(filepath)
-
-
 
     required_cols = ['smiles', 'protein_sequence', 'label']
     missing = [c for c in required_cols if c not in df.columns]
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
 
-
     df['smiles_clean'] = df['smiles'].apply(canonicalize_smiles)
     df = df.dropna(subset=['smiles_clean'])
-
 
     df['label'] = df['label'].astype(int)
 
@@ -300,7 +244,6 @@ def load_binding_data(filepath: str = BINDING_DATA_PATH) -> pd.DataFrame:
 
 
 def load_effect_data(filepath: str = EFFECT_DATA_PATH) -> pd.DataFrame:
-
     logger.info(f"Loading effect data from {filepath}")
     df = pd.read_csv(filepath)
 
@@ -329,10 +272,8 @@ def load_effect_data(filepath: str = EFFECT_DATA_PATH) -> pd.DataFrame:
 
 
 def load_no_effect_data(filepath: str = NO_EFFECT_DATA_PATH) -> pd.DataFrame:
-
     logger.info(f"Loading no-effect data from {filepath}")
     df = pd.read_csv(filepath)
-
 
     df = df.rename(columns={'protein_sequence': 'sequence'})
     df = df.dropna(subset=['smiles', 'sequence'])
@@ -352,22 +293,6 @@ def sample_with_protein_coverage(
     protein_col: str = 'gene_symbol',
     seed: int = 42
 ) -> pd.DataFrame:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     np.random.seed(seed)
 
     unique_proteins = df[protein_col].unique()
@@ -376,14 +301,12 @@ def sample_with_protein_coverage(
     logger.info(f"Sampling {n_samples} samples with coverage of {n_proteins} proteins")
 
     if n_samples <= n_proteins:
-
         sampled_proteins = np.random.choice(unique_proteins, size=n_samples, replace=False)
         sampled_dfs = []
         for protein in sampled_proteins:
             protein_df = df[df[protein_col] == protein]
             sampled_dfs.append(protein_df.sample(n=1, random_state=seed))
         return pd.concat(sampled_dfs, ignore_index=True)
-
 
     sampled_dfs = []
     remaining_df = df.copy()
@@ -395,7 +318,6 @@ def sample_with_protein_coverage(
             sampled_dfs.append(sampled)
 
             remaining_df = remaining_df.drop(sampled.index)
-
 
     n_remaining = n_samples - len(sampled_dfs)
 
@@ -418,45 +340,22 @@ def create_effect_data_with_negatives(
     target_ratio: str = "1:1:1",
     seed: int = 42
 ) -> pd.DataFrame:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     logger.info("="*50)
     logger.info("Creating hierarchical effect dataset (combined sources)")
     logger.info(f"Target ratio (activation:inhibition:no_effect): {target_ratio}")
     logger.info("="*50)
 
-
     collected_no_effect_df = load_no_effect_data()
     collected_proteins = set(collected_no_effect_df['gene_symbol'].unique())
     logger.info(f"Collected no-effect data: {len(collected_no_effect_df)} samples, {len(collected_proteins)} proteins")
 
-
     if binding_df is None:
         binding_df = load_binding_data()
-
 
     effect_df = effect_df.copy()
     effect_df['has_effect'] = 1
     effect_df['pair_key'] = effect_df['smiles_clean'] + '|' + effect_df['gene_symbol']
     effect_pairs = set(effect_df['pair_key'].values)
-
 
     binding_positive = binding_df[binding_df['label'] == 1].copy()
     binding_positive['pair_key'] = binding_positive['smiles_clean'] + '|' + binding_positive['gene_symbol']
@@ -467,10 +366,8 @@ def create_effect_data_with_negatives(
     binding_proteins = set(binding_no_effect_df['gene_symbol'].unique())
     logger.info(f"Binding-derived no-effect data: {len(binding_no_effect_df)} samples, {len(binding_proteins)} proteins")
 
-
     new_proteins = binding_proteins - collected_proteins
     logger.info(f"New proteins from binding data: {len(new_proteins)}")
-
 
     activation_df = effect_df[effect_df['effect_label'] == 1].copy()
     inhibition_df = effect_df[effect_df['effect_label'] == 0].copy()
@@ -481,7 +378,6 @@ def create_effect_data_with_negatives(
     logger.info(f"\nOriginal effect data:")
     logger.info(f"  Activation samples: {n_activation}")
     logger.info(f"  Inhibition samples: {n_inhibition_total}")
-
 
     if target_ratio == "1:1:1":
         n_inhibition_target = n_activation
@@ -498,7 +394,6 @@ def create_effect_data_with_negatives(
     logger.info(f"  Inhibition target: {n_inhibition_target}")
     logger.info(f"  No-effect target: {n_no_effect_target}")
 
-
     if n_inhibition_target < n_inhibition_total:
         logger.info(f"\nSampling inhibition data with protein coverage...")
         inhibition_sampled = sample_with_protein_coverage(
@@ -511,9 +406,7 @@ def create_effect_data_with_negatives(
         inhibition_sampled = inhibition_df
         logger.info(f"Using all inhibition data")
 
-
     logger.info(f"\n--- Sampling no-effect data from combined sources ---")
-
 
     n_collected_proteins = len(collected_proteins)
 
@@ -531,12 +424,10 @@ def create_effect_data_with_negatives(
         seed=seed
     )
 
-
     n_remaining = n_no_effect_target - len(collected_sampled)
     logger.info(f"Step 2: Need {n_remaining} more samples from binding data")
 
     if n_remaining > 0 and len(binding_no_effect_df) > 0:
-
         new_protein_df = binding_no_effect_df[binding_no_effect_df['gene_symbol'].isin(new_proteins)]
         old_protein_df = binding_no_effect_df[~binding_no_effect_df['gene_symbol'].isin(new_proteins)]
 
@@ -544,7 +435,6 @@ def create_effect_data_with_negatives(
         logger.info(f"  Binding samples with existing proteins: {len(old_protein_df)}")
 
         binding_sampled_parts = []
-
 
         if len(new_protein_df) > 0:
             n_from_new = min(n_remaining, len(new_protein_df))
@@ -558,7 +448,6 @@ def create_effect_data_with_negatives(
             n_remaining -= len(new_sampled)
             logger.info(f"  Sampled {len(new_sampled)} from new proteins, covering {new_sampled['gene_symbol'].nunique()} proteins")
 
-
         if n_remaining > 0 and len(old_protein_df) > 0:
             n_from_old = min(n_remaining, len(old_protein_df))
             old_sampled = old_protein_df.sample(n=n_from_old, random_state=seed)
@@ -571,7 +460,6 @@ def create_effect_data_with_negatives(
             binding_sampled = pd.DataFrame()
     else:
         binding_sampled = pd.DataFrame()
-
 
     no_effect_parts = [collected_sampled]
     if len(binding_sampled) > 0:
@@ -588,28 +476,23 @@ def create_effect_data_with_negatives(
         logger.info(f"  From binding: {len(binding_sampled)} ({binding_sampled['gene_symbol'].nunique()} proteins)")
     logger.info(f"  Total: {len(no_effect_combined)} ({no_effect_combined['gene_symbol'].nunique()} proteins)")
 
-
     logger.info(f"\n--- Final dataset composition ---")
     logger.info(f"  Activation: {n_activation}")
     logger.info(f"  Inhibition: {len(inhibition_sampled)}")
     logger.info(f"  No-effect: {len(no_effect_combined)}")
 
-
     activation_final = activation_df[['smiles_clean', 'gene_symbol', 'sequence', 'has_effect', 'effect_label']].copy()
     inhibition_final = inhibition_sampled[['smiles_clean', 'gene_symbol', 'sequence', 'has_effect', 'effect_label']].copy()
     no_effect_final = no_effect_combined[['smiles_clean', 'gene_symbol', 'sequence', 'has_effect', 'effect_label']].copy()
 
-
     combined_df = pd.concat([activation_final, inhibition_final, no_effect_final], ignore_index=True)
     combined_df = combined_df.sample(frac=1, random_state=seed).reset_index(drop=True)
-
 
     logger.info(f"\nCombined effect dataset: {len(combined_df)}")
     logger.info(f"  Has effect: {(combined_df['has_effect'] == 1).sum()}")
     logger.info(f"    - Activation: {((combined_df['has_effect']==1) & (combined_df['effect_label']==1)).sum()}")
     logger.info(f"    - Inhibition: {((combined_df['has_effect']==1) & (combined_df['effect_label']==0)).sum()}")
     logger.info(f"  No effect: {(combined_df['has_effect'] == 0).sum()}")
-
 
     logger.info(f"\nProtein coverage:")
     logger.info(f"  Activation unique proteins: {activation_final['gene_symbol'].nunique()}")
@@ -620,8 +503,6 @@ def create_effect_data_with_negatives(
     return combined_df
 
 
-
-
 def cold_chemical_split(
     df: pd.DataFrame,
     smiles_col: str,
@@ -630,7 +511,6 @@ def cold_chemical_split(
     test_ratio: float = 0.1,
     seed: int = 42
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-
     logger.info("Performing Cold Chemical Split...")
 
     unique_smiles = df[smiles_col].unique()
@@ -666,7 +546,6 @@ def random_split(
     test_ratio: float = 0.1,
     seed: int = 42
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-
     logger.info("Performing Random Split...")
 
     train_val_df, test_df = train_test_split(df, test_size=test_ratio, random_state=seed)
@@ -685,37 +564,12 @@ def domain_aware_split(
     val_test_ratio: float = 0.5,
     seed: int = 42
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     np.random.seed(seed)
-
 
     required_cols = [source_col, 'label', 'smiles_clean', 'uniprot_id']
     for col in required_cols:
         if col not in df.columns:
             raise ValueError(f"Column '{col}' not found in DataFrame")
-
 
     pos_df = df[df['label'] == 1].copy()
     neg_df = df[df['label'] == 0].copy()
@@ -727,16 +581,13 @@ def domain_aware_split(
     logger.info(f"  Positive: {len(pos_df)} ({len(pos_df)/len(df)*100:.1f}%)")
     logger.info(f"  Negative: {len(neg_df)} ({len(neg_df)/len(df)*100:.1f}%)")
 
-
     pos_source_counts = pos_df[source_col].value_counts()
     logger.info(f"\nPositive samples by source:")
     for source, count in pos_source_counts.items():
         logger.info(f"  {source}: {count} ({count/len(pos_df)*100:.1f}%)")
 
-
     drug_sources = ['BindingDB']
     tox_sources = ['T3DB', 'ToxCast', 'APDB']
-
 
     pos_drug = pos_df[pos_df[source_col].isin(drug_sources)].copy()
     pos_tox = pos_df[pos_df[source_col].isin(tox_sources)].copy()
@@ -745,15 +596,11 @@ def domain_aware_split(
     logger.info(f"  药物正例 (BindingDB): {len(pos_drug)}")
     logger.info(f"  毒理正例 (T3DB+ToxCast+APDB): {len(pos_tox)}")
 
-
     for source in tox_sources:
         count = (pos_tox[source_col] == source).sum()
         logger.info(f"    - {source}: {count}")
 
-
-
     pos_drug_train = pos_drug
-
 
     n_tox_pos = len(pos_tox)
     n_tox_pos_valtest = int(n_tox_pos * tox_to_valtest_ratio)
@@ -766,12 +613,10 @@ def domain_aware_split(
     logger.info(f"  验证集: {n_tox_pos_val}")
     logger.info(f"  测试集: {n_tox_pos_test}")
 
-
     tox_pos_indices = np.random.permutation(len(pos_tox))
     pos_tox_train = pos_tox.iloc[tox_pos_indices[:n_tox_pos_train]].reset_index(drop=True)
     pos_tox_val = pos_tox.iloc[tox_pos_indices[n_tox_pos_train:n_tox_pos_train + n_tox_pos_val]].reset_index(drop=True)
     pos_tox_test = pos_tox.iloc[tox_pos_indices[n_tox_pos_train + n_tox_pos_val:]].reset_index(drop=True)
-
 
     pos_train = pd.concat([pos_drug_train, pos_tox_train], ignore_index=True)
     pos_val = pos_tox_val
@@ -782,11 +627,9 @@ def domain_aware_split(
     logger.info(f"  验证集: {len(pos_val)} (全部毒理)")
     logger.info(f"  测试集: {len(pos_test)} (全部毒理)")
 
-
     logger.info("\n" + "="*60)
     logger.info("智能分配负例")
     logger.info("="*60)
-
 
     train_chem_counts = pos_train['smiles_clean'].value_counts()
     val_chem_counts = pos_val['smiles_clean'].value_counts()
@@ -806,8 +649,6 @@ def domain_aware_split(
     logger.info(f"  验证集: {len(val_prot_counts)} 种蛋白质")
     logger.info(f"  测试集: {len(test_prot_counts)} 种蛋白质")
 
-
-
     target_neg_train = len(pos_train)
     target_neg_val = len(pos_val)
     target_neg_test = len(pos_test)
@@ -821,7 +662,6 @@ def domain_aware_split(
     logger.info(f"  测试集目标: {target_neg_test}")
     logger.info(f"  总需要: {total_neg_needed}, 总可用: {total_neg_available}")
 
-
     if total_neg_needed > total_neg_available:
         scale = total_neg_available / total_neg_needed
         target_neg_train = int(target_neg_train * scale)
@@ -832,15 +672,10 @@ def domain_aware_split(
         logger.info(f"  验证集: {target_neg_val}")
         logger.info(f"  测试集: {target_neg_test}")
 
-
-
-
-
     total_pos = len(pos_train) + len(pos_val) + len(pos_test)
     pos_train_ratio = len(pos_train) / total_pos
     pos_val_ratio = len(pos_val) / total_pos
     pos_test_ratio = len(pos_test) / total_pos
-
 
     target_neg_train = int(len(neg_df) * pos_train_ratio)
     target_neg_val = int(len(neg_df) * pos_val_ratio)
@@ -850,13 +685,11 @@ def domain_aware_split(
     logger.info(f"  正例占比 - 训练:{pos_train_ratio:.2%}, 验证:{pos_val_ratio:.2%}, 测试:{pos_test_ratio:.2%}")
     logger.info(f"  负例分配 - 训练:{target_neg_train}, 验证:{target_neg_val}, 测试:{target_neg_test}")
 
-
     neg_indices = np.random.permutation(neg_df.index.tolist())
 
     neg_train_indices = neg_indices[:target_neg_train].tolist()
     neg_val_indices = neg_indices[target_neg_train:target_neg_train + target_neg_val].tolist()
     neg_test_indices = neg_indices[target_neg_train + target_neg_val:].tolist()
-
 
     neg_train = neg_df.loc[neg_train_indices].reset_index(drop=True)
     neg_val = neg_df.loc[neg_val_indices].reset_index(drop=True)
@@ -867,7 +700,6 @@ def domain_aware_split(
     logger.info(f"  验证集: {len(neg_val)}")
     logger.info(f"  测试集: {len(neg_test)}")
 
-
     train_df = pd.concat([pos_train, neg_train], ignore_index=True)
     val_df = pd.concat([pos_val, neg_val], ignore_index=True)
     test_df = pd.concat([pos_test, neg_test], ignore_index=True)
@@ -875,7 +707,6 @@ def domain_aware_split(
     train_df = train_df.sample(frac=1, random_state=seed).reset_index(drop=True)
     val_df = val_df.sample(frac=1, random_state=seed).reset_index(drop=True)
     test_df = test_df.sample(frac=1, random_state=seed).reset_index(drop=True)
-
 
     logger.info("\n" + "="*60)
     logger.info("最终数据划分统计")
@@ -892,7 +723,6 @@ def domain_aware_split(
         logger.info(f"  正例: {pos} ({pos_ratio:.1f}%)")
         logger.info(f"  负例: {neg} ({neg_ratio:.1f}%)")
 
-
     logger.info(f"\n各集合正例来源分布:")
     for name, split_df in [("训练集", train_df), ("验证集", val_df), ("测试集", test_df)]:
         pos_split = split_df[split_df['label'] == 1]
@@ -901,7 +731,6 @@ def domain_aware_split(
             count = (pos_split[source_col] == source).sum()
             if count > 0:
                 logger.info(f"    {source}: {count}")
-
 
     logger.info(f"\n蛋白质级别正负平衡检查 (前10个蛋白质):")
     for name, split_df, split_pos, split_neg in [
@@ -919,11 +748,9 @@ def domain_aware_split(
             if pos_count > 0 or neg_count > 0:
                 prot_stats.append((prot, pos_count, neg_count))
 
-
         prot_stats.sort(key=lambda x: -x[1])
         for prot, pc, nc in prot_stats[:10]:
             logger.info(f"    {prot}: 正例={pc}, 负例={nc}")
-
 
     train_chems = set(train_df['smiles_clean'].unique())
     val_chems = set(val_df['smiles_clean'].unique())
@@ -953,40 +780,12 @@ def domain_aware_cold_split(
     val_test_ratio: float = 0.5,
     seed: int = 42
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     np.random.seed(seed)
-
 
     required_cols = [source_col, 'label', 'smiles_clean', 'uniprot_id']
     for col in required_cols:
         if col not in df.columns:
             raise ValueError(f"Column '{col}' not found in DataFrame")
-
 
     pos_df = df[df['label'] == 1].copy()
     neg_df = df[df['label'] == 0].copy()
@@ -998,16 +797,13 @@ def domain_aware_cold_split(
     logger.info(f"  Positive: {len(pos_df)} ({len(pos_df)/len(df)*100:.1f}%)")
     logger.info(f"  Negative: {len(neg_df)} ({len(neg_df)/len(df)*100:.1f}%)")
 
-
     pos_source_counts = pos_df[source_col].value_counts()
     logger.info(f"\nPositive samples by source:")
     for source, count in pos_source_counts.items():
         logger.info(f"  {source}: {count} ({count/len(pos_df)*100:.1f}%)")
 
-
     drug_sources = ['BindingDB']
     tox_sources = ['T3DB', 'ToxCast', 'APDB']
-
 
     pos_drug = pos_df[pos_df[source_col].isin(drug_sources)].copy()
     pos_tox = pos_df[pos_df[source_col].isin(tox_sources)].copy()
@@ -1016,24 +812,18 @@ def domain_aware_cold_split(
     logger.info(f"  药物正例 (BindingDB): {len(pos_drug)}")
     logger.info(f"  毒理正例 (T3DB+ToxCast+APDB): {len(pos_tox)}")
 
-
     for source in tox_sources:
         count = (pos_tox[source_col] == source).sum()
         logger.info(f"    - {source}: {count}")
 
-
-
     pos_drug_train = pos_drug
-
 
     tox_unique_chemicals = pos_tox['smiles_clean'].unique().tolist()
     n_tox_chemicals = len(tox_unique_chemicals)
 
     logger.info(f"\n毒理正例中的唯一化学品数: {n_tox_chemicals}")
 
-
     np.random.shuffle(tox_unique_chemicals)
-
 
     n_valtest_chems = int(n_tox_chemicals * tox_to_valtest_ratio)
     n_train_chems = n_tox_chemicals - n_valtest_chems
@@ -1045,11 +835,9 @@ def domain_aware_cold_split(
     logger.info(f"  验证集化学品: {n_val_chems}")
     logger.info(f"  测试集化学品: {n_test_chems}")
 
-
     train_chemicals = set(tox_unique_chemicals[:n_train_chems])
     val_chemicals = set(tox_unique_chemicals[n_train_chems:n_train_chems + n_val_chems])
     test_chemicals = set(tox_unique_chemicals[n_train_chems + n_val_chems:])
-
 
     pos_tox_train = pos_tox[pos_tox['smiles_clean'].isin(train_chemicals)].reset_index(drop=True)
     pos_tox_val = pos_tox[pos_tox['smiles_clean'].isin(val_chemicals)].reset_index(drop=True)
@@ -1060,7 +848,6 @@ def domain_aware_cold_split(
     logger.info(f"  验证集: {len(pos_tox_val)}")
     logger.info(f"  测试集: {len(pos_tox_test)}")
 
-
     pos_train = pd.concat([pos_drug_train, pos_tox_train], ignore_index=True)
     pos_val = pos_tox_val
     pos_test = pos_tox_test
@@ -1070,11 +857,9 @@ def domain_aware_cold_split(
     logger.info(f"  验证集: {len(pos_val)} (全部毒理)")
     logger.info(f"  测试集: {len(pos_test)} (全部毒理)")
 
-
     logger.info("\n" + "="*60)
     logger.info("智能分配负例")
     logger.info("="*60)
-
 
     all_split_chemicals = train_chemicals | val_chemicals | test_chemicals
     neg_smiles = neg_df['smiles_clean']
@@ -1096,7 +881,6 @@ def domain_aware_cold_split(
     logger.info(f"  验证集: {len(neg_val)}")
     logger.info(f"  测试集: {len(neg_test)}")
 
-
     train_df = pd.concat([pos_train, neg_train], ignore_index=True)
     val_df = pd.concat([pos_val, neg_val], ignore_index=True)
     test_df = pd.concat([pos_test, neg_test], ignore_index=True)
@@ -1104,7 +888,6 @@ def domain_aware_cold_split(
     train_df = train_df.sample(frac=1, random_state=seed).reset_index(drop=True)
     val_df = val_df.sample(frac=1, random_state=seed).reset_index(drop=True)
     test_df = test_df.sample(frac=1, random_state=seed).reset_index(drop=True)
-
 
     logger.info("\n" + "="*60)
     logger.info("最终数据划分统计")
@@ -1121,7 +904,6 @@ def domain_aware_cold_split(
         logger.info(f"  正例: {pos} ({pos_ratio:.1f}%)")
         logger.info(f"  负例: {neg} ({neg_ratio:.1f}%)")
 
-
     logger.info(f"\n各集合正例来源分布:")
     for name, split_df in [("训练集", train_df), ("验证集", val_df), ("测试集", test_df)]:
         pos_split = split_df[split_df['label'] == 1]
@@ -1130,7 +912,6 @@ def domain_aware_cold_split(
             count = (pos_split[source_col] == source).sum()
             if count > 0:
                 logger.info(f"    {source}: {count}")
-
 
     train_chems_pos = set(pos_train['smiles_clean'].unique())
     val_chems_pos = set(pos_val['smiles_clean'].unique())
@@ -1143,7 +924,6 @@ def domain_aware_cold_split(
     logger.info(f"  验证集/训练集化学品重叠: {val_train_overlap} (应为0)")
     logger.info(f"  测试集/训练集化学品重叠: {test_train_overlap} (应为0)")
 
-
     train_chems_all = set(train_df['smiles_clean'].unique())
     val_chems_all = set(val_df['smiles_clean'].unique())
     test_chems_all = set(test_df['smiles_clean'].unique())
@@ -1152,7 +932,6 @@ def domain_aware_cold_split(
     logger.info(f"  训练集/验证集: {len(train_chems_all & val_chems_all)}")
     logger.info(f"  训练集/测试集: {len(train_chems_all & test_chems_all)}")
     logger.info(f"  验证集/测试集: {len(val_chems_all & test_chems_all)}")
-
 
     train_prots = set(train_df['uniprot_id'].unique())
     val_prots = set(val_df['uniprot_id'].unique())
@@ -1166,10 +945,7 @@ def domain_aware_cold_split(
     return train_df, val_df, test_df
 
 
-
-
 def binding_collate_fn(batch: List[Dict]) -> Dict:
-
     result = {
         'smiles': [s['smiles'] for s in batch],
         'sequences': [s['sequence'] for s in batch],
@@ -1186,7 +962,6 @@ def binding_collate_fn(batch: List[Dict]) -> Dict:
 
 
 def effect_collate_fn(batch: List[Dict]) -> Dict:
-
     result = {
         'smiles': [s['smiles'] for s in batch],
         'sequences': [s['sequence'] for s in batch],
@@ -1203,8 +978,6 @@ def effect_collate_fn(batch: List[Dict]) -> Dict:
     return result
 
 
-
-
 def create_binding_dataloaders(
     cold_split: bool = True,
     batch_size: int = 32,
@@ -1215,58 +988,35 @@ def create_binding_dataloaders(
     weight_config: Optional[dict] = None,
     domain_aware: bool = False
 ) -> Tuple[DataLoader, DataLoader, DataLoader, Optional[SampleWeightCalculator]]:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     logger.info("="*50)
     logger.info("Creating Binding Task DataLoaders")
     logger.info("="*50)
 
     df = load_binding_data()
 
-
     if domain_aware and cold_split:
-
         logger.info("Using domain-aware + cold chemical split")
         train_df, val_df, test_df = domain_aware_cold_split(
             df, source_col='data_source', seed=seed
         )
     elif domain_aware:
-
         logger.info("Using domain-aware split (toxicology/pharmacology)")
         train_df, val_df, test_df = domain_aware_split(
             df, source_col='data_source', seed=seed
         )
     elif cold_split:
-
         train_df, val_df, test_df = cold_chemical_split(
             df, 'smiles_clean', train_config.train_ratio,
             train_config.val_ratio, train_config.test_ratio, seed
         )
     else:
-
         train_df, val_df, test_df = random_split(
             df, train_config.train_ratio, train_config.val_ratio,
             train_config.test_ratio, seed
         )
 
-
     if balance:
         def balance_dataset(df, name, seed):
-
             pos = df[df['label'] == 1]
             neg = df[df['label'] == 0]
             n_pos, n_neg = len(pos), len(neg)
@@ -1289,13 +1039,11 @@ def create_binding_dataloaders(
         val_df = balance_dataset(val_df, "Val set", seed)
         test_df = balance_dataset(test_df, "Test set", seed)
     else:
-
         logger.info("Using original data without balance sampling")
         for name, split_df in [("Train", train_df), ("Val", val_df), ("Test", test_df)]:
             n_pos = (split_df['label'] == 1).sum()
             n_neg = (split_df['label'] == 0).sum()
             logger.info(f"{name} - Positive: {n_pos}, Negative: {n_neg}")
-
 
     weight_calculator = None
     train_sampler = None
@@ -1315,18 +1063,15 @@ def create_binding_dataloaders(
 
         logger.info(f"Weight config: {weight_config}")
 
-
         calculator = SampleWeightCalculator(**weight_config)
         calculator.fit(train_df)
         train_weights = calculator.get_sample_weights(train_df)
-
 
         logger.info(f"Train sample weights:")
         logger.info(f"  Min: {train_weights.min():.3f}")
         logger.info(f"  Max: {train_weights.max():.3f}")
         logger.info(f"  Mean: {train_weights.mean():.3f}")
         logger.info(f"  Median: {np.median(train_weights):.3f}")
-
 
         from torch.utils.data.sampler import WeightedRandomSampler
         train_sampler = WeightedRandomSampler(
@@ -1336,7 +1081,6 @@ def create_binding_dataloaders(
         )
 
         weight_calculator = calculator
-
 
         weight_dict = calculator.get_weight_dict()
         logger.info("\nWeight Summary:")
@@ -1360,7 +1104,6 @@ def create_binding_dataloaders(
             cache_path=os.path.join(cache_dir, f'{cache_name}_tox_features.npz')
         )
         datasets.append(ds)
-
 
     train_loader = DataLoader(
         datasets[0],
@@ -1389,16 +1132,6 @@ def create_effect_dataloaders(
     seed: int = 42,
     num_workers: int = 0
 ) -> Tuple[DataLoader, DataLoader, DataLoader]:
-
-
-
-
-
-
-
-
-
-
     logger.info("="*50)
     logger.info("Creating Effect Task DataLoaders (Hierarchical)")
     logger.info("="*50)
@@ -1422,7 +1155,6 @@ def create_effect_dataloaders(
             train_config.test_ratio, seed
         )
 
-
     train_activation = train_df[(train_df['has_effect'] == 1) & (train_df['effect_label'] == 1)]
     train_inhibition = train_df[(train_df['has_effect'] == 1) & (train_df['effect_label'] == 0)]
     train_no_effect = train_df[train_df['has_effect'] == 0]
@@ -1430,7 +1162,6 @@ def create_effect_dataloaders(
     n_act = len(train_activation)
     n_inh = len(train_inhibition)
     logger.info(f"Train set before sampling - Activation: {n_act}, Inhibition: {n_inh}, No_effect: {len(train_no_effect)}")
-
 
     n_sample = min(n_act, n_inh)
     if n_act > n_inh:
@@ -1440,11 +1171,9 @@ def create_effect_dataloaders(
         train_activation_sampled = train_activation
         train_inhibition_sampled = train_inhibition.sample(n=n_sample, random_state=seed)
 
-
     train_df = pd.concat([train_activation_sampled, train_inhibition_sampled, train_no_effect], ignore_index=True)
     train_df = train_df.sample(frac=1, random_state=seed).reset_index(drop=True)
     logger.info(f"Train set after sampling - Activation: {len(train_activation_sampled)}, Inhibition: {len(train_inhibition_sampled)}, No_effect: {len(train_no_effect)}")
-
 
     for name, df in [('Train', train_df), ('Val', val_df), ('Test', test_df)]:
         n_has_effect = (df['has_effect'] == 1).sum()
@@ -1485,29 +1214,7 @@ def create_effect_dataloaders(
     return train_loader, val_loader, test_loader
 
 
-
-
 def prepare_binding_data(cold_split=True, batch_size=32, seed=42, balance=False, use_sample_weights=True, domain_aware=False, num_workers=0):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return create_binding_dataloaders(
         cold_split=cold_split,
         batch_size=batch_size,
@@ -1520,19 +1227,7 @@ def prepare_binding_data(cold_split=True, batch_size=32, seed=42, balance=False,
 
 
 def prepare_effect_data(cold_split=True, batch_size=32, target_ratio="1:1:1", seed=42, num_workers=0):
-
-
-
-
-
-
-
-
-
-
     return create_effect_dataloaders(cold_split, batch_size, target_ratio, seed, num_workers)
-
-
 
 
 if __name__ == "__main__":
@@ -1543,7 +1238,6 @@ if __name__ == "__main__":
     print("="*60)
 
     try:
-
         print("\nTesting with target_ratio='1:1:1':")
         train_loader, val_loader, test_loader = prepare_effect_data(
             cold_split=True, batch_size=4, target_ratio="1:1:1"
@@ -1553,7 +1247,6 @@ if __name__ == "__main__":
         print(f"\nBatch keys: {batch.keys()}")
         print(f"has_effect: {batch['has_effect']}")
         print(f"effect_type: {batch['effect_type']}")
-
 
         print("\n" + "="*60)
         print("Testing with target_ratio='1:1:2':")

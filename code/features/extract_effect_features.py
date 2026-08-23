@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import os, sys
 for i, arg in enumerate(sys.argv):
     if arg == '--gpu' and i + 1 < len(sys.argv):
@@ -28,8 +13,6 @@ from tqdm import tqdm
 import torch
 import requests
 import time
-
-
 
 
 BERMOL_DIR = Path(os.environ.get(
@@ -57,7 +40,6 @@ logger = logging.getLogger(__name__)
 
 
 def load_effect_entities():
-
     act = pd.concat(
         [pd.read_csv(path, low_memory=False) for path in sorted(ACTIVATION_DIR.glob('effect_activation_*.csv'))],
         ignore_index=True,
@@ -75,11 +57,7 @@ def load_effect_entities():
     return prots, chems
 
 
-
-
-
 def fetch_uniprot_sequences(uniprot_ids, batch_size=100):
-
     logger.info(f"从 UniProt 获取 {len(uniprot_ids)} 个蛋白质序列...")
 
     results = {}
@@ -117,8 +95,6 @@ def fetch_uniprot_sequences(uniprot_ids, batch_size=100):
 
 
 def fill_missing_sequences(prots):
-
-
     seq_map = {}
     for _, row in prots.iterrows():
         if pd.notna(row['sequence']):
@@ -138,14 +114,9 @@ def fill_missing_sequences(prots):
     return seq_map
 
 
-
-
-
 def extract_missing_bermol(chems, device='cuda:0'):
-
     logger.info("=" * 60)
     logger.info("Step 2: 提取缺失 BerMol token 级特征")
-
 
     if os.path.exists(BERMOL_TOKENS_PATH):
         existing = pickle.load(open(BERMOL_TOKENS_PATH, 'rb'))
@@ -153,14 +124,12 @@ def extract_missing_bermol(chems, device='cuda:0'):
         existing = {}
     logger.info(f"已有 BerMol 特征: {len(existing)}")
 
-
     missing = chems[~chems['chemical_name'].isin(existing.keys())]
     logger.info(f"需提取: {len(missing)}")
 
     if len(missing) == 0:
         logger.info("无需提取")
         return existing
-
 
     import dill as pkl
     with open(BERMOL_MODEL_PATH, "rb") as f:
@@ -185,7 +154,6 @@ def extract_missing_bermol(chems, device='cuda:0'):
 
     logger.info(f"新提取: {len(new_feat)}, 失败: {failed}")
 
-
     existing.update(new_feat)
     with open(BERMOL_TOKENS_PATH, 'wb') as f:
         pickle.dump(existing, f)
@@ -194,14 +162,9 @@ def extract_missing_bermol(chems, device='cuda:0'):
     return existing
 
 
-
-
-
 def extract_missing_esm2(seq_map, device='cuda:0'):
-
     logger.info("=" * 60)
     logger.info("Step 3: 提取缺失 ESM2 残基级特征")
-
 
     if os.path.exists(ESM2_RESIDUES_PATH):
         existing = pickle.load(open(ESM2_RESIDUES_PATH, 'rb'))
@@ -209,14 +172,12 @@ def extract_missing_esm2(seq_map, device='cuda:0'):
         existing = {}
     logger.info(f"已有 ESM2 特征: {len(existing)}")
 
-
     missing = {k: v for k, v in seq_map.items() if k not in existing}
     logger.info(f"需提取: {len(missing)}")
 
     if len(missing) == 0:
         logger.info("无需提取")
         return existing
-
 
     if not ESM2_MODEL_PATH.is_file():
         raise FileNotFoundError(
@@ -257,16 +218,12 @@ def extract_missing_esm2(seq_map, device='cuda:0'):
 
     logger.info(f"新提取: {len(new_feat)}, 失败: {failed}")
 
-
     existing.update(new_feat)
     with open(ESM2_RESIDUES_PATH, 'wb') as f:
         pickle.dump(existing, f)
     logger.info(f"已保存: {ESM2_RESIDUES_PATH} (共 {len(existing)} 个)")
 
     return existing
-
-
-
 
 
 def main():
@@ -276,25 +233,20 @@ def main():
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     logger.info(f"Device: {device}")
 
-
     prots, chems = load_effect_entities()
     logger.info(f"Effect 任务实体: {len(prots)} 蛋白, {len(chems)} 化学品")
 
-
     seq_map = fill_missing_sequences(prots)
-
 
     if not skip_bermol:
         extract_missing_bermol(chems, device)
     else:
         logger.info("跳过 BerMol 提取")
 
-
     if not skip_esm2:
         extract_missing_esm2(seq_map, device)
     else:
         logger.info("跳过 ESM2 提取")
-
 
     logger.info("=" * 60)
     logger.info("最终覆盖率:")

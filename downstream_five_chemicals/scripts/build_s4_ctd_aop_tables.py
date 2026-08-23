@@ -1,6 +1,3 @@
-
-
-
 from __future__ import annotations
 
 import argparse
@@ -82,7 +79,6 @@ def bool_series(values: pd.Series) -> pd.Series:
 
 
 def build_hit_events(data: dict[str, pd.DataFrame]) -> pd.DataFrame:
-
     detail = data["detail"].copy()
     if "unique_model_evidence_id" not in detail.columns:
         raise ValueError("Route 2 detail lacks unique_model_evidence_id")
@@ -234,8 +230,6 @@ def build_s8(data: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "fold_enrichment",
     ]
     ora = data["ora"][ora_columns].drop_duplicates(["chemical_name", "pathway_id"])
-
-
 
     ora_metric_columns = ora_columns[2:]
     ctd = ctd.drop(

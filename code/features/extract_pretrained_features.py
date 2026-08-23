@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import os
 import sys
 import pickle
@@ -25,7 +15,6 @@ from torch.utils.data import Dataset, DataLoader
 
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
-
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import DEVICE
@@ -40,8 +29,6 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 
 
 class FeatureExtractor:
-
-
     def __init__(self, device='cuda'):
         self.device = torch.device(device if torch.cuda.is_available() else 'cpu')
         self.chemberta = None
@@ -50,7 +37,6 @@ class FeatureExtractor:
         self.esm2_tokenizer = None
 
     def load_models(self):
-
         logger.info("Loading ChemBERTa...")
         from transformers import AutoModel, AutoTokenizer
         self.chemberta_tokenizer = AutoTokenizer.from_pretrained('seyonec/ChemBERTa-zinc-base-v1')
@@ -68,13 +54,11 @@ class FeatureExtractor:
 
     @torch.no_grad()
     def extract_chem_features(self, smiles_list, batch_size=64, max_length=512):
-
         logger.info(f"Extracting features for {len(smiles_list)} molecules...")
         features = []
 
         for i in tqdm(range(0, len(smiles_list), batch_size), desc="ChemBERTa"):
             batch_smiles = smiles_list[i:i+batch_size]
-
 
             inputs = self.chemberta_tokenizer(
                 batch_smiles,
@@ -84,9 +68,7 @@ class FeatureExtractor:
                 return_tensors='pt'
             ).to(self.device)
 
-
             outputs = self.chemberta(**inputs)
-
 
             cls_emb = outputs.last_hidden_state[:, 0, :].cpu().numpy()
             features.append(cls_emb)
@@ -97,13 +79,11 @@ class FeatureExtractor:
 
     @torch.no_grad()
     def extract_prot_features(self, sequences, batch_size=8, max_length=1024):
-
         logger.info(f"Extracting features for {len(sequences)} proteins...")
         features = []
 
         for i in tqdm(range(0, len(sequences), batch_size), desc="ESM-2"):
             batch_seqs = sequences[i:i+batch_size]
-
 
             inputs = self.esm2_tokenizer(
                 batch_seqs,
@@ -113,10 +93,8 @@ class FeatureExtractor:
                 return_tensors='pt'
             ).to(self.device)
 
-
             with torch.cuda.amp.autocast():
                 outputs = self.esm2(**inputs)
-
 
             cls_emb = outputs.last_hidden_state[:, 0, :].cpu().numpy()
             features.append(cls_emb)
@@ -127,9 +105,7 @@ class FeatureExtractor:
 
 
 def load_data(data_path):
-
     df = pd.read_csv(data_path)
-
 
     chem_col = None
     prot_col = None
@@ -147,7 +123,6 @@ def load_data(data_path):
             smiles_col = col
 
     logger.info(f"Data columns: chem={chem_col}, prot={prot_col}, seq={seq_col}, smiles={smiles_col}")
-
 
     if smiles_col and chem_col:
         chem_data = df[[chem_col, smiles_col]].drop_duplicates(subset=[chem_col])
@@ -174,10 +149,8 @@ def main():
     parser.add_argument('--output_dir', type=str, default=None)
     args = parser.parse_args()
 
-
     os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
     device = f'cuda:0'
-
 
     if args.output_dir is None:
         args.output_dir = os.environ.get(
@@ -192,10 +165,8 @@ def main():
     logger.info(f"GPU: {args.gpu}")
     logger.info(f"Output dir: {args.output_dir}")
 
-
     extractor = FeatureExtractor(device=device)
     extractor.load_models()
-
 
     data_path = str(REPOSITORY_ROOT / 'data' / 'binding' /
                     'combined_balanced_n72045_with_seq.csv')
@@ -206,7 +177,6 @@ def main():
     logger.info(f"Unique proteins: {len(prot_data)}")
     logger.info(f"Total samples: {len(df)}")
 
-
     chem_ids = list(chem_data.keys())
     smiles_list = [chem_data[cid] for cid in chem_ids]
     chem_features = extractor.extract_chem_features(
@@ -214,13 +184,11 @@ def main():
         batch_size=args.batch_size_chem
     )
 
-
     chem_features_dict = {cid: feat for cid, feat in zip(chem_ids, chem_features)}
     chem_path = os.path.join(args.output_dir, 'compound_features.pkl')
     with open(chem_path, 'wb') as f:
         pickle.dump(chem_features_dict, f)
     logger.info(f"Chemical features saved to {chem_path}")
-
 
     prot_ids = list(prot_data.keys())
     sequences = [prot_data[pid] for pid in prot_ids]
@@ -228,7 +196,6 @@ def main():
         sequences,
         batch_size=args.batch_size_prot
     )
-
 
     prot_features_dict = {pid: feat for pid, feat in zip(prot_ids, prot_features)}
     prot_path = os.path.join(args.output_dir, 'protein_features.pkl')

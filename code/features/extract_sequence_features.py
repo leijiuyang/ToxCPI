@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import os, sys
 for i, arg in enumerate(sys.argv):
     if arg == '--gpu' and i + 1 < len(sys.argv):
@@ -40,7 +31,6 @@ OUTPUT_DIR = os.path.join(BASE_DIR, 'data', 'pretrained_features')
 
 
 def extract_bermol_tokens(device='cuda:0'):
-
     logger.info("=" * 60)
     logger.info("Extracting BerMol token-level features...")
 
@@ -73,7 +63,6 @@ def extract_bermol_tokens(device='cuda:0'):
 
     logger.info(f"Extracted: {len(comp_feat)}, Failed: {failed}")
 
-
     lengths = [v.shape[0] for v in comp_feat.values()]
     logger.info(f"Token lengths: min={min(lengths)}, max={max(lengths)}, "
                 f"mean={np.mean(lengths):.1f}, median={np.median(lengths):.0f}")
@@ -83,7 +72,6 @@ def extract_bermol_tokens(device='cuda:0'):
         pickle.dump(comp_feat, f)
     logger.info(f"Saved to {output_path}")
 
-
     total_bytes = sum(v.nbytes for v in comp_feat.values())
     logger.info(f"Total size: {total_bytes / 1024**2:.1f} MB")
 
@@ -91,7 +79,6 @@ def extract_bermol_tokens(device='cuda:0'):
 
 
 def extract_esm2_residues(device='cuda:0'):
-
     logger.info("=" * 60)
     logger.info("Extracting ESM2 residue-level features...")
 
@@ -133,7 +120,6 @@ def extract_esm2_residues(device='cuda:0'):
 
     logger.info(f"Extracted: {len(prot_feat)}, Failed: {failed}")
 
-
     lengths = [v.shape[0] for v in prot_feat.values()]
     logger.info(f"Residue lengths: min={min(lengths)}, max={max(lengths)}, "
                 f"mean={np.mean(lengths):.1f}, median={np.median(lengths):.0f}")
@@ -153,9 +139,7 @@ def main():
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-
     extract_bermol_tokens(device)
-
 
     extract_esm2_residues(device)
 
