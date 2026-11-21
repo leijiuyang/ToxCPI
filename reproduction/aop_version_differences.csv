@@ -1,0 +1,8 @@
+﻿component,before,after,interpretation
+formal input,historical helper tables and scoring flags,single 91-row table; Use_For_AOP_Matching; resolved inline members,scientific CSV unchanged byte-for-byte
+member interpretation,separate obsolete family definitions and representative score,only explicit resolved members; all qualifying members recorded,no historical family expansion
+event logic,legacy label rows and aggregate scores,strict >0.7 AND on same member; one source mapping row one node,activation and inhibition candidates may coexist
+binding gate,legacy context/eligibility machinery,binding checked only when Event_Labels explicitly contains binding,no direction calibration or S_target used
+outputs,"weighted AOP/AO summaries, rankings and PPI placeholders","node/member/task evidence, shared-evidence IDs and descriptive counts",counts are not aggregate probabilities or scores
+history,old 05 implementation in base commit,05 dispatches final matcher; old 06/table scripts explicitly reject final schema,historical code remains retrievable at base commit
+paper comparison,historical tables/rankings cannot be applied to final schema,25 S17 illustrative associations all confirmed; all 455 nodes checked,remaining hits are not asserted to be the selected five illustrations per chemical

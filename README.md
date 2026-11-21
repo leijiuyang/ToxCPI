@@ -9,8 +9,12 @@ training and processed mapping data.
 
 This repository **does not include pretrained ToxCPI checkpoints, precomputed
 human-proteome predictions, CTD/AOP result tables, baseline results, manuscript
-files, or paper figures**. Train the three models locally, pass the resulting
-checkpoint paths to inference, and regenerate downstream outputs.
+files, or paper figures**. Six original trained checkpoints and fixed downstream inputs have been prepared
+as candidate release attachments, with hashes and provenance. They have not yet
+been uploaded. See [publication status](reproduction/PUBLICATION_STATUS.txt), the
+[reproduction guide](reproduction/REPRODUCE.txt), and the
+[analysis matrix](code/manifests/analysis_matrix.csv) for the exact supported scope.
+Users can also train locally and supply their own checkpoint paths explicitly.
 
 ```text
 code/                          model, feature, training, inference, tests/configs
@@ -30,7 +34,7 @@ install environment
   -> run inference for chemicals against the human proteome
   -> create prediction CSV files
   -> run CTD mapping
-  -> consult the final AOP mechanistic-hypothesis mappings
+  -> run the final unweighted AOP mechanistic-hypothesis matcher
 ```
 
 ### 1. Environment
@@ -40,8 +44,11 @@ conda env create -f environment.yml
 conda activate toxcpi
 ```
 
-The environment pins `pyarrow=21.0.0`. PyTorch/CUDA compatibility is
-hardware-specific; adjust only the PyTorch installation when necessary.
+This is a candidate reproduction environment, not a proven original training
+lock. A fresh Python 3.9 environment was validated for final AOP matching using
+`requirements-aop.txt`; the full model environment was not clean-installed.
+See [environment validation](reproduction/ENVIRONMENT.txt) for actual versions,
+CPU/GPU availability, the separate strict-budget environment and limitations.
 
 ### 2. External feature/model assets
 
@@ -67,12 +74,17 @@ python code/experiments/train_fusion.py \
 
 python code/experiments/train_effect.py \
   --task activation --split cold --data_dir data/activation \
-  --effect_raw_global_branch
+  --effect_raw_global_branch --hidden_dim 256 --dropout 0.25
 
 python code/experiments/train_effect.py \
   --task inhibition --split cold --data_dir data/inhibition \
-  --effect_raw_global_branch
+  --effect_raw_global_branch --hidden_dim 256 --dropout 0.3
 ```
+
+These examples show interfaces. Complete fixed-run settings and seeds are
+recorded in `code/configs/formal_runs/`; command defaults alone do not certify
+the historical training trajectory. No retraining was performed in this audit.
+For evaluation without retraining, see `code/inference/evaluate_fixed_checkpoint.py`.
 
 Warm-starting is optional and always requires an explicit `--init_from
 /path/to/checkpoint.pth`; no repository checkpoint path is assumed.
@@ -132,21 +144,42 @@ It supports mechanistic hypotheses, without an AOP weighting or aggregate-score
 method. See [the AOP data notes](data/AOP/README.md) for provenance and field
 interpretation.
 
-The historical Route 2 scoring and supplementary-table scripts remain unchanged.
-They expect the earlier schema and separate member tables and are **not
-compatible with this final table**. In particular, do not pass the updated
-`data/AOP` directory to `05_run_aop_ppi_and_summary.py` as though it implements
-the final matching format. No predictions or AOP results were recalculated for
-this data update.
+The original `05_run_aop_ppi_and_summary.py` entry now invokes the final matcher:
+
+```bash
+python downstream_five_chemicals/scripts/05_run_aop_ppi_and_summary.py \
+  --prediction-dir runtime/predictions --aop-data-dir data/AOP \
+  --chemical-list downstream_five_chemicals/config/five_chemicals.csv \
+  --output-dir runtime/final_route2
+```
+
+It reads only the final mapping CSV. Every required raw task probability must be
+strictly `>0.7` on the same explicitly listed member; binding is checked only when
+the event labels require it. Activation and inhibition associations can both be
+retained. Each mapping is one event-mapping node regardless of member count.
+Outputs record all qualifying members and shared chemical–protein–task evidence;
+no aggregate event/AOP/AO scores or rankings are generated.
+
+All 455 mapping nodes for five archived prediction files were independently checked;
+all 25 illustrative Table S17 associations and titles matched. This validates final
+matching on archived predictions; it does not mean the full proteome predictions,
+all supplementary analyses, or the model training were rerun.
+
+Historical family-display and scoring Excel scripts are retained for provenance
+and explicitly reject final-schema inputs/outputs. The original scoring entry is
+available in base commit `3de0496dbfbc1b7600a52efae8a617866c8a8fde`.
 
 ## Prediction CSV contract
 
 CTD mapping requires `chemical_name`, `gene_symbol`, `P_binding`,
-`P_activation`, and `P_inhibition`. The historical AOP scripts additionally require `casrn`,
-`ctd_chemical_id`, `uniprot_id`, `protein_name`, `S_target`, `rank_binding`,
-`rank_activation`, `rank_inhibition`, and `effect_extrapolated`. These are the
-columns emitted by `predict_human_proteome.py`; probabilities are not replaced
-by a generic `score` column.
+`P_activation`, and `P_inhibition`. Final AOP matching requires chemical identity,
+`uniprot_id`, and the raw probabilities for required task labels. Missing required
+predictions cannot qualify; malformed probabilities and duplicate identities halt
+with an error. A whole semicolon-delimited mapping cell is never one accession.
+
+Historical scoring scripts additionally require their earlier rank, context and
+score fields; these are not prerequisites for final Route 2 matching. Neither
+calibrated external direction scores nor `S_target` replace the raw task probabilities.
 
 ## Data
 

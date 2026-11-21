@@ -50,6 +50,26 @@ def load_effect_entities():
     )
     all_data = pd.concat([act, inh])
 
+    if 'sequence' not in all_data:
+        # Packaged fixed effect files intentionally do not contain sequences.
+        # Supply the fixed sequence snapshot explicitly; do not silently fetch
+        # current UniProt sequences to replace the study inputs.
+        sequence_path = os.environ.get('TOXCPI_PROTEIN_SEQUENCE_CSV')
+        if not sequence_path:
+            raise ValueError('Fixed effect files have no sequence column. Set TOXCPI_PROTEIN_SEQUENCE_CSV to a fixed CSV with uniprot_id and sequence (or protein_sequence).')
+        sequences = pd.read_csv(Path(sequence_path).expanduser().resolve(), low_memory=False)
+        if 'sequence' not in sequences and 'protein_sequence' in sequences:
+            sequences = sequences.rename(columns={'protein_sequence': 'sequence'})
+        if not {'uniprot_id', 'sequence'}.issubset(sequences):
+            raise ValueError('Sequence CSV must contain uniprot_id and sequence/protein_sequence')
+        sequences = sequences[['uniprot_id', 'sequence']].drop_duplicates()
+        if sequences.uniprot_id.duplicated().any():
+            conflicts = sorted(sequences.loc[sequences.uniprot_id.duplicated(keep=False), 'uniprot_id'].astype(str).unique())
+            raise ValueError(f'Conflicting sequences for UniProt identifiers; review fixed input identity: {conflicts}')
+        all_data = all_data.merge(sequences, on='uniprot_id', how='left', validate='many_to_one')
+        if all_data.sequence.isna().any():
+            missing = sorted(all_data.loc[all_data.sequence.isna(), 'uniprot_id'].unique())
+            raise ValueError(f'Fixed sequence snapshot missing effect proteins: {missing}')
     prots = all_data[['uniprot_id', 'sequence']].drop_duplicates(subset=['uniprot_id'])
     chems = all_data[['chemical_name', 'smiles']].drop_duplicates(subset=['chemical_name'])
     chems = chems.dropna(subset=['smiles'])

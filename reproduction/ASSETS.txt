@@ -1,0 +1,13 @@
+Proposed release attachments (pending authenticated upload):
+toxcpi-primary-weights.tar.gz          six original trained classifier weight files
+toxcpi-downstream-predictions.tar.gz   five original archived proteome CSVs
+toxcpi-strict-gene-budget-inputs.tar.gz exact fixed-score inputs and hashed inputs.json
+toxcpi-fixed-test-smoke-features.tar.gz exact numeric feature subset and provenance, 192 records
+toxcpi-validation-evidence.tar.gz      selected actual logs, checks and output tables
+SHA256SUMS.txt                        attachment integrity manifest
+
+These are distinct from BerMol and ESM-2 upstream model assets, which are not
+redistributed. Main performance checkpoints do not cover the full baseline and
+five-seed experimental model sets. Large weights are prepared as release assets,
+not inserted into ordinary Git history. Local execution evidence contains source
+paths; the public package uses runtime-relative commands and asset manifests.

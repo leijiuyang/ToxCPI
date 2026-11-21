@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-05T13:12:22.130413+00:00",
+  "blocks": [
+    "activation_warm",
+    "activation_cold",
+    "inhibition_warm",
+    "inhibition_cold"
+  ],
+  "models_in_analysis": [
+    "ToxCPI",
+    "RF",
+    "MLP"
+  ],
+  "reported_main_baselines": [
+    "PMF-CPI",
+    "RF",
+    "MLP"
+  ],
+  "separately_reported_historical_model": "DTIAM; different negative pool; no test scores",
+  "replicates": 2000,
+  "seeds": {
+    "activation_warm": 2026110501,
+    "activation_cold": 2026110502,
+    "inhibition_warm": 2026110503,
+    "inhibition_cold": 2026110504
+  },
+  "rng": "numpy.Generator(PCG64(seed))",
+  "group_order": "lexicographically sorted canonical isomeric SMILES",
+  "group_key": "RDKit MolFromSmiles default sanitization; remove atom maps; MolToSmiles(canonical=True,isomericSmiles=True)",
+  "molecular_policy": "Retain stereo, isotope, formal charge, all fragments; no neutralization, tautomer normalization, parent selection, or record deduplication. Ordinary explicit hydrogens follow RDKit default molecular parsing.",
+  "sampling": "G integers uniform in [0,G), replacement, exactly 2000 draws, all pairs of selected groups receive group frequency; one shared weight vector per draw for all models",
+  "invalid_draws": "Do not redraw. Ranking metrics NA on single-class draws; F1 NA if 2TP+FP+FN=0; MCC NA if its denominator=0; otherwise retain mathematically defined metrics.",
+  "ci": "Pointwise 2.5/97.5 percentiles of finite draws, numpy.quantile(method=linear); valid counts reported by metric",
+  "delta": "ToxCPI minus comparator within each shared draw",
+  "classification_rule": "raw probability >=0.5; equality positive for all available models; PMF historical rule >0.5 (scores missing)",
+  "ap": "average_precision_score: non-interpolated recall-increment weighted precision, ties grouped",
+  "multiplicity": "No adjustment, no p values",
+  "scope": "Fixed archived checkpoints and fixed existing labels/splits. Test chemical-group sampling uncertainty only."
+}

@@ -24,10 +24,11 @@ sys.path.insert(0, str(BERMOL_DIR))
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, 'data', 'interaction_binding',
-                         'combined_balanced_n72045_with_seq.csv')
-OUTPUT_DIR = os.path.join(BASE_DIR, 'data', 'pretrained_features')
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+DATA_PATH = Path(os.environ.get('TOXCPI_BINDING_TABLE',
+    REPOSITORY_ROOT / 'data/binding/combined_balanced_n72045_with_seq.csv')).expanduser().resolve()
+OUTPUT_DIR = str(Path(os.environ.get('TOXCPI_FEATURE_DIR',
+    REPOSITORY_ROOT / 'runtime/pretrained_features')).expanduser().resolve())
 
 
 def extract_bermol_tokens(device='cuda:0'):
@@ -83,7 +84,11 @@ def extract_esm2_residues(device='cuda:0'):
     logger.info("Extracting ESM2 residue-level features...")
 
     import esm
-    model, alphabet = esm.pretrained.esm2_t33_650M_UR50D()
+    local_model = os.environ.get('TOXCPI_ESM2_MODEL')
+    if local_model:
+        model, alphabet = esm.pretrained.load_model_and_alphabet_local(str(Path(local_model).expanduser().resolve()))
+    else:
+        model, alphabet = esm.pretrained.esm2_t33_650M_UR50D()
     model = model.to(device)
     model.eval()
     batch_converter = alphabet.get_batch_converter()

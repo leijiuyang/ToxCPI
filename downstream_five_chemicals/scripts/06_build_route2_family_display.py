@@ -107,6 +107,8 @@ def expansion_context(task: str, binding_context: object) -> str:
 
 def build_rows() -> pd.DataFrame:
     aop = pd.read_csv(AOP_PROTEINS_MULTILABEL, encoding="utf-8-sig")
+    if "Use_For_AOP_Matching" in aop.columns:
+        raise ValueError("Historical family display cannot consume the final inline-member table. Run 05_run_aop_ppi_and_summary.py; qualifying members are already recorded there.")
     family = pd.read_csv(FAMILY_MAP)
     if FAMILY_EXCLUDED_RELATED.exists():
         excluded_related_df = pd.read_csv(FAMILY_EXCLUDED_RELATED)

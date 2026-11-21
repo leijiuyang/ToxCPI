@@ -1,0 +1,28 @@
+{
+  "project": "/home/data2/leijiuyang/1_TOXCPI/leijiuyang/test1",
+  "iterations_per_null": 1000,
+  "seed": 20261025,
+  "scope": "Five manuscript cases only; frozen cold-model raw probabilities; no inference or training",
+  "chemical_order": ["BPA", "TCDD", "BaP", "Chlorpyrifos", "DDT"],
+  "threshold": 0.5,
+  "background": "B_common, identical to the stored Route 1 8383-gene background",
+  "sampling": "A single permutation of gene identities is applied jointly to all five binary target-set columns in each draw; without replacement within each set. Preserves target sizes and every cross-chemical target intersection. Uniform uses all background genes; degree_matched permutes within joint annotation-degree strata.",
+  "kegg_degree_bins": [[1,1],[2,4],[5,9],[10,19],[20,null]],
+  "ctd_inference_disease_degree_bins": [[0,0],[1,9],[10,99],[100,null]],
+  "degree_definition": "KEGG degree: number of retained GMT pathways containing a gene. CTD degree: number of distinct disease IDs linked to that inference gene in the full processed KEGG pathway-disease snapshot, before any chemical selection. Match coarse joint strata exactly; not exact degree, study frequency, tissue or assay context.",
+  "ora": "One-sided hypergeometric upper tail; pathway genes intersected with the same background; BH over all 369 tested pathways separately per chemical and draw. No pathway-state direction inference.",
+  "ctd_comparison": "Complete FDR<0.05 and overlap>=2 pathways; chemical-specific fixed CTD significant comparable reference. support, recovery, Jaccard; missing reference would be NA, never a negative label.",
+  "display_pipeline": "FDR<0.05 pathways ordered by FDR, p, decreasing overlap, decreasing fold, then stored GMT order for residual ties; take at most10. Map all CTD pathway-disease associations. Within pathway, rank by log1p(inference-gene count) (equivalent to fold*log1p at fixed pathway); at most10 per pathway, top5 subset for Table S5. Chemical-level disease IDs deduplicated by maximum fold*log1p support across selected pathways; descending display score and disease_id for residual ties; top20.",
+  "primary": "Mean of the 10 pairwise Jaccards of chemical-level top20 unique disease IDs. If the union is empty, Jaccard=0 (no shared evidence); retain all empty draws and report them. Upper-tail Monte Carlo p=(1+#null>=observed)/(R+1), BH across the two null designs.",
+  "secondary_test": "CTD pathway Jaccard for each of five chemicals, upper-tail Monte Carlo p, BH over all ten chemical-by-null comparisons. support/recovery/counts/target/pathway/per-pathway-top5 disease overlaps are descriptive, no additional significance claims.",
+  "uncertainty": "Null quantiles describe random gene relabeling conditional on fixed target sets and snapshots, not model-training uncertainty or biological replication. No parameters or endpoints selected after results.",
+  "input_paths": {
+    "gmt": "explanation/downstream_ao_4chem/inputs/kegg_human.gmt",
+    "background": "baseline_compare/CTD_PATHWAY/manifests/common_background_genes.txt",
+    "ctd_reference": "baseline_compare/CTD_PATHWAY/ctd/ctd_reference_5chem.csv.gz",
+    "ctd_disease": "AOP/CTD/processed/ctd_kegg_pathway_disease.parquet",
+    "target_sets": "baseline_compare/CTD_PATHWAY/target_sets/target_sets_threshold.csv.gz",
+    "route1_ranked": "explanation/downstream_ao_4chem/route1_ctd_v2/route1b_kegg_pathway_ora_ranked_threshold_0.5.csv",
+    "route1_disease_full": "explanation/downstream_ao_4chem/route1_ctd_v2/route1d_chemical_disease_full_threshold_0.5.csv"
+  }
+}

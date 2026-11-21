@@ -9,6 +9,7 @@ dependencies:
   - pyarrow=21.0.0
   - scipy=1.13.1
   - scikit-learn=1.6.1
+  - statsmodels=0.14.4
   - rdkit=2025.09.2
   - h5py=3.14.0
   - matplotlib=3.9.4
@@ -17,8 +18,8 @@ dependencies:
   - openpyxl=3.1.5
   - joblib=1.5.3
   - tqdm=4.67.1
-  - requests
-  - dill
+  - requests=2.32.5
+  - dill=0.4.1
   - pip
   - pip:
       - torch==2.8.0

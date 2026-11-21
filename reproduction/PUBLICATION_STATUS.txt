@@ -1,0 +1,9 @@
+Candidate prepared locally from base commit 3de0496dbfbc1b7600a52efae8a617866c8a8fde.
+Selected files at that public fixed commit were fetched successfully and their
+bytes matched the clean source checkout. The GitHub commit/Release APIs returned
+403 rate-limit errors; this is not evidence that releases are absent.
+Publication of this candidate and attachments is authorized by the user's later
+upload request. Actual upload is blocked by GitHub SSH public-key authentication;
+there is no available authenticated GitHub API credential. No release or new
+public commit is claimed here. Update publication status only after successful
+upload and fixed-link/download verification. R1-m26 is not yet closed.

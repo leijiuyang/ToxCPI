@@ -1,0 +1,7 @@
+# Fresh isolated installation and final AOP matching were actually validated.
+numpy==1.26.4
+pandas==2.3.3
+python-dateutil==3.0.0
+pytz==2026.6
+tzdata==2026.6
+six==1.17.0

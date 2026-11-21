@@ -1,0 +1,102 @@
+{
+  "experiment_id": "inhibition_warm_full_seed42",
+  "task": "inhibition",
+  "split": "warm",
+  "variant": "full",
+  "seed": 42,
+  "physical_gpu": 1,
+  "model_source": "experiments/ablation/s3_models.py",
+  "production_model_source": "model_fusion.py",
+  "production_attention_source": "attention.py",
+  "local_interaction_branch": true,
+  "raw_global_branch": true,
+  "local_interaction_description": "Present",
+  "raw_global_description": "Present",
+  "projected_global_branch": false,
+  "dual_control_used": false,
+  "max_chem_tokens": 64,
+  "max_protein_length": 768,
+  "monitor": "validation AUROC",
+  "threshold_rule": "fixed probability threshold 0.5 (formal result convention)",
+  "protocol_version": "s3-controlled-v2-fixed-threshold-0.5",
+  "protocol_fingerprint": "26d0ccb99a7f0400f6c1b94e84bd638e9e3041445cd4b6cb08597f2add8017f4",
+  "protocol_payload": {
+    "protocol_version": "s3-controlled-v2-fixed-threshold-0.5",
+    "task": "inhibition",
+    "split": "warm",
+    "variant": "full",
+    "seed": 42,
+    "threshold_rule": "fixed probability threshold 0.5 (formal result convention)",
+    "hyperparameters": {
+      "batch_size": 64,
+      "lr": 0.0001,
+      "weight_decay": 5e-05,
+      "dropout": 0.3,
+      "hidden_dim": 256,
+      "epochs": 80,
+      "patience": 20,
+      "label_smoothing": 0.05,
+      "warmup_ratio": 0.05
+    },
+    "split_sha256": {
+      "train": "9f315f184ff4e6322225d620120efa601617be8390c300881d86e287c2563d20",
+      "val": "c0495d6663846ba6ca0048f78d6dbb995c47526f59fa39890983e3ba3b9d6108",
+      "test": "302698f9cf8d6d9ab2a164b47bfd5f7bd41a97320f2ddf2abfea7a77b4442100"
+    },
+    "code_sha256": {
+      "runner": "49bacd876fac75f89f2ec5e9eff5eb776e2d9a18f9656d89024c153ad0e5ba3e",
+      "ablation_models": "94eb5a989e050809242d33c9f32e6c884b446a9fa1fb67794b9cf39d2a4d6ac4",
+      "production_model": "b438aa0738b9e2819aca4d562acaa225692e2b978c14e069cf2258c80e09d5b6",
+      "production_attention": "1f00243553ce3373cc9fcaca206d1020dd990aeabe8e3d560e92196ddebb08bf",
+      "production_training_helpers": "2c1781a9e1f995f13f30804a8587575fdd91e4e7f986a9aaa9b69c65bd896250"
+    },
+    "entity_cache": "test1/data/pretrained_features/fusion_warm_chem64_prot768_nogcn_5da6d84b77_entity_tensors.pt",
+    "entity_cache_size": 14942885723
+  },
+  "criterion": "BCEWithLogitsLoss without pos_weight",
+  "ema_decay": 0.999,
+  "amp": false,
+  "enhancements": {
+    "gcn": false,
+    "interaction_cnn": false,
+    "site_weak_supervision": false,
+    "multi_granularity": false
+  },
+  "hyperparameters": {
+    "batch_size": 64,
+    "lr": 0.0001,
+    "weight_decay": 5e-05,
+    "dropout": 0.3,
+    "hidden_dim": 256,
+    "epochs": 80,
+    "patience": 20,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.05
+  },
+  "train_rows": 39286,
+  "validation_rows": 2326,
+  "test_rows": 2330,
+  "source_split_rows": {
+    "train": 39286,
+    "val": 2326,
+    "test": 2330
+  },
+  "feature_eligible_rows": {
+    "train": 39286,
+    "val": 2326,
+    "test": 2330
+  },
+  "split_files": {
+    "train": "test1/data/interaction_type_1to1_targetaware/effect_inhibition_warm_train.csv",
+    "val": "test1/data/interaction_type_1to1_targetaware/effect_inhibition_warm_val.csv",
+    "test": "test1/data/interaction_type_1to1_targetaware/effect_inhibition_warm_test.csv"
+  },
+  "split_sha256": {
+    "train": "9f315f184ff4e6322225d620120efa601617be8390c300881d86e287c2563d20",
+    "val": "c0495d6663846ba6ca0048f78d6dbb995c47526f59fa39890983e3ba3b9d6108",
+    "test": "302698f9cf8d6d9ab2a164b47bfd5f7bd41a97320f2ddf2abfea7a77b4442100"
+  },
+  "entity_cache": "test1/data/pretrained_features/fusion_warm_chem64_prot768_nogcn_5da6d84b77_entity_tensors.pt",
+  "trainable_parameters": 3514625,
+  "formal_checkpoint_reused": "test1/checkpoints/effect_inhibition_warm_rawglobal_v3_rawglobal_local_control_1to1_targetaware_20260507_rerun_gpu1_tmux_seed42_best.pth"
+}

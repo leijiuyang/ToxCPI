@@ -1,0 +1,7 @@
+# Python 3.9; new reproduction environment, not a historical training lock.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.13.1
+openpyxl==3.1.5
+statsmodels==0.14.4
+pyarrow==21.0.0

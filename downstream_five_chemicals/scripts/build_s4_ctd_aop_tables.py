@@ -357,6 +357,8 @@ def configure(args: argparse.Namespace) -> None:
 def main() -> None:
     args = parse_args()
     configure(args)
+    if (ROUTE2 / "run_metadata.json").exists() or (ROUTE2 / "route2_event_mapping_nodes.csv").exists():
+        raise ValueError("Historical scoring tables are incompatible with final unweighted Route 2 outputs; use the event mapping and evidence CSVs directly.")
     data = load_inputs()
     validate_names(data)
     data["hit_events"] = build_hit_events(data)
