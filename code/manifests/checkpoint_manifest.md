@@ -3,7 +3,7 @@
 Trained ToxCPI weights are prepared as six original-byte candidate release assets,
 with original filenames, provenance and SHA-256 in `weight_identity.csv`. They are
 not stored in ordinary Git history. See `reproduction/ASSETS.txt` and
-`reproduction/PUBLICATION_STATUS.txt`; prepared files are not yet public downloads.
+`reproduction/PUBLICATION_STATUS.txt`; use the matching fixed Release for actual download availability.
 
 All six load with `strict=True` and have passed CPU inference on 32 fixed test
 records per task/split. Binding uses the full shared feature cache; historical

@@ -1,13 +1,13 @@
-Proposed release attachments (pending authenticated upload):
-toxcpi-primary-weights.tar.gz          six original trained classifier weight files
-toxcpi-downstream-predictions.tar.gz   five original archived proteome CSVs
-toxcpi-strict-gene-budget-inputs.tar.gz exact fixed-score inputs and hashed inputs.json
-toxcpi-fixed-test-smoke-features.tar.gz exact numeric feature subset and provenance, 192 records
-toxcpi-validation-evidence.tar.gz      selected actual logs, checks and output tables
+Versioned release attachments:
+toxcpi-primary-weights.tar.gz          six original trained classifier weights
+toxcpi-downstream-predictions.tar.gz   five archived raw proteome prediction CSVs
+toxcpi-strict-gene-budget-inputs.tar.gz exact inputs for the fixed-score analysis
+toxcpi-validation-evidence.tar.gz      selected validation logs and outputs
 SHA256SUMS.txt                        attachment integrity manifest
 
-These are distinct from BerMol and ESM-2 upstream model assets, which are not
-redistributed. Main performance checkpoints do not cover the full baseline and
-five-seed experimental model sets. Large weights are prepared as release assets,
-not inserted into ordinary Git history. Local execution evidence contains source
-paths; the public package uses runtime-relative commands and asset manifests.
+The fixed source tree and all 18 split files are available through the immutable
+commit/tag and GitHub's automatically generated Source code archives. A redundant
+custom source archive and feature caches are not uploaded. Feature generation
+methods, upstream asset identities and acquisition instructions are documented in
+REPRODUCE.txt. BerMol/ESM-2 upstream weights remain separate from ToxCPI classifiers.
+Six primary models do not replace all baseline or controlled five-seed models.

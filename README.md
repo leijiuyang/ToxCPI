@@ -10,8 +10,8 @@ training and processed mapping data.
 This repository **does not include pretrained ToxCPI checkpoints, precomputed
 human-proteome predictions, CTD/AOP result tables, baseline results, manuscript
 files, or paper figures**. Six original trained checkpoints and fixed downstream inputs have been prepared
-as candidate release attachments, with hashes and provenance. They have not yet
-been uploaded. See [publication status](reproduction/PUBLICATION_STATUS.txt), the
+as versioned release attachments, with hashes and provenance. Check the matching
+GitHub Release for available downloads. See [publication status](reproduction/PUBLICATION_STATUS.txt), the
 [reproduction guide](reproduction/REPRODUCE.txt), and the
 [analysis matrix](code/manifests/analysis_matrix.csv) for the exact supported scope.
 Users can also train locally and supply their own checkpoint paths explicitly.

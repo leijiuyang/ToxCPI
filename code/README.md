@@ -24,4 +24,4 @@ dependencies. `inference/evaluate_fixed_checkpoint.py` strictly loads a primary
 checkpoint and evaluates explicit fixed CSV records without training/resplitting.
 `features/build_entity_cache.py` builds original max64/768 tensors from explicit
 trusted feature dictionaries. See `manifests/weight_identity.csv` for six original
-weight identities; release attachments are prepared locally, not yet public.
+weight identities; use the matching fixed Release for download availability. Feature caches are not distributed.

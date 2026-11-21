@@ -14,8 +14,8 @@ Release attachment filenames are listed in ASSETS.txt. Extract them under runtim
   tar -xzf toxcpi-primary-weights.tar.gz -C runtime/
   tar -xzf toxcpi-downstream-predictions.tar.gz -C runtime/
   tar -xzf toxcpi-strict-gene-budget-inputs.tar.gz -C runtime/
-  tar -xzf toxcpi-fixed-test-smoke-features.tar.gz -C runtime/
-This places fixed_test_smoke_features.pt and its provenance JSON in runtime/.
+Feature caches are not distributed. Generate them from the documented upstream
+assets or use an identity-verified local cache as described below.
 Validate release files with SHA256SUMS.txt before extraction. Checkpoint files retain
 their original filenames and bytes under runtime/weights/{task}/.
 
@@ -42,15 +42,14 @@ code/manifests/weight_identity.csv and fixed_splits.csv):
   python code/inference/evaluate_fixed_checkpoint.py \
     --task binding --split cold --test-csv data/binding/test_cold.csv \
     --checkpoint runtime/weights/binding/fusion_cold_best.pth \
-    --entity-cache runtime/fixed_test_smoke_features.pt \
+    --entity-cache runtime/entity_features.pt \
     --output-dir runtime/smoke_binding_cold --limit 32 --device cpu
 
-The compact smoke cache copies exactly the feature vectors of the 192 validated
-fixed-test records (32 per model). It is not a full feature cache. Its provenance
-lists source cache hashes and selected source record IDs. It must not be used to
-claim a full test denominator or published performance. With a complete trusted
-cache, --limit 0 evaluates all feature-eligible stored records and records exclusions.
-No random split, rebalancing, deduplication, or SMILES identity cleaning occurs.
+Local validation used exact feature vectors for 192 fixed test records (32 per
+model). No feature cache is included in the release. Provide a complete trusted
+cache explicitly; --limit 32 repeats representative interface validation, while
+--limit 0 evaluates all feature-eligible stored records and records exclusions.
+No random split, rebalancing, deduplication or SMILES identity cleaning occurs.
 
 To construct a full cache from trusted frozen feature dictionaries:
   python code/features/build_entity_cache.py \
