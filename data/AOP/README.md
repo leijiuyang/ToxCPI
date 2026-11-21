@@ -65,8 +65,19 @@ for provenance. They were not updated to the accepted member ranges and
 identifier corrections. Do not re-expand, override or supplement the final
 inline mappings from those historical files.
 
-The historical downstream scoring/table-building scripts were not changed.
-They expect the earlier schema and separate helper tables and cannot consume
-this table correctly without adaptation. The final data replace the old input
-file, but this update does not integrate a new executable matching workflow or
-recalculate any prediction, score, ranking or manuscript table.
+The `05_run_aop_ppi_and_summary.py` interface has now been adapted to the final
+table, using `aop_matching.py`. It reads no historical inventory, manual helper or
+family file. Matching uses raw probabilities strictly >0.7 on one explicit member
+for all required labels; binding is checked only if labelled. All qualifying
+members are recorded, while each source mapping remains one node. Reused
+chemical/protein/task predictions carry shared evidence IDs. No aggregate scores
+or rankings are emitted. Historical scoring/table helpers reject final inputs.
+
+Seven rule/interface tests passed, including the exact 0.7 boundary, missing
+required predictions, cross-member versus same-member combinations, both
+directions, shared evidence, and single-node counting. Five archived prediction
+files produced 455 checked nodes and confirmed all 25 illustrative S17 associations.
+Fresh AOP environment outputs match the model environment byte-for-byte. These
+checks do not certify full model or paper regeneration. The 91-row scientific
+mapping file itself is unchanged. See `reproduction/REPRODUCE.txt` and the analysis
+matrix for commands and remaining dependencies.
