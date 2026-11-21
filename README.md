@@ -30,7 +30,7 @@ install environment
   -> run inference for chemicals against the human proteome
   -> create prediction CSV files
   -> run CTD mapping
-  -> run AOP mapping
+  -> consult the final AOP mechanistic-hypothesis mappings
 ```
 
 ### 1. Environment
@@ -119,24 +119,30 @@ comparable to the supplied GMT. CTD recovery and Jaccard use the comparable
 subset; model-support overlap is therefore evaluated on the same pathway
 universe as ORA.
 
-### 6. AOP/AO mapping
+### 6. AOP mechanistic-hypothesis mappings
 
-```bash
-python downstream_five_chemicals/scripts/05_run_aop_ppi_and_summary.py \
-  --prediction-dir /path/to/predictions \
-  --aop-data-dir data/AOP \
-  --chemical-list downstream_five_chemicals/config/five_chemicals.csv \
-  --threshold 0.7 \
-  --output-dir /path/to/results/aop
-```
+The final mapping table is `data/AOP/human_aop_proteins_multilabel.csv`.
+It contains 91 protein-concept/event mappings covering 62 AOPs, including
+`AOP_Title`. Each family or complex candidate group occupies one row;
+semicolon-separated UniProt accessions identify its members. These correspond
+to 241 member-level associations and 147 distinct human proteins.
 
-All output locations are user-selected; scripts do not write into source or
-data directories.
+This version uses `Use_For_AOP_Matching` and has no `Position_Weight` column.
+It supports mechanistic hypotheses, without an AOP weighting or aggregate-score
+method. See [the AOP data notes](data/AOP/README.md) for provenance and field
+interpretation.
+
+The historical Route 2 scoring and supplementary-table scripts remain unchanged.
+They expect the earlier schema and separate member tables and are **not
+compatible with this final table**. In particular, do not pass the updated
+`data/AOP` directory to `05_run_aop_ppi_and_summary.py` as though it implements
+the final matching format. No predictions or AOP results were recalculated for
+this data update.
 
 ## Prediction CSV contract
 
 CTD mapping requires `chemical_name`, `gene_symbol`, `P_binding`,
-`P_activation`, and `P_inhibition`. AOP mapping additionally requires `casrn`,
+`P_activation`, and `P_inhibition`. The historical AOP scripts additionally require `casrn`,
 `ctd_chemical_id`, `uniprot_id`, `protein_name`, `S_target`, `rank_binding`,
 `rank_activation`, `rank_inhibition`, and `effect_extrapolated`. These are the
 columns emitted by `predict_human_proteome.py`; probabilities are not replaced
@@ -150,7 +156,7 @@ by a generic `score` column.
 | `data/activation` | 4.2 MiB | Fixed activation warm/cold splits |
 | `data/inhibition` | 8.4 MiB | Fixed inhibition warm/cold splits |
 | `data/CTD` | 11 MiB | Processed CTD chemical–pathway and pathway–disease inputs |
-| `data/AOP` | 176 KiB | Curated AOP-Wiki multilabel event and protein/family mappings |
+| `data/AOP` | 151 KiB | Final AOP mechanistic-hypothesis mapping table and historical source/reference tables |
 
 The fixed scientific splits are provided without sampling or compression.
 Users are responsible for complying with the terms of the upstream data
